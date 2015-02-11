@@ -6,3 +6,11 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 
 # Build settings
 markdown: kramdown
+
+collections:
+  atoms:
+    output: true
+  molecules:
+    output: true
+  organisms:
+    output: true

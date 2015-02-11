@@ -4,6 +4,37 @@ layout: default
 
 <div class="main">
 
-  {% include atoms/headers.html %}
+  <div class="sg-category">
+    {% for atom in site.atoms %}
+      <div class="sg-item">
+        <div class="sg-link">
+          <a href="{{ atom.url }}">{{ atom.url }}</a>
+        </div>
+        {{ atom.content }}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="sg-category">
+    {% for molecule in site.molecules %}
+      <div class="sg-item">
+        <div class="sg-link">
+          <a href="{{ molecule.url }}">{{ molecule.url }}</a>
+        </div>
+        {{ molecule.content }}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="sg-category">
+    {% for organism in site.organisms %}
+      <div class="sg-item">
+        <div class="sg-link">
+          <a href="{{ organism.url }}">{{ organism.url }}</a>
+        </div>
+        {{ organism.content }}
+      </div>
+    {% endfor %}
+  </div>
 
 </div>
