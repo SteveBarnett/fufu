@@ -14,3 +14,6 @@ collections:
     output: true
   organisms:
     output: true
+
+sass:
+    style: :compressed

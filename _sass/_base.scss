@@ -1,0 +1,64 @@
+// Links
+
+a {
+  text-decoration : none;
+  color : $linkcolor;
+  &:visited {
+    color : $linkcolorvisited;
+  }
+  &:hover {
+    text-decoration : underline;
+    color : $linkcolorhover;
+  }
+  &:focus {
+    outline : thin dotted;
+    color : $linkcolorfocus;
+  }
+  &:hover,
+  &:active {
+    outline : 0;
+  }
+}
+
+::-moz-selection {
+  background-color : lighten($primaryColor, 65%);
+  color : $primaryColor;
+  text-shadow : none;
+}
+
+::selection {
+  background-color : lighten($primaryColor, 65%);
+  color : $primaryColor;
+  text-shadow : none;
+}
+
+hr {
+  display : block;
+  margin : 1em 0;
+  padding : 0;
+  height : 1px;
+  border : 0;
+  border-top : 1px solid #999;
+  border-bottom : 1px solid #fff;
+}
+
+// img
+
+img {
+  border-width : 0;
+  vertical-align : middle;
+  -ms-interpolation-mode : bicubic;
+  max-width: 100%;
+  height: auto;
+}
+
+
+// https://github.com/mrmrs/fluidity
+
+canvas, iframe, video, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Wrap tables or pre elements in a div with this class */
+.overflow-container { overflow-y: scroll; }

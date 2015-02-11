@@ -82,17 +82,13 @@ textarea {
 
 /* ==|== primary styles ===================================================== */
 
-// @import "animations";
-// @import "base";
-// @import "buttons";
-// @import "icons";
-// @import "layout";
-// @import "modules";
-// @import "navigation";
-// @import "state";
-// @import "typography";
-// @import "normalize-opentype";
-// @import "variables";
+@import "variables";
+@import "base";
+@import "typography";
+@import "buttons";
+@import "layout";
+@import "modules";
+@import "navigation";
 
 // http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
 

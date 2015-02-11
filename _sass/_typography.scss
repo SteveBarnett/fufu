@@ -1,0 +1,60 @@
+@import "variables";
+
+// good measure: 45 to 75 characters
+// 1em is about 2 characters, so use 22 to 38ems
+
+p, table {
+  hyphens: auto;
+}
+
+// Consider using columns for larger screens
+// @media only screen and (min-width: 66em) {
+//   column-count:2;
+//   column-gap: 1.5em;
+// }
+
+
+blockquote {
+  margin: 1.5em;
+}
+
+
+// web font loading classes
+
+// .wf-loading
+// .wf-active
+// .wf-inactive
+
+// text helper classes
+
+.uc {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.tac {
+  text-align: center;
+}
+
+.tar {
+  text-align: right;
+}
+
+.tal {
+  text-align: left;
+}
+
+.no-bull {
+  list-style: none;
+}
+
+// show IDs for content
+
+main [id]:hover::after {
+  display: inline;
+  content: ' #' attr(id);
+  color: lighten(#333, 30%);
+}
