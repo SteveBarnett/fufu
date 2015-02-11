@@ -6,7 +6,7 @@
 
 // Use @include respond-min(60em) { ... } to bracket responsive elements
 
-.no-p {
+%no-p {
   padding: 0;
 }
 
@@ -14,7 +14,7 @@
   margin: 0;
 }
 
-.no-bull {
+%no-bull {
   list-style-type: none;
 }
 

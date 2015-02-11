@@ -2,3 +2,17 @@
 // navbar
 // nav
 // pagination
+
+.nav {
+  @extend %no-p;
+  @extend %no-bull;
+}
+
+.nav-inline,
+.nav-lang {
+  @extend %no-p;
+  @extend %no-bull;
+  li {
+    display: inline-block;
+  }
+}
