@@ -30,6 +30,29 @@
 // nav
 // pagination
 
+//links
+.a{
+	color:$primaryColor
+}
+
+.highlight-primary{
+	background-color: $primaryColor
+	color: $secondaryColor
+}
+
+.highlight-primary a {
+	color: $secondaryColor
+}
+
+.highlight-secondary{
+	background-color: $secondaryColor
+	color: $tertiaryColor
+}
+
+.highlight-secondary a {
+	color: $tertiaryColor
+}
+
 .nav {
   @extend %no-p;
   @extend %no-bull;
@@ -45,9 +68,3 @@
 //   }
 // }
 
-.nav-inline,
-.nav-lang {
-  li {
-    display: inline-block;
-  }
-}
