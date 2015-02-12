@@ -1,62 +1,264 @@
-// Links
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
-a {
-  color : $linkcolor;
-  &:visited {
-    color : $linkcolorvisited;
-  }
-  &:hover {
-    color : $linkcolorhover;
-  }
-  &:focus {
-    outline : thin dotted;
-    color : $linkcolorfocus;
-  }
-  &:hover,
-  &:active {
-    outline : 0;
-  }
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
 ::-moz-selection {
-  background-color : lighten($primaryColor, 65%);
-  color : $primaryColor;
-  text-shadow : none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 ::selection {
-  background-color : lighten($primaryColor, 65%);
-  color : $primaryColor;
-  text-shadow : none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
+
+/*
+ * A better looking default horizontal rule
+ */
 
 hr {
-  display : block;
-  margin : 1em 0;
-  padding : 0;
-  height : 1px;
-  border : 0;
-  border-top : 1px solid #999;
-  border-bottom : 1px solid #fff;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
-// img
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
 
-img {
-  border-width : 0;
-  vertical-align : middle;
-  -ms-interpolation-mode : bicubic;
-  max-width: 100%;
-  height: auto;
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
 
 
-// https://github.com/mrmrs/fluidity
+/* ==|== primary styles ===================================================== */
 
-canvas, iframe, video, svg {
-  max-width: 100%;
-  height: auto;
+// http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+
+@-webkit-viewport {
+  width : device-width;
 }
 
-/* Wrap tables or pre elements in a div with this class */
-.overflow-container { overflow-y: scroll; }
+@-moz-viewport {
+  width : device-width;
+}
+
+@-ms-viewport {
+  width : device-width;
+}
+
+@-o-viewport {
+  width : device-width;
+}
+
+@viewport {
+  width : device-width;
+}
+
+html {
+  -webkit-overflow-scrolling : touch;
+  -webkit-tap-highlight-color : lighten(#333, 75%);
+}
+
+
+/* ==|== Links ==== */
+
+:not(a):focus {
+  outline: none;
+}
