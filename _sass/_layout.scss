@@ -10,89 +10,81 @@
   padding: 0;
 }
 
-.no-m {
+%no-m {
   margin: 0;
 }
 
-%no-bull {
-  list-style-type: none;
-}
-
-.l-db {
+%l-db {
  display: block;
 }
 
-.l-ib {
+%l-ib {
   display: inline-block;
 
 }
 
-.l-wsno {
-  white-space: nowrap;
-}
-
 // clearing
 
- .l-cb {
+%l-cb {
   clear: both;
 }
 
-.l-cl {
+%l-cl {
   clear: left;
 }
 
-.l-cr {
+%l-cr {
   clear: right;
 }
 
 // positioning
 
-.l-pa {
+%l-pa {
   position: absolute;
 }
 
-.l-pr {
+%l-pr {
   position: relative;
 }
 
 // positioning - indented
 
-.l-t-indent {
+%l-t-indent {
   top: 1em;
 }
 
-.l-r-indent {
+%l-r-indent {
   right: 1em;
 }
 
-.l-b-indent {
+%l-b-indent {
   bottom: 1em;
 }
 
-.l-l-indent {
+%l-l-indent {
   left: 1em;
 }
 
 // sizes
 
-.w-half {
+%w-half {
   width: 50%;
 }
 
-.w-full {
+%w-full {
   width: 100%;
 }
 
 // floating
 
-.l-fl {
+%l-fl {
   float: left;
 }
 
-.l-fr {
+%l-fr {
   float: right;
 }
 
-.l-fn {
+%l-fn {
   float: none;
 }

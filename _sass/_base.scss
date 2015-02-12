@@ -262,3 +262,7 @@ html {
 :not(a):focus {
   outline: none;
 }
+
+html {
+  font-family: $font-family-sans-serif;
+}

@@ -27,27 +27,27 @@ blockquote {
 
 // text helper classes
 
-.uc {
+%uc {
   text-transform: uppercase;
 }
 
-.capitalize {
+%capitalize {
   text-transform: capitalize;
 }
 
-.tac {
+%tac {
   text-align: center;
 }
 
-.tar {
+%tar {
   text-align: right;
 }
 
-.tal {
+%tal {
   text-align: left;
 }
 
-.no-bull {
+%no-bull {
   list-style: none;
 }
 
