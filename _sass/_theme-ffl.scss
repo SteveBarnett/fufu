@@ -1,0 +1,25 @@
+// Facts for Life
+
+$primaryColor: #cce9fc; // baby blue
+$secondaryColor: #fff; // white
+$tertiaryColor: #0093ef; // blue
+$quarternaryColor: #92AFC1; // grey blue
+
+
+// white, blue links, on baby blue
+.highlight-primary {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  a {
+    color: $secondaryColor;
+  }
+}
+
+// white on blue
+.highlight-secondary {
+  background-color: $tertiaryColor;
+  color: $secondaryColor;
+  a {
+    color: $secondaryColor;
+  }
+}
