@@ -22,3 +22,32 @@
 //      speak: none;
 // }
 // <a data-icon="&#xe012;" href="">Link Text</a>
+
+@import "variables";
+
+// breadcrumbs
+// navbar
+// nav
+// pagination
+
+.nav {
+  @extend %no-p;
+  @extend %no-bull;
+}
+
+// [fufu], .nav {
+//   background: $primaryColor;
+//   color: $secondaryColor;
+//   a {
+//     @extend %l-db;
+//     @extend %pad-s;
+//     color: $tertiaryColor;
+//   }
+// }
+
+.nav-inline,
+.nav-lang {
+  li {
+    display: inline-block;
+  }
+}
