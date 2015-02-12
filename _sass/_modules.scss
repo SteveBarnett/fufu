@@ -31,31 +31,46 @@
 // pagination
 
 //links
-.a{
-	color:$primaryColor
+a {
+	color:$primaryColor;
 }
 
-.highlight-primary{
-	background-color: $primaryColor
-	color: $secondaryColor
+.highlight-primary {
+	background-color: $primaryColor;
+	color: $secondaryColor;
 }
 
 .highlight-primary a {
-	color: $secondaryColor
+	color: $secondaryColor;
 }
 
 .highlight-secondary{
-	background-color: $secondaryColor
-	color: $tertiaryColor
+	background-color: $secondaryColor;
+	color: $tertiaryColor;
 }
 
 .highlight-secondary a {
-	color: $tertiaryColor
+	color: $tertiaryColor;
 }
 
 .nav {
   @extend %no-p;
   @extend %no-bull;
+}
+
+.displayinline {
+
+
+	li {
+		@extend %l-il;
+	}
+}
+
+.displayblock{
+	
+	li{
+		@extend %l-db;
+	}
 }
 
 // [fufu], .nav {
