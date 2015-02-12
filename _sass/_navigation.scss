@@ -1,3 +1,5 @@
+@import "variables";
+
 // breadcrumbs
 // navbar
 // nav
@@ -8,10 +10,18 @@
   @extend %no-bull;
 }
 
+// [fufu], .nav {
+//   background: $primaryColor;
+//   color: $secondaryColor;
+//   a {
+//     @extend %l-db;
+//     @extend %pad-s;
+//     color: $tertiaryColor;
+//   }
+// }
+
 .nav-inline,
 .nav-lang {
-  @extend %no-p;
-  @extend %no-bull;
   li {
     display: inline-block;
   }

@@ -229,6 +229,77 @@ textarea {
 
 /* ==|== primary styles ===================================================== */
 
+// Links
+
+a {
+  text-decoration: none;
+  color: $linkcolor;
+  &:visited {
+    color: $linkcolorvisited;
+  }
+  &:hover {
+    text-decoration: underline;
+    color: $linkcolorhover;
+  }
+  &:focus {
+    outline: thin dotted;
+    color: $linkcolorfocus;
+  }
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+::-moz-selection {
+  background-color: lighten($primaryColor, 65%);
+  color: $primaryColor;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: lighten($primaryColor, 65%);
+  color: $primaryColor;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  margin: 1em 0;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid white;
+}
+
+// img
+
+img {
+  border-width: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  height: auto;
+}
+
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+
+// https://github.com/mrmrs/fluidity
+
+canvas, iframe, video, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Wrap tables or pre elements in a div with this class */
+.overflow-container { overflow-y: scroll; }
+
+
 // http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
 
 @-webkit-viewport {
@@ -265,4 +336,5 @@ html {
 
 html {
   font-family: $font-family-sans-serif;
+  line-height: 1.25em;
 }
