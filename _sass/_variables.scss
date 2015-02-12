@@ -1,7 +1,8 @@
 // Variables
 
-// $bodycolor: $white;
-// $textcolor: $black;
+$bodycolor: #fff;
+$textcolor: #000;
+
 
 // Typography
 
@@ -10,9 +11,9 @@ $font-family-serif: Georgia, "Times New Roman", Times, serif;
 
 // Colour
 
-$primaryColor: #666;
-$secondaryColor: #999;
-$teriaryColor: #ccc;
+$primaryColor: #d15c4d; //orange
+$secondaryColor: #ccb;	//cream
+$tertiaryColor: #aac2ac;	//green
 
 // Links
 
@@ -20,3 +21,4 @@ $linkcolor: rgb(1,53,104);
 $linkcolorhover: darken($linkcolor, 10);
 $linkcolorvisited: darken($linkcolorhover, 10);
 $linkcolorfocus: $linkcolorhover;
+
