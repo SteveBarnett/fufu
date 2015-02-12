@@ -22,3 +22,68 @@
 //      speak: none;
 // }
 // <a data-icon="&#xe012;" href="">Link Text</a>
+
+@import "variables";
+
+// breadcrumbs
+// navbar
+// nav
+// pagination
+
+//links
+a {
+	color:$primaryColor;
+}
+
+.highlight-primary {
+	background-color: $primaryColor;
+	color: $secondaryColor;
+}
+
+.highlight-primary a {
+	color: $secondaryColor;
+}
+
+.highlight-secondary{
+	background-color: $secondaryColor;
+	color: $tertiaryColor;
+}
+
+.highlight-secondary a {
+	color: $tertiaryColor;
+}
+
+.nav {
+  @extend %no-p;
+  @extend %no-bull;
+}
+
+.displayinline {
+
+
+	li {
+		@extend %l-il;
+	}
+}
+
+.displayblock{
+	
+	li{
+		@extend %l-db;
+	}
+}
+
+.b-b {    
+    border-bottom-style: solid;
+}
+
+// [fufu], .nav {
+//   background: $primaryColor;
+//   color: $secondaryColor;
+//   a {
+//     @extend %l-db;
+//     @extend %pad-s;
+//     color: $tertiaryColor;
+//   }
+// }
+
