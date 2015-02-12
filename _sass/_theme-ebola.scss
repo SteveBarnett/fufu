@@ -1,0 +1,24 @@
+// Ebola
+
+$primaryColor: #ef5500; // dark orange
+$secondaryColor: #fff; // white
+$tertiaryColor: #f6f4e3; // light grey grey
+$quarternaryColor: #aac2ac; // grey green
+
+// white on orange
+.highlight-primary {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  a {
+    color: $secondaryColor;
+  }
+}
+
+// grey green on light grey green
+.highlight-secondary {
+  background-color: $tertiaryColor;
+  color: $quarternaryColor;
+  a {
+    color: $quarternaryColor;
+  }
+}
