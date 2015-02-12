@@ -12,6 +12,7 @@
 
 html {
     color: #222;
+    background-color: #fff;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -232,13 +233,12 @@ textarea {
 // Links
 
 a {
-  text-decoration: none;
   color: $linkcolor;
   &:visited {
     color: $linkcolorvisited;
   }
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: $linkcolorhover;
   }
   &:focus {
@@ -337,4 +337,17 @@ html {
 html {
   font-family: $font-family-sans-serif;
   line-height: 1.25em;
+}
+
+html {
+  background-color: #333;
+}
+
+body {
+  background-color: #fff;
+  max-width: 35em;
+  margin: 0 auto;
+  @media (min-width: 50em) {
+    max-width: 20em;
+  }
 }
