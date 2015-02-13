@@ -2,21 +2,10 @@
 layout: default
 ---
 
-<p>The Fieldset:</p>
-<fieldset>
-  <legend>Legend</legend>
+<form>
+  <label for="search">Search: 
+    <input type="search" id="search" name="search" placeholder="e.g. fufu"/>
+  </label>
 
-  <p>The Form:</p>
-
-  <form>
-    <p><label for="text_field">Text Field:</label><br />
-      <input type="text" id="text_field" />
-    </p>
-
-    <p>
-      <button>Button Element</button>
-      <input class="button" type="submit" value="Submit" />
-    </p>
-  </form>
-
-</fieldset>
+  <input type="submit" value="Submit" />
+</form>
