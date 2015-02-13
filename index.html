@@ -8,7 +8,7 @@ layout: default
     {% for atom in site.atoms %}
       <div class="sg-item">
         <div class="sg-link">
-          <a href="/fufu/{{ atom.url }}">/fufu/{{ atom.url }}</a> &darr;
+          <a href="/fufu{{ atom.url }}">/fufu{{ atom.url }}</a> &darr;
           {{ atom.fish }}
         </div>
         {{ atom.content }}
@@ -20,7 +20,7 @@ layout: default
     {% for molecule in site.molecules %}
       <div class="sg-item">
         <div class="sg-link">
-          <a href="/fufu/{{ molecule.url }}">/fufu/{{ molecule.url }}</a> &darr;
+          <a href="/fufu{{ molecule.url }}">/fufu{{ molecule.url }}</a> &darr;
         </div>
         {{ molecule.content }}
       </div>
@@ -31,7 +31,7 @@ layout: default
     {% for organism in site.organisms %}
       <div class="sg-item">
         <div class="sg-link">
-          <a href="/fufu/{{ organism.url }}">/fufu/{{ organism.url }}</a> &darr;
+          <a href="/fufu{{ organism.url }}">/fufu{{ organism.url }}</a> &darr;
         </div>
         {{ organism.content }}
       </div>
