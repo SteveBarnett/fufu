@@ -252,14 +252,14 @@ a {
 }
 
 ::-moz-selection {
-  background-color: lighten($primaryColor, 65%);
-  color: $primaryColor;
+  background-color: lighten($colorFirst, 65%);
+  color: $colorFirst;
   text-shadow: none;
 }
 
 ::selection {
-  background-color: lighten($primaryColor, 65%);
-  color: $primaryColor;
+  background-color: lighten($colorFirst, 65%);
+  color: $colorFirst;
   text-shadow: none;
 }
 

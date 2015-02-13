@@ -1,25 +1,25 @@
 // MAMA
 
-$primaryColor: #f7a11a; // orange
-$secondaryColor: #fff; // white
-$tertiaryColor: #f0f0f0; // very light grey
-$quarternaryColor: #999; // grey
+$colorFirst: #f7a11a; // orange
+$colorSecond: #fff; // white
+$colorThird: #f0f0f0; // very light grey
+$colorFourth: #999; // grey
 
 // white on orange
 .highlight-primary {
-  background-color: $primaryColor;
-  color: $secondaryColor;
+  background-color: $colorFirst;
+  color: $colorSecond;
   a {
-    color: $secondaryColor;
+    color: $colorSecond;
   }
 }
 
 // grey, orange links, on very light grey
 .highlight-secondary {
-  background-color: $tertiaryColor;
-  color: $quarternaryColor;
+  background-color: $colorThird;
+  color: $colorFourth;
   a {
-    color: $primaryColor;
+    color: $colorFirst;
   }
 }
 
