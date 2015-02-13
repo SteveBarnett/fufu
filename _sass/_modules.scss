@@ -33,6 +33,7 @@
 //links
 a {
 	color:$primaryColor;
+	text-decoration: none;
 }
 
 .highlight-primary {
@@ -60,16 +61,31 @@ a {
 
 .displayinline {
 
-
+	@extend %no-p;
 	li {
-		@extend %l-il;
+		@extend %l-ib;
+		a{	
+			line-height: 1.5;
+			border-left: solid 1px;
+			padding: 0.25em;
+		}
+
+		&:first-child a{
+			border:none;	
+
+		}
 	}
 }
 
 .displayblock{
-	
+	@extend %no-p;
 	li{
 		@extend %l-db;
+		border-bottom-style: 1px solid;
+		a{
+			display: block;
+			padding: 0.5em;
+		}
 	}
 }
 
