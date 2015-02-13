@@ -341,13 +341,14 @@ html {
 
 html {
   background-color: #333;
-}
-
-body {
-  background-color: #fff;
   max-width: 35em;
   margin: 0 auto;
   @media (min-width: 50em) {
     max-width: 20em;
   }
+}
+
+body {
+  background-color: #fff;
+  padding: 0.5em;
 }
