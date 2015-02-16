@@ -3,18 +3,16 @@
 $bodycolor: #fff;
 $textcolor: #000;
 
-
 // Typography
 
 $font-family-sans-serif: Helvetica, Arial, sans-serif;
 $font-family-serif: Georgia, "Times New Roman", Times, serif;
 
-// Colour
+// Colour - defaults
 
 $colorFirst: #d15c4d;   //orange
 $colorSecond: #f6f4e3;	//cream
 $colorThird: #aac2ac;	//green
-
 
 // Links
 
@@ -22,4 +20,3 @@ $linkcolor: rgb(1,53,104);
 $linkcolorhover: darken($linkcolor, 10);
 $linkcolorvisited: darken($linkcolor, 10);
 $linkcolorfocus: $linkcolorhover;
-
