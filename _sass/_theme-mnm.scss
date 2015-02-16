@@ -18,7 +18,7 @@ $colorFourth: #ebebeb; // light grey
 // dark grey, orange links, on light grey
 .highlight-secondary {
   background-color: $colorFourth;
-  color: $colorSecond;
+  color: darken($colorFourth, 30%);
   a {
     color: $colorSecond;
   }
@@ -27,8 +27,16 @@ $colorFourth: #ebebeb; // light grey
   }
 }
 
+//thick bottom border os light orange
 .list-block {
   li {
     border-bottom: solid 5px $colorSecond;
+  }
+}
+
+.list-inline {
+  
+  li {
+    border-left: solid 2px ;
   }
 }
