@@ -55,26 +55,29 @@ a {
 }
 
 .nav {
-  @extend %no-p;
-  @extend %no-bull;
+  a {
+  	padding: 0 0.5em;
+  	@extend %l-ib;
+  }
 }
 
-.displayinline {
+.list-inline {
 
-	@extend %no-p;
+	@extend %no-bull;
+	@extend %no-m;
+	padding: 0.25em;
+
 	li {
 		@extend %l-ib;
-		a{	
-			line-height: 1.5;
-			border-left: solid 1px;
-			padding: 0.25em;
-		}
-
-		&:first-child a{
-			border:none;	
-
+		border-left: solid 1px;
+		&:first-child {
+			border-left: none;
 		}
 	}
+
+	a {
+	}
+
 }
 
 .displayblock{
