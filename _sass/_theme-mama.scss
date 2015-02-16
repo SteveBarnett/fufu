@@ -17,7 +17,7 @@ $colorFourth: #999; // grey
 // grey, orange links, on very light grey
 .highlight-secondary {
   background-color: $colorThird;
-  color: $colorFourth;
+  color: lighten($colorFourth, 25%);
   a {
     color: $colorFirst;
   }
@@ -25,6 +25,10 @@ $colorFourth: #999; // grey
     color: #999;
   }
 }
+
+ .b-b {
+   border-bottom: solid 2px lighten($colorFourth, 25%);
+ }
 
 // MAMA special
 
