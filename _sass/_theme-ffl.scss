@@ -11,7 +11,10 @@ $colorFourth: #92AFC1; // grey blue
   background-color: $colorFirst;
   color: $colorSecond;
   a {
-    color: $colorSecond;
+    color: $colorThird;
+  }
+  .active {
+    color: #92AFC1;
   }
 }
 
