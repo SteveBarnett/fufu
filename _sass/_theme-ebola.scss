@@ -38,3 +38,9 @@ $colorFourth: #666; // light grey grey
     border-left: solid 2px ;
   }
 }
+
+//Is there a more elegant way of doing this?
+//adds bottom border to in-line navs
+.b-b{
+      border-bottom: 6px solid $colorThird;
+}
