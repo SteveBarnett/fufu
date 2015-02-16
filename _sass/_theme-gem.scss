@@ -12,6 +12,9 @@ $colorFourth: #333; // black
   a {
     color: $colorSecond;
   }
+  .active {
+    color: lighten($colorSecond, 10%)
+  }
 }
 
 // black on green
@@ -19,7 +22,7 @@ $colorFourth: #333; // black
   background-color: $colorThird;
   color: $colorFourth;
   a {
-    color: $colorFirst;
+    color: $colorFourth;
   }
 }
 
