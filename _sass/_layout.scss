@@ -6,12 +6,17 @@
 
 // Use @include respond-min(60em) { ... } to bracket responsive elements
 
+%no-m {
+  margin: 0;
+}
+
 %no-p {
   padding: 0;
 }
 
-%no-m {
+%no-mp {
   margin: 0;
+  padding: 0;
 }
 
 %l-db {
@@ -110,4 +115,18 @@
 
 %mar-s {
   margin: 0.5em;
+}
+
+// text alignment
+
+.l-tac {
+  text-align: center;
+}
+
+.l-tar {
+  text-align: right;
+}
+
+.l-tal {
+  text-align: left;
 }
