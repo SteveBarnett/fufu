@@ -55,8 +55,8 @@ a {
 }
 
 .nav {
-  a {
-  	padding: 0 0.5em;
+  a, p {
+  	padding: 0.5em;
   }
 }
 
@@ -74,19 +74,35 @@ a {
 }
 
 .list-block {
-	@extend %no-p;
-	li{
+	@extend %no-mp;
+	li {
 		@extend %l-db;
 		border-bottom: 1px solid;
 		a{
 			display: block;
 			padding: 0.5em;
+
 		}
+	}
+	a {
+		@extend %l-db;
+	} Is 
+	h1, h2, h3,
+	p {
+		margin: 0;
+	}
+	/* extended lists */
+	.more {
+		border-top: solid 1px;
+		background-color: #eee;
+		font-weight: bold;
 	}
 }
 
-.b-b {    
-    border-bottom-style: solid;
+.list-header {
+	border-bottom: solid 1px;
+	@extend %no-m;
+	@extend %pad-s;
 }
 
 // [fufu], .nav {

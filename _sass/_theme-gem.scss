@@ -35,26 +35,35 @@ $declaration: $colorFirst; // turquoise
 // white on background colours
 
 .latest {
-  h1, h2, h3 {
+  a {
+    color: $latest;
+  }
+  > h1, > h2, > h3 {
     background-color: $latest;
   }
 }
 
 .articles {
-  h1, h2, h3 {
+  a {
+    color: $articles;
+  }
+  > h1, > h2, > h3 {
     background-color: $articles;
   }
 }
 
 .declaration {
-  h1, h2, h3 {
+  a {
+    color: $declaration;
+  }
+  > h1, > h2, > h3 {
     background-color: $declaration;
   }
 }
 
 .latest, .articles, .declaration {
-  h1, h2, h3
-  h1 a, h2 a, h3 a {
+  > h1, > h2, > h3
+  > h1 a, > h2 a, > h3 a {
     color: white;
   }
 }
