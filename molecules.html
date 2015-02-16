@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="main">
+
+  <div class="sg-category">
+    {% for molecule in site.molecules %}
+      <div class="sg-item">
+        <div class="sg-link">
+          <a href="/fufu{{ molecule.url }}">/fufu{{ molecule.url }}</a> &darr;
+        </div>
+        {{ molecule.content }}
+      </div>
+    {% endfor %}
+  </div>
+  
+</div>

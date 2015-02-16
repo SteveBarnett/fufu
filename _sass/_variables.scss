@@ -20,6 +20,6 @@ $colorThird: #aac2ac;	//green
 
 $linkcolor: rgb(1,53,104);
 $linkcolorhover: darken($linkcolor, 10);
-$linkcolorvisited: darken($linkcolorhover, 10);
+$linkcolorvisited: darken($linkcolor, 10);
 $linkcolorfocus: $linkcolorhover;
 

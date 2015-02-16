@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="main">
+
+  <div class="sg-category">
+    {% for organism in site.organisms %}
+      <div class="sg-item">
+        <div class="sg-link">
+          <a href="/fufu{{ organism.url }}">/fufu{{ organism.url }}</a> &darr;
+        </div>
+        {{ organism.content }}
+      </div>
+    {% endfor %}
+  </div>
+
+</div>

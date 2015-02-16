@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="main">
+
+  <div class="sg-category">
+    {% for atom in site.atoms %}
+      <div class="sg-item">
+        <div class="sg-link">
+          <a href="/fufu{{ atom.url }}">/fufu{{ atom.url }}</a> &darr;
+          {{ atom.fish }}
+        </div>
+        {{ atom.content }}
+      </div>
+    {% endfor %}
+  </div>
+
+</div>

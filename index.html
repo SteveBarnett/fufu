@@ -5,37 +5,42 @@ layout: default
 <div class="main">
 
   <div class="sg-category">
+    <h1>Atoms</h1>
+    <a href="atoms.html">View all atoms</a>
+
+    <ul>
     {% for atom in site.atoms %}
-      <div class="sg-item">
-        <div class="sg-link">
-          <a href="/fufu{{ atom.url }}">/fufu{{ atom.url }}</a> &darr;
-          {{ atom.fish }}
-        </div>
-        {{ atom.content }}
-      </div>
-    {% endfor %}
+      <li>
+        <a href="/fufu{{ atom.url }}">{{ atom.url }}</a>
+      </li>
+    {% endfor %}      
+    </ul>
   </div>
 
   <div class="sg-category">
+    <h1>Molecules</h1>
+    <a href="molecules.html">View all molecules</a>
+
+    <ul>
     {% for molecule in site.molecules %}
-      <div class="sg-item">
-        <div class="sg-link">
-          <a href="/fufu{{ molecule.url }}">/fufu{{ molecule.url }}</a> &darr;
-        </div>
-        {{ molecule.content }}
-      </div>
-    {% endfor %}
+      <li>
+        <a href="/fufu{{ molecule.url }}">{{ molecule.url }}</a>
+      </li>
+    {% endfor %}      
+    </ul>
   </div>
 
   <div class="sg-category">
+    <h1>Organisms</h1>
+    <a href="organisms.html">View all organisms</a>
+
+    <ul>
     {% for organism in site.organisms %}
-      <div class="sg-item">
-        <div class="sg-link">
-          <a href="/fufu{{ organism.url }}">/fufu{{ organism.url }}</a> &darr;
-        </div>
-        {{ organism.content }}
-      </div>
-    {% endfor %}
+      <li>
+        <a href="/fufu{{ organism.url }}">{{ organism.url }}</a>
+      </li>
+    {% endfor %}      
+    </ul>
   </div>
 
 </div>
