@@ -1,24 +1,27 @@
 // Ebola
 
-$primaryColor: #ef5500; // dark orange
-$secondaryColor: #fff; // white
-$tertiaryColor: #f6f4e3; // light grey grey
-$quarternaryColor: #aac2ac; // grey green
+$colorFirst: #d15c4d; // dark orange
+$colorSecond: #f6f4e3; // cream
+$colorThird: #aac2ac; // grey green
+$colorFourth: #666; // light grey grey
 
 // white on orange
 .highlight-primary {
-  background-color: $primaryColor;
-  color: $secondaryColor;
+  background-color: $colorFirst;
+  color: $colorSecond;
   a {
-    color: $secondaryColor;
+    color: $colorSecond;
   }
 }
 
-// grey green on light grey green
+// green on cream
 .highlight-secondary {
-  background-color: $tertiaryColor;
-  color: $quarternaryColor;
+  background-color: $colorSecond;
+  color: $colorThird;
   a {
-    color: $quarternaryColor;
+    color: $colorThird;
+  }
+  .active {
+    color: lighten($colorThird, 10%)
   }
 }

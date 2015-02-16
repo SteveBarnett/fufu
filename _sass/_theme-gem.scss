@@ -1,25 +1,25 @@
 // MAMA
 
-$primaryColor: #32a6a6; // turquoise
-$secondaryColor: #124f52; // dark turquoise
-$tertiaryColor: #c4d131; // green
-$quarternaryColor: #333; // black
+$colorFirst: #32a6a6; // turquoise
+$colorSecond: #124f52; // dark turquoise
+$colorThird: #c4d131; // green
+$colorFourth: #333; // black
 
 // dark turquoise on turquoise
 .highlight-primary {
-  background-color: $primaryColor;
-  color: $secondaryColor;
+  background-color: $colorFirst;
+  color: $colorSecond;
   a {
-    color: $secondaryColor;
+    color: $colorSecond;
   }
 }
 
 // black on green
 .highlight-secondary {
-  background-color: $tertiaryColor;
-  color: $quarternaryColor;
+  background-color: $colorThird;
+  color: $colorFourth;
   a {
-    color: $primaryColor;
+    color: $colorFirst;
   }
 }
 
@@ -27,7 +27,7 @@ $quarternaryColor: #333; // black
 
 $latest: #ff9933; // orange
 $articles: #ea178b; // pink - Girl Heroes, Life Tips
-$declaration: $primaryColor; // turquoise
+$declaration: $colorFirst; // turquoise
 
 // white on background colours
 

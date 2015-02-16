@@ -1,24 +1,24 @@
 // Malaria No More
 
-$primaryColor: #dc5a11; // burnt orange
-$secondaryColor: #fff; // white
-$tertiaryColor: #ebebeb; // light grey
-$quarternaryColor: #999; // grey
+$colorFirst: #dc5a11; // burnt orange
+$colorSecond: #fff; // white
+$colorThird: #ebebeb; // light grey
+$colorFourth: #999; // grey
 
 // orange on white
 .highlight-primary {
-  background-color: $primaryColor;
-  color: $secondaryColor;
+  background-color: $colorFirst;
+  color: $colorSecond;
   a {
-    color: $secondaryColor;
+    color: $colorSecond;
   }
 }
 
 // dark grey, orange links, on grey
 .highlight-secondary {
-  background-color: $tertiaryColor;
-  color: $quarternaryColor;
+  background-color: $colorThird;
+  color: $colorFourth;
   a {
-    color: $primaryColor;
+    color: $colorFirst;
   }
 }

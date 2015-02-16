@@ -32,26 +32,26 @@
 
 //links
 a {
-	color:$primaryColor;
+	color:$colorFirst;
 	text-decoration: none;
 }
 
 .highlight-primary {
-	background-color: $primaryColor;
-	color: $secondaryColor;
+	background-color: $colorFirst;
+	color: $colorSecond;
 }
 
 .highlight-primary a {
-	color: $secondaryColor;
+	color: $colorSecond;
 }
 
 .highlight-secondary{
-	background-color: $secondaryColor;
-	color: $tertiaryColor;
+	background-color: $colorSecond;
+	color: $colorThird;
 }
 
 .highlight-secondary a {
-	color: $tertiaryColor;
+	color: $colorThird;
 }
 
 .nav {
@@ -97,12 +97,12 @@ a {
 }
 
 // [fufu], .nav {
-//   background: $primaryColor;
-//   color: $secondaryColor;
+//   background: $colorFirst;
+//   color: $colorSecond;
 //   a {
 //     @extend %l-db;
 //     @extend %pad-s;
-//     color: $tertiaryColor;
+//     color: $colorThird;
 //   }
 // }
 
