@@ -56,7 +56,7 @@ a {
 
 .nav {
   a {
-  	padding: 0 0.5em;
+  	padding: 0.5em;
   }
 }
 
@@ -75,18 +75,24 @@ a {
 
 .list-block {
 	@extend %no-p;
-	li{
+	li {
 		@extend %l-db;
-		border-bottom-style: 1px solid;
-		a{
-			display: block;
-			padding: 0.5em;
+		border-top: solid 1px;
+		&:first-child {
+			border-top: none;
 		}
+	}
+	a {
+		@extend %l-db;
+	}
+	/* extended lists */
+	.more {
+		border-top: solid 1px;
 	}
 }
 
-.b-b {    
-    border-bottom-style: solid;
+.list-header {
+	border-bottom: solid 1px;	
 }
 
 // [fufu], .nav {
