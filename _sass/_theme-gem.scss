@@ -24,6 +24,9 @@ $colorFourth: #333; // black
   a {
     color: $colorFourth;
   }
+  .active {
+    color: lighten($colorFourth, 30%)
+  }
 }
 
 // GEM special
