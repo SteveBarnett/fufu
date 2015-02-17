@@ -8,7 +8,7 @@ layout: default
     {% for organism in site.organisms %}
       <div class="sg-item">
         <div class="sg-link">
-          <a href="/fufu{{ organism.url }}">/fufu{{ organism.url }}</a> &darr;
+          <a href="/fufu{{ organism.url }}">{{ organism.url | replace: '/organisms/', ''  | replace: '.html', '' }}</a> &darr;
         </div>
         {{ organism.content }}
       </div>

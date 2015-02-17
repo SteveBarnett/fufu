@@ -10,7 +10,7 @@ layout: default
     <h2>Atoms</h2>
 
     {% for atom in site.atoms %}
-      <p class="l-tar">&darr; <a href="/fufu{{ atom.url }}">{{ atom.url }}</a></p>
+      <p class="l-tar">&darr; <a href="/fufu{{ atom.url }}">{{ atom.url  | replace: '/atoms/', ''  | replace: '.html', '' }}</a></p>
       <div class="sg-category">
       {{ atom.content }}
       </div>
@@ -21,7 +21,7 @@ layout: default
     <h2>Molecules</h2>
 
     {% for molecule in site.molecules %}
-      <p class="l-tar">&darr; <a href="/fufu{{ molecule.url }}">{{ molecule.url }}</a></p>
+      <p class="l-tar">&darr; <a href="/fufu{{ molecule.url }}">{{ molecule.url | replace: '/molecules/', ''  | replace: '.html', '' }}</a></p>
       <div class="sg-category">
       {{ molecule.content }}
       </div>
@@ -32,7 +32,7 @@ layout: default
     <h2>Organisms</h2>
 
     {% for organism in site.organisms %}
-      <p class="l-tar">&darr; <a href="/fufu{{ organism.url }}">{{ organism.url }}</a></p>
+      <p class="l-tar">&darr; <a href="/fufu{{ organism.url }}">{{ organism.url | replace: '/organisms/', ''  | replace: '.html', '' }}</a></p>
       <div class="sg-category">
       {{ organism.content }}
       </div>

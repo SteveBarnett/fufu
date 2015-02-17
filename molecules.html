@@ -8,7 +8,7 @@ layout: default
     {% for molecule in site.molecules %}
       <div class="sg-item">
         <div class="sg-link">
-          <a href="/fufu{{ molecule.url }}">/fufu{{ molecule.url }}</a> &darr;
+          <a href="/fufu{{ molecule.url }}">{{ molecule.url | replace: '/molecules/', ''  | replace: '.html', '' }}</a> &darr;
         </div>
         {{ molecule.content }}
       </div>

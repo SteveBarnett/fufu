@@ -16,7 +16,7 @@ layout: default
     <ul>
     {% for atom in site.atoms %}
       <li>
-        <a href="/fufu{{ atom.url }}">{{ atom.url }}</a>
+        <a href="/fufu{{ atom.url }}">{{ atom.url  | replace: '/atoms/', ''  | replace: '.html', '' }}</a>
       </li>
     {% endfor %}      
     </ul>
@@ -29,7 +29,7 @@ layout: default
     <ul>
     {% for molecule in site.molecules %}
       <li>
-        <a href="/fufu{{ molecule.url }}">{{ molecule.url }}</a>
+        <a href="/fufu{{ molecule.url }}">{{ molecule.url | replace: '/molecules/', ''  | replace: '.html', '' }}</a>
       </li>
     {% endfor %}      
     </ul>
@@ -42,7 +42,7 @@ layout: default
     <ul>
     {% for organism in site.organisms %}
       <li>
-        <a href="/fufu{{ organism.url }}">{{ organism.url }}</a>
+        <a href="/fufu{{ organism.url }}">{{ organism.url | replace: '/organisms/', ''  | replace: '.html', '' }}</a>
       </li>
     {% endfor %}      
     </ul>
