@@ -65,7 +65,10 @@ a {
 	@extend %no-m;
 	padding: 0.25em;
 	li {
-		@extend %l-ib;
+		@extend %l-il;
+		border-top: none;
+		border-right: none;
+		border-bottom: none;
 		border-left: solid 2px #ddd;
 		&:first-child {
 			border-left: none;
@@ -73,11 +76,21 @@ a {
 	}
 }
 
+[fufu], .list-inline { // target mid range devices
+	li {
+		display: inline-block;
+		// because using @extend messes with the cascade
+	}
+}
+
 .list-block {
 	@extend %no-mp;
 	li {
 		@extend %l-db;
+		border-top: none;
+		border-right: none;
 		border-bottom: 1px solid #ddd;
+		border-left: none;
 	}
 	a {
 		padding: 0.5em;

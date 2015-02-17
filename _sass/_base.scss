@@ -350,7 +350,7 @@ html {
 
 body {
   background-color: #fff;
-  
+  @extend %no-m;
 }
 
 %clearfix {
