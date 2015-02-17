@@ -352,3 +352,16 @@ body {
   background-color: #fff;
   
 }
+
+%clearfix {
+    *zoom: 1;
+    &:before {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+}

@@ -130,3 +130,37 @@
 .l-tal {
   text-align: left;
 }
+
+
+// response images support for featurephones and up
+
+.header {
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+// articles with thumb
+
+.article-with-thumb {
+  @extend %clearfix;
+  img {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+  p {
+    margin-left: 4em; // = thumb width + margin above
+  }
+}
+
+[dir="rtl"] .article-with-thumb {
+  img {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+  p {
+    margin-left: 0;
+    margin-right: 4em; // = thumb width + margin above
+  }
+}
