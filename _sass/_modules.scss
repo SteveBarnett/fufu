@@ -66,7 +66,7 @@ a {
 	padding: 0.25em;
 	li {
 		@extend %l-ib;
-		border-left: solid 2px;
+		border-left: solid 2px #ddd;
 		&:first-child {
 			border-left: none;
 		}
@@ -77,32 +77,25 @@ a {
 	@extend %no-mp;
 	li {
 		@extend %l-db;
-		border-bottom: 1px solid;
-		a{
-			display: block;
-			padding: 0.5em;
-
-		}
+		border-bottom: 1px solid #ddd;
 	}
 	a {
+		padding: 0.5em;
 		@extend %l-db;
-	} Is 
-	h1, h2, h3,
-	p {
-		margin: 0;
 	}
-	/* extended lists */
-	.more {
-		border-top: solid 1px;
-		background-color: #eee;
-		font-weight: bold;
+	h2, h3 {
+		@extend %no-m;
+		font-size: 1em;
+	}
+	p {
+		@extend %no-m;
 	}
 }
 
 .list-header {
-	border-bottom: solid 1px;
 	@extend %no-m;
 	@extend %pad-s;
+	font-size: 1em;
 }
 
 // [fufu], .nav {
