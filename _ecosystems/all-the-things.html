@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="main">
+
+  <h1>Everything on one page</h1>
+
+  <div class="sg-category">
+    <h2>Atoms</h2>
+
+    {% for atom in site.atoms %}
+      <p class="l-tar">&darr; <a href="/fufu{{ atom.url }}">{{ atom.url }}</a></p>
+      <div class="sg-category">
+      {{ atom.content }}
+      </div>
+    {% endfor %}      
+  </div>
+
+  <div class="sg-category">
+    <h2>Molecules</h2>
+
+    {% for molecule in site.molecules %}
+      <p class="l-tar">&darr; <a href="/fufu{{ molecule.url }}">{{ molecule.url }}</a></p>
+      <div class="sg-category">
+      {{ molecule.content }}
+      </div>
+    {% endfor %}  
+  </div>
+
+  <div class="sg-category">
+    <h2>Organisms</h2>
+
+    {% for organism in site.organisms %}
+      <p class="l-tar">&darr; <a href="/fufu{{ organism.url }}">{{ organism.url }}</a></p>
+      <div class="sg-category">
+      {{ organism.content }}
+      </div>
+    {% endfor %}  
+  </div>
+
+</div>
