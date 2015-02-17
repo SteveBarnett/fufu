@@ -159,75 +159,6 @@ textarea {
     *zoom: 1;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-
-
 /* ==|== primary styles ===================================================== */
 
 // Links
@@ -337,20 +268,6 @@ html {
 html {
   font-family: $font-family-sans-serif;
   line-height: 1.25;
-}
-
-html {
-  background-color: #333;
-  max-width: 35em;
-  margin: 0 auto;
-  @media (min-width: 50em) {
-    max-width: 20em;
-  }
-}
-
-body {
-  background-color: #fff;
-  @extend %no-m;
 }
 
 %clearfix {
