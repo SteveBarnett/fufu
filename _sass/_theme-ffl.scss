@@ -26,3 +26,13 @@ $colorFourth: #92AFC1; // grey blue
     color: $colorSecond;
   }
 }
+
+.list-block {
+  li {
+    border-bottom: 1px dotted $colorSecond;
+  }
+}
+
+//SUGGESTION: Put top and bottom borders around #header, 
+//instead of on top and bottom of different inline navs
+
