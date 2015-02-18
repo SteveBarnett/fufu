@@ -7,24 +7,23 @@ $colorFourth: #666; // light grey grey
 
 @include links($colorFirst);
 
-// orange
+// white on orange
 .highlight-primary {
-  color: $colorFirst;
+  background-color: $colorFirst;
+  color: $colorSecond;
+  a {
+    color: $colorSecond;
+  }
 }
 
 // green on cream
 .highlight-secondary {
+  background-color: $colorSecond;
   color: lighten($colorThird, 10%);
   a {
     color: $colorThird;
   }
   .active {
     color: lighten($colorThird, 10%);
-  }
-}
-
-.list-block {
-  li {
-    border-bottom: 1px solid $colorSecond;
   }
 }

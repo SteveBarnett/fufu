@@ -1,29 +1,5 @@
 @import "variables";
 
-//links
-a {
-	color:$colorFirst;
-	text-decoration: none;
-}
-
-.highlight-primary {
-	background-color: $colorFirst;
-	color: $colorSecond;
-}
-
-.highlight-primary a {
-	color: $colorSecond;
-}
-
-.highlight-secondary{
-	background-color: $colorSecond;
-	color: $colorThird;
-}
-
-.highlight-secondary a {
-	color: $colorThird;
-}
-
 .nav {
   a {
   	padding: 0.5em;

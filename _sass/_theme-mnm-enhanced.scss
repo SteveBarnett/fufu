@@ -9,16 +9,34 @@ $colorFourth: #ebebeb; // light grey
 
 // white text on burnt orange background
 .highlight-primary {
-  color: $colorFirst;
+  background-color: $colorFirst;
+  color: $colorThird;
+  a {
+    color: $colorThird;
+  }
 }
 
 // dark grey, orange links, on light grey
 .highlight-secondary {
+  background-color: $colorFourth;
   color: darken($colorFourth, 30%);
   a {
     color: $colorSecond;
   }
   .active {
     color: darken($colorFourth, 30%);
+  }
+}
+
+//thick bottom border light orange
+.list-block {
+  li {
+    border-bottom: solid 5px $colorSecond;
+  }
+}
+
+.list-inline { 
+  li {
+    border-left: solid 2px ;
   }
 }

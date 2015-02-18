@@ -5,11 +5,15 @@ $colorSecond: #124f52; // dark turquoise
 $colorThird: #c4d131; // green
 $colorFourth: #333; // black
 
-@include links($colorSecond);
+@include links($colorFirst);
 
 // dark turquoise on turquoise
 .highlight-primary {
+  background-color: $colorFirst;
   color: $colorSecond;
+  a {
+    color: $colorSecond;
+  }
   .active {
     color: lighten($colorSecond, 10%)
   }
@@ -17,12 +21,13 @@ $colorFourth: #333; // black
 
 // black on green
 .highlight-secondary {
-  color: $colorThird;
+  background-color: $colorThird;
+  color: $colorFourth;
   a {
-    color: $colorThird;
+    color: $colorFourth;
   }
   .active {
-    color: lighten($colorThird, 30%)
+    color: lighten($colorFourth, 30%)
   }
 }
 
@@ -32,12 +37,8 @@ $latest: #ff9933; // orange
 $articles: #ea178b; // pink - Girl Heroes, Life Tips
 $girlEffect: $colorFirst; // turquoise
 
-.list-header {
-  border-bottom: solid 1px #ddd;
-}
-
 .more {
-  font-weight: bold;
+  background-color: #eee;
 }
 
 // white on background colours
@@ -46,17 +47,26 @@ $girlEffect: $colorFirst; // turquoise
   a {
     color: $latest;
   }
+  .list-header {
+    background-color: $latest;
+  }
 }
 
 .articles {
   a {
     color: $articles;
   }
+  .list-header {
+    background-color: $articles;
+  }
 }
 
 .girl-effect {
   a {
     color: $girlEffect;
+  }
+  .list-header {
+    background-color: $girlEffect;
   }
 }
 
@@ -66,12 +76,10 @@ $girlEffect: $colorFirst; // turquoise
 
 .latest, .articles, .girl-effect {
   .list-header {
+    color: white;
     @extend %uc;
   }
-  p {
-    padding-top: 0;
-  }
-  h3 {
-    font-weight: normal;    
+  .list-header a {
+    color: white;
   }
 }

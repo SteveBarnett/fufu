@@ -9,17 +9,19 @@ $colorFourth: #999; // grey
 
 // white on orange
 .highlight-primary {
-  color: $colorFirst;
+  background-color: $colorFirst;
+  color: $colorSecond;
+  a {
+    color: $colorSecond;
+  }
 }
 
 // grey, orange links, on very light grey
 .highlight-secondary {
-  color: $colorThird;
+  background-color: $colorThird;
+  color: lighten($colorFourth, 25%);
   a {
-    color: $colorThird;
-  }
-  .active {
-    color: #999;
+    color: $colorFirst;
   }
 }
 
@@ -32,16 +34,12 @@ $mamaToMama: #d81f29; // red;
 // white on background colours
 
 .list-header {
-  font-weight: normal;
-}
-
-.more {
-  padding-left: 0.5em;
+  color: white;
 }
 
 .pregnancy {
   .list-header {
-    color: $pregnancy;
+    background-color: $pregnancy;
   }
   .more {
     color: $pregnancy;
@@ -53,7 +51,7 @@ $mamaToMama: #d81f29; // red;
 
 .baby {
   .list-header {
-    color: $baby;
+    background-color: $baby;
   }
   .more {
     color: $baby;
@@ -65,7 +63,7 @@ $mamaToMama: #d81f29; // red;
 
 .mama-to-mama {
   .list-header {
-    color: $mamaToMama;
+    background-color: $mamaToMama;
   }
   .more {
     color: $mamaToMama;
