@@ -1,6 +1,10 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
 /* ==========================================================================
    Print styles.
-   Inlined to avoid the additional HTTP request: h5bp.com/r
+   Separate file to avoid featurephone freakout.
    ========================================================================== */
 
 @media print {
