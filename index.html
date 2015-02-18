@@ -5,11 +5,6 @@ layout: default
 <div class="main" role="main">
 
   <div class="sg-category">
-    <h1>All The Things</h1>
-    <a href="/fufu/ecosystems/all-the-things.html">View All The Things</a>
-  </div>  
-
-  <div class="sg-category">
     <h1>Atoms</h1>
     <a href="atoms.html">View all atoms</a>
 
@@ -43,6 +38,19 @@ layout: default
     {% for organism in site.organisms %}
       <li>
         <a href="/fufu{{ organism.url }}">{{ organism.url | replace: '/organisms/', ''  | replace: '.html', '' }}</a>
+      </li>
+    {% endfor %}      
+    </ul>
+  </div>
+
+  <div class="sg-category">
+    <h1>Ecosystems</h1>
+    <a href="atoms.html">View all ecosystems</a>
+
+    <ul>
+    {% for ecosystem in site.ecosystems %}
+      <li>
+        <a href="/fufu{{ ecosystem.url }}">{{ ecosystem.url  | replace: '/ecosystems/', ''  | replace: '.html', '' }}</a>
       </li>
     {% endfor %}      
     </ul>
