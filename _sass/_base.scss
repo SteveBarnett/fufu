@@ -3,14 +3,14 @@
 /* ==|== primary styles ===================================================== */
 
 ::-moz-selection {
-  // background-color: lighten($colorFirst, 65%);
-  // color: $colorFirst;
+  background-color: lighten($colorFirst, 65%);
+  color: $colorFirst;
   text-shadow: none;
 }
 
 ::selection {
-  // background-color: lighten($colorFirst, 65%);
-  // color: $colorFirst;
+  background-color: lighten($colorFirst, 65%);
+  color: $colorFirst;
   text-shadow: none;
 }
 
