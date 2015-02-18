@@ -33,7 +33,7 @@ $colorFourth: #333; // black
 
 $latest: #ff9933; // orange
 $articles: #ea178b; // pink - Girl Heroes, Life Tips
-$declaration: $colorFirst; // turquoise
+$girlEffect: $colorFirst; // turquoise
 
 .list-header {
   border-bottom: solid 1px #ddd;
@@ -64,16 +64,20 @@ $declaration: $colorFirst; // turquoise
   }
 }
 
-.declaration {
+.girl-effect {
   a {
-    color: $declaration;
+    color: $girlEffect;
   }
   .list-header {
-    background-color: $declaration;
+    background-color: $girlEffect;
   }
 }
 
-.latest, .articles, .declaration {
+.girl-effect-logo {
+  background-color: $girlEffect;
+}
+
+.latest, .articles, .girl-effect {
   .list-header {
     color: white;
     @extend %uc;
