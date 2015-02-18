@@ -55,16 +55,19 @@ a {
 }
 
 .nav {
-  a, p {
+  a {
   	padding: 0.5em;
+  }
+  p {
+  	padding: 0.5em 1em;
   }
 }
 
 .list-inline {
 	@extend %no-bull;
 	@extend %no-m;
-	padding: 0.25em;
-	li {
+	padding: 0.5em 1em;
+	> li {
 		@extend %l-ib;
 		border-top: none;
 		border-right: none;
@@ -78,7 +81,7 @@ a {
 
 .list-block {
 	@extend %no-mp;
-	li {
+	> li {
 		@extend %l-db;
 		border-top: none;
 		border-right: none;
@@ -86,7 +89,7 @@ a {
 		border-left: none;
 	}
 	a {
-		padding: 0.5em;
+		padding: 0.5em 1em;
 		@extend %l-db;
 	}
 	h2, h3 {
@@ -100,7 +103,7 @@ a {
 
 .list-header {
 	@extend %no-m;
-	@extend %pad-s;
+	padding: 0.5em;
 	font-size: 1em;
 }
 
@@ -109,7 +112,7 @@ a {
 //   color: $colorSecond;
 //   a {
 //     @extend %l-db;
-//     @extend %pad-s;
+//     padding: 0.5em;
 //     color: $colorThird;
 //   }
 // }
