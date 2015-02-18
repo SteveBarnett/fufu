@@ -1,34 +1,4 @@
-// Flexible dimensions.
-// Self-contained and reusable, repeatable patterns.
-// Module specific classes should be module name prefixed.
-// Module subclass class names should be double-hyphened: module--subclass.
-// High-level modules should not depend on low-level modules. Both should depend on abstractions.
-// Use Icon Modules where appropriate.
-
-// Examples
-// accordion
-// alerts
-// carousel
-// code
-// dropdowns
-// forms
-// media
-// modals
-
-// For asset fonts
-// [data-icon]:before {
-//      content: attr(data-icon);
-//      font-family: "AssetFont";
-//      speak: none;
-// }
-// <a data-icon="&#xe012;" href="">Link Text</a>
-
 @import "variables";
-
-// breadcrumbs
-// navbar
-// nav
-// pagination
 
 //links
 a {
@@ -106,14 +76,3 @@ a {
 	padding: 0.5em;
 	font-size: 1em;
 }
-
-// [fufu], .nav {
-//   background: $colorFirst;
-//   color: $colorSecond;
-//   a {
-//     @extend %l-db;
-//     padding: 0.5em;
-//     color: $colorThird;
-//   }
-// }
-

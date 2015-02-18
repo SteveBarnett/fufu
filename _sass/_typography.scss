@@ -1,22 +1,12 @@
 @import "variables";
 
-// good measure: 45 to 75 characters
-// 1em is about 2 characters, so use 22 to 38ems
-
 p, table {
   hyphens: auto;
 }
 
-// Consider using columns for larger screens
-// @media only screen and (min-width: 66em) {
-//   column-count:2;
-//   column-gap: 1.5em;
-// }
-
 blockquote {
   margin: 1.5em;
 }
-
 
 // web font loading classes
 
@@ -36,14 +26,6 @@ blockquote {
 
 %no-bull {
   list-style: none;
-}
-
-// show IDs for content
-
-main [id]:hover::after {
-  display: inline;
-  content: ' #' attr(id);
-  color: lighten(#333, 30%);
 }
 
 h1, h2, h3, h4 {

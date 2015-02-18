@@ -1,0 +1,20 @@
+@mixin links($linkcolor) {
+  a {
+    color: $linkcolor;
+    &:visited {
+      color: $linkcolor;
+    }
+    &:hover {
+      text-decoration: none;
+      color: darken($linkcolor, 10);
+    }
+    &:focus {
+      outline: thin dotted;
+      color: darken($linkcolor, 10);
+    }
+    &:hover,
+    &:active {
+      outline: 0;
+    }
+  }
+}
