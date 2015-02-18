@@ -5,6 +5,7 @@ $colorSecond: #fff; // white
 $colorThird: #0093ef; // blue
 $colorFourth: #92AFC1; // grey blue
 
+@include links($colorFirst);
 
 // white, blue links, on baby blue
 .highlight-primary {

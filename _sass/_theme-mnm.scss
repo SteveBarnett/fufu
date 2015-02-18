@@ -4,7 +4,8 @@ $colorFirst: #cd3209;// burnt orange
 $colorSecond: #dc5a11; //  light orange  
 $colorThird: #fff; // white
 $colorFourth: #ebebeb; // light grey
-//$colorFourth: #999; // grey
+
+@include links($colorFirst);
 
 // white text on burnt orange background
 .highlight-primary {

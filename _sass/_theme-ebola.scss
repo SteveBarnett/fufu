@@ -5,6 +5,8 @@ $colorSecond: #f6f4e3; // cream
 $colorThird: #aac2ac; // grey green
 $colorFourth: #666; // light grey grey
 
+@include links($colorFirst);
+
 // white on orange
 .highlight-primary {
   background-color: $colorFirst;

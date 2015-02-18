@@ -5,6 +5,8 @@ $colorSecond: #124f52; // dark turquoise
 $colorThird: #c4d131; // green
 $colorFourth: #333; // black
 
+@include links($colorFirst);
+
 // dark turquoise on turquoise
 .highlight-primary {
   background-color: $colorFirst;
