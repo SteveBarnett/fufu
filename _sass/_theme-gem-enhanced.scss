@@ -96,6 +96,16 @@ $girlEffect-flip: $colorThird;
   }
 }
 
+.list-block {
+  h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
 .latest {
   @include fancy-list-headers($latest-flip, $latest);
 }
