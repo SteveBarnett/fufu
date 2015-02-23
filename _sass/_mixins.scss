@@ -28,7 +28,7 @@
       padding-left: 1em;
       margin: -0.5em -0.5em -0.5em -0.5em; // because we don't want to change .list-header: they're not all <a>s
       position: relative;
-     &:after {
+     &:after { // for ltr
       content: "";
       display: block;
       width: 2em;
@@ -39,7 +39,19 @@
       background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$highlight), color-stop(50%,$highlight), color-stop(50%,$background), color-stop(100%,$background)); /* Chrome,Safari4+ */
       background: -webkit-linear-gradient(-45deg, $highlight 0%,$highlight 50%, $background 50%, $background 100%); /* Chrome10+,Safari5.1+ */
       background: linear-gradient(135deg, $highlight 0%,$highlight 50%, $background 50%, $background 100%); /* W3C */      
-     } 
+     }
+     &:before { // for rtl
+      content: "";
+      display: block;
+      width: 2em;
+      position: absolute;
+      top: 0;
+      left: -2em;
+      bottom: 0;
+      background: -webkit-gradient(linear, right top, left bottom, color-stop(0%,$highlight), color-stop(50%,$highlight), color-stop(50%,$background), color-stop(100%,$background)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(-135deg, $highlight 0%,$highlight 50%, $background 50%, $background 100%); /* Chrome10+,Safari5.1+ */
+      background: linear-gradient(225deg, $highlight 0%,$highlight 50%, $background 50%, $background 100%); /* W3C */      
+     }
     }
   }
 }
