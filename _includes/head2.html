@@ -1,0 +1,39 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <style>
+
+  a {
+    color: #ff7700; /* orange */
+  }
+
+  .highlight-primary-test {
+    background-color: #ff7700; /* orange */
+    color: #ffffff;
+  }
+
+  .highlight-primary-test a {
+    color: #33bb00; /* green */
+  }
+
+  #highlight-secondary-test {
+    background-color: #ffee00; /* yellow */
+    color: #ff00dd; /* pink */
+  }
+
+  #highlight-secondary-test a {
+    color: #66ccff; /* light blue */
+  }
+
+  .nesting .too .deep a {
+    color: #33bb00; /* green */
+  }
+
+  </style>
+
+</head>
