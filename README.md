@@ -6,6 +6,8 @@ Follows an atomic design pattern. We have a requirement for no JavaScript depend
 
 Images supplied by https://placekitten.com/.
 
+The main CSS file is `css/style.scss`. This imports sass partials from the `_sass` directory. Devices that understand media queries also get (the compiled version of) `css/enhanced.scss`, which pulls in a few additional partials from the `_sass` directory.
+
 ## Some problems
 
 ### CSS
