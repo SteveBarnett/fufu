@@ -83,3 +83,27 @@ $girlEffect: $colorFirst; // turquoise
     color: white;
   }
 }
+
+// extra fancy
+
+$latest-flip: #fad527; // yellow
+$articles-flip: #e31f26; // red
+$girlEffect-flip: $colorThird;
+
+.list-header {
+  strong, a strong {
+    color: #333;
+  }
+}
+
+.latest {
+  @include fancy-list-headers($latest-flip, $latest);
+}
+
+.articles {
+  @include fancy-list-headers($articles-flip, $articles);
+}
+
+.girl-effect {
+  @include fancy-list-headers($girlEffect-flip, $girlEffect);
+}
