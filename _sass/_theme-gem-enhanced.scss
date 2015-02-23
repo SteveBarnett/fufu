@@ -106,22 +106,9 @@ $girlEffect-flip: $colorThird; // green
   }
 }
 
-.latest {
-  @include fancy-list-headers($latest-flip, $latest);
-}
-
-.articles {
-  @include fancy-list-headers($articles-flip, $articles);
-}
-
-.girl-effect {
-  @include fancy-list-headers($girlEffect-flip, $girlEffect);
-}
-
-
 // arrows
 
-.highlighted-links {
+%highlighted-links {
   a {
     position: relative;
     padding-right: 2.5em;
@@ -131,6 +118,12 @@ $girlEffect-flip: $colorThird; // green
       right: 0.5em;
       font-size: 1.5em;
       top: 0.1em;
+    }
+    [dir="rtl"] & {
+      padding-right: 0.5em;
+      &:after {
+        content: "";
+      }
     }
   }
   .more {
@@ -144,4 +137,27 @@ $girlEffect-flip: $colorThird; // green
       }
     }
   }
+}
+
+.latest {
+  @include fancy-list-headers($latest-flip, $latest);
+}
+
+.articles {
+  @include fancy-list-headers($articles-flip, $articles);
+  @extend %highlighted-links;
+}
+
+.girl-heroes {
+  @extend %has-thumb;
+  @extend %thumb-circle;
+}
+
+.life-tips {
+  @extend %has-thumb;
+}
+
+.girl-effect {
+  @include fancy-list-headers($girlEffect-flip, $girlEffect);
+  @extend %has-thumb-flip;
 }
