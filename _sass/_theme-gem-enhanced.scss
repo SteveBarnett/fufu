@@ -140,11 +140,11 @@ $girlEffect-flip: $colorThird; // green
 }
 
 .latest {
-  @include fancy-list-headers($latest-flip, $latest);
+  @include fancy-list-headers($latest-flip, $latest, true);
 }
 
 .articles {
-  @include fancy-list-headers($articles-flip, $articles);
+  @include fancy-list-headers($articles-flip, $articles, true);
   @extend %highlighted-links;
 }
 
@@ -158,6 +158,6 @@ $girlEffect-flip: $colorThird; // green
 }
 
 .girl-effect {
-  @include fancy-list-headers($girlEffect-flip, $girlEffect);
+  @include fancy-list-headers($girlEffect-flip, $girlEffect, true);
   @extend %has-thumb-flip;
 }
