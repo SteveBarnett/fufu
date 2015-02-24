@@ -57,3 +57,7 @@
 		text-decoration: none;
 	}
 }
+
+.header-centered {
+	@extend %l-tac;
+}

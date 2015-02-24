@@ -29,6 +29,13 @@ img {
   height: auto;
 }
 
+.banner {
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 
 svg:not(:root) {
   overflow: hidden;
@@ -97,4 +104,10 @@ html {
 
 body {
   @extend %no-m;
+}
+
+// Typography
+
+h1, h2, h3, h4 {
+  margin-top: 0;
 }
