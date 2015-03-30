@@ -68,3 +68,22 @@
 .header-centered {
 	@include l-tac;
 }
+
+// text over img
+
+.over {
+	position: relative;
+	img {
+		width: 100%;
+	}
+}
+
+.over-text {
+	position: absolute;
+	right: 1em;
+	bottom: 1em;
+	left: 1em;
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
