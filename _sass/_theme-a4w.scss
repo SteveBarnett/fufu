@@ -26,6 +26,10 @@ $colorFourth: #EBEBEB; // light grey
   background-color: red;
   color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 // polls
@@ -40,4 +44,53 @@ $colorFourth: #EBEBEB; // light grey
 .poll-result-bar {
   background-color: $colorFirst;
   height: 2em;
+}
+
+
+// comments
+
+.link-comments {
+  color: lighten($colorSecond, 50%);
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    color: $colorSecond;
+    text-decoration: underline;
+  }
+}
+
+.comment-list {
+  @include no-bull;
+  @include no-mp;
+  padding: 1em 0;
+  p {
+    margin-top: 0;
+  }
+}
+
+.comment {
+  padding: 1em 1.5em;
+  border-top: solid 1px $colorFourth;
+  &:last-child {
+    border-bottom: solid 1px $colorFourth;
+  }
+}
+
+.comment-actions {
+  padding: 0;
+  li:first-child {
+    a {
+      padding-left: 0;
+    }
+  }
+}
+
+// forms and validation
+
+.error {
+  color: $colorFirst;
+}
+
+.input-error {
+  border: solid 1px $colorFirst;
 }

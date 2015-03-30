@@ -123,9 +123,13 @@ input {
 }
 
 .error {
-  color: $colorFirst;
+  color: red;
 }
 
 .input-error {
-  border: solid 1px $colorFirst;
+  border: solid 1px red;
+}
+
+.btn {
+  padding: 0.5em 1em;
 }
