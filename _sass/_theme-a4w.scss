@@ -1,0 +1,43 @@
+// Ebola
+
+$colorFirst: #C51332; // red
+$colorSecond: #161518; // dark grey
+$colorThird: #1573AD; // blue
+$colorFourth: #EBEBEB; // light grey
+
+@include links($colorFirst);
+
+// dark grey
+.highlight-primary {
+  color: $colorSecond;
+}
+
+// dark grey
+.highlight-secondary {
+  color: lighten($colorSecond, 10%);
+}
+
+// blue
+.highlight-tertiary {
+  color: $colorThird;
+}
+
+.btn {
+  background-color: red;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+// polls
+
+.poll-results {
+  padding: 1em;
+  p {
+    margin-bottom: 0.25em;
+  }
+}
+
+.poll-result-bar {
+  background-color: $colorFirst;
+  height: 2em;
+}

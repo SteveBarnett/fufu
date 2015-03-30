@@ -1,0 +1,20 @@
+// dark grey
+.highlight-primary {
+  background: $colorSecond url(grey-zigzag.png) 0 0 repeat;
+  color: #ffffff;
+}
+
+// light grey
+.highlight-secondary {
+  background-color: $colorFourth;
+}
+
+// blue
+.highlight-tertiary {
+  color: #ffffff;
+  background: $colorThird url(blue-zigzag.png) 0 0 repeat;
+}
+
+.btn {
+  background: red url(red-zigzag.png) 0 0 repeat;
+}
