@@ -77,7 +77,7 @@ $girlEffect: $colorFirst; // turquoise
 .latest, .articles, .girl-effect {
   .list-header {
     color: white;
-    @extend %uc;
+    @include uc;
   }
   .list-header a {
     color: white;
@@ -108,7 +108,7 @@ $girlEffect-flip: $colorThird; // green
 
 // arrows
 
-%highlighted-links {
+@mixin highlighted-links {
   a {
     position: relative;
     padding-right: 2.5em;
@@ -145,19 +145,19 @@ $girlEffect-flip: $colorThird; // green
 
 .articles {
   @include fancy-list-headers($articles-flip, $articles, true);
-  @extend %highlighted-links;
+  @include highlighted-links;
 }
 
 .girl-heroes {
-  @extend %has-thumb;
-  @extend %thumb-circle;
+  @include has-thumb;
+  @include thumb-circle;
 }
 
 .life-tips {
-  @extend %has-thumb;
+  @include has-thumb;
 }
 
 .girl-effect {
   @include fancy-list-headers($girlEffect-flip, $girlEffect, true);
-  @extend %has-thumb-flip;
+  @include has-thumb-flip;
 }

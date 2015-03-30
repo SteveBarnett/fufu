@@ -10,11 +10,11 @@
 }
 
 .list-inline {
-	@extend %no-bull;
-	@extend %no-m;
+	@include no-bull;
+	@include no-m;
 	padding: 0.5em 1em;
 	> li {
-		@extend %l-ib;
+		@include l-ib;
 		border-top: none;
 		border-right: none;
 		border-bottom: none;
@@ -25,10 +25,17 @@
 	}
 }
 
+.list-plain {
+	@include no-bull;
+	* {
+		@include no-bull;
+	}
+}
+
 .list-block {
-	@extend %no-mp;
+	@include no-mp;
 	> li {
-		@extend %l-db;
+		@include l-db;
 		border-top: none;
 		border-right: none;
 		border-bottom: 1px solid #ddd;
@@ -37,19 +44,19 @@
 	}
 	a {
 		padding: 0.5em 1em;
-		@extend %l-db;
+		@include l-db;
 	}
 	h2, h3 {
-		@extend %no-m;
+		@include no-m;
 		font-size: 1em;
 	}
 	p {
-		@extend %no-m;
+		@include no-m;
 	}
 }
 
 .list-header {
-	@extend %no-m;
+	@include no-m;
 	padding: 0.5em;
 	font-size: 1em;
 	line-height: 1;
@@ -59,5 +66,5 @@
 }
 
 .header-centered {
-	@extend %l-tac;
+	@include l-tac;
 }

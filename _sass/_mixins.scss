@@ -61,3 +61,93 @@
   }
 
 }
+
+// text helper classes
+
+@mixin uc {
+  text-transform: uppercase;
+}
+
+@mixin no-bull {
+  list-style: none;
+}
+
+// layout
+
+@mixin no-m {
+  margin: 0;
+}
+
+@mixin no-mp {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin l-db {
+ display: block;
+}
+
+@mixin l-ib {
+  display: inline-block;
+
+}
+
+@mixin l-tac {
+  text-align: center;
+}
+
+// thumbs
+
+@mixin thumb-circle {
+  img {
+    border-radius: 50%;
+  }
+}
+
+@mixin has-thumb {
+  img {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+  p {
+    margin-left: 4em; // = thumb width + margin above
+    margin-top: 0;
+  }
+  h3 {
+    margin-top: -1em;
+  }
+  [dir="rtl"] & {
+    img {
+      float: right;
+      margin: 0 0 1em 1em;
+    }
+    p {
+      margin-left: 0;
+      margin-right: 4em; // = thumb width + margin above
+    }
+  }
+}
+
+@mixin has-thumb-flip {
+  img {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+  p {
+    margin-right: 4em; // = thumb width + margin above
+    margin-top: 0;
+  }
+  h3 {
+    margin-top: -1em;
+  }
+  [dir="rtl"] & {
+    img {
+      float: left;
+      margin: 0 1em 1em 0;
+    }
+    p {
+      margin-right: 0;
+      margin-left: 4em; // = thumb width + margin above
+    } 
+  }
+}

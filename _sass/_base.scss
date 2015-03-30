@@ -103,7 +103,7 @@ html {
 }
 
 body {
-  @extend %no-m;
+  @include no-m;
 }
 
 // Typography
