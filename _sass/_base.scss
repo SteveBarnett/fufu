@@ -89,19 +89,6 @@ html {
   line-height: 1.25;
 }
 
-%clearfix {
-    *zoom: 1;
-    &:before {
-      content: " ";
-      display: table;
-    }
-    &:after {
-      content: " ";
-      display: table;
-      clear: both;
-    }
-}
-
 body {
   @include no-m;
 }
@@ -110,4 +97,21 @@ body {
 
 h1, h2, h3, h4 {
   margin-top: 0;
+}
+
+// layout
+
+.l-row {
+  clear: both;
+  @include clearfix;
+}
+
+.l-half {
+  width: 50%;
+  &:first-child {
+    float: left;
+  }
+  &:last-child {
+    float: right;
+  }
 }
