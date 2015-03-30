@@ -4,12 +4,12 @@ layout: default
 
 <div class="header-centered" role="banner">
   <div class="logo">
-    {% include logo.html %}
+    {{ site.atoms | where:"name","logo" }}
   </div>
   <ul class="nav list-inline" role="navigation">
     <li><a href="#">List Item 1</a></li><li><a href="#">List Item 2</a></li><li><a href="#">List Item 3</a></li>
   </ul>
   <div class="banner">
-    {% include img.html %}
+    {{ site.atoms | where:"name","image" }}
   </div>
 </div>

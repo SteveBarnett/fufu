@@ -3,5 +3,5 @@ layout: default
 ---
 
 <div class="header">
-  {% include img.html %}
+  {{ site.atoms | where:"name","image" }}
 </div>

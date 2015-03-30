@@ -3,5 +3,5 @@ layout: default
 ---
 
 <div class="banner">
-  {% include img.html %}
+  {{ site.atoms | where:"name","image" }}
 </div>

@@ -4,4 +4,4 @@ layout: default
 
 <p>A paragraph of text.</p>
 
-{% include img.html %}
+{{ site.atoms | where:"name","image" }}
