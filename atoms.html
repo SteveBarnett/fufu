@@ -7,11 +7,15 @@ layout: default
   <div class="sg-category">
     {% for atom in site.atoms %}
       <div class="sg-item">
-        <div class="sg-link">
-          <a href="/fufu{{ atom.url }}">{{ atom.url  | replace: '/atoms/', ''  | replace: '.html', '' }}</a> &darr;
-          {{ atom.fish }}
-        </div>
-        {{ atom.content }}
+        <details>
+          <summary>
+            {{ atom.url  | replace: '/atoms/', ''  | replace: '.html', '' }}
+          </summary>
+          {% highlight html linenos %}
+            {{ atom.content }}
+          {% endhighlight %}
+        </details>
+      {{ atom.content }}
       </div>
     {% endfor %}
   </div>
