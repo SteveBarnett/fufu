@@ -1,0 +1,11 @@
+---
+layout: default
+name: articleheader
+---
+
+<header class="article-header">
+  <div class="article-meta">
+    {{ site.molecules | where:"name","author" }}
+  </div>
+  {{ site.atoms | where:"name","comcountalt" }}
+</header>

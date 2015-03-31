@@ -20,12 +20,76 @@ body {
 // dark grey
 .highlight-secondary {
   color: lighten($colorSecond, 10%);
+  li {
+    border: none; 
+  }
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 // blue
 .highlight-tertiary {
   color: $colorThird;
 }
+
+// typography
+
+p {
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+.over-text {
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+// articles
+
+.category {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: lighten($colorSecond, 60%);
+}
+
+.article-title {
+  font-size: 2em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.article-author {
+  color: $colorFirst;
+  padding-bottom: 0;
+}
+
+.article-date {
+  font-size: 0.7em;
+}
+
+.article-header {
+  @include clearfix;
+  .article-meta {
+    float: left;
+    padding-top: 0.75em;
+  }
+  .link-comments {
+    float: right;
+  }
+}
+
+article {
+  padding: 1em;
+}
+
+// buttons
 
 .btn {
   background-color: red;
