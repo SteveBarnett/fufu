@@ -278,6 +278,7 @@ textarea {
   text-align: center;
   padding-top: 1em;
   border-top: solid 1px #000000;
+  font-size: 0.9em;
 }
 
 .copyright {
@@ -322,6 +323,7 @@ textarea {
 
 .poll {
   padding: 1em;
+  border-top: solid 1px lighten($colorSecond, 40%);
   .article-title {
     margin-bottom: 0.25em;
   }
@@ -338,10 +340,12 @@ textarea {
   }
 }
 
-.poll-view-results {
+.cta {
   text-transform: uppercase;
   text-align: center;
-  input {
-    margin-bottom: 1em;
+  margin-bottom: 0;
+  a {
+    display: block;
+    padding: 1em 0;
   }
 }
