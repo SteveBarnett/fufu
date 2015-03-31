@@ -1,0 +1,12 @@
+---
+layout: default
+name: overpoll
+---
+
+<div class="over over-poll">
+  <a href="#" class="over-text">
+    {{ site.molecules | where:"name","catandtitle" }}
+    <p>Optional extra teaser text that's about one sentence long.</p>
+    {{ site.atoms | where:"name","commentcounter" }}
+  </a>
+</div>
