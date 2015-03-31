@@ -3,10 +3,7 @@ layout: default
 name: comment
 ---
 
-<span class="comment-author-avatar">
-  <img src="/fufu/img/squitten-s.jpg" alt="A small square kitten">
-</span>
-
+{{ site.atoms | where:"name","avatar" }}
 
 <span class="comment-meta">
   <span class="comment-author">Anon</span> - 2min ago

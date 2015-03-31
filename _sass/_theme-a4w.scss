@@ -240,7 +240,7 @@ article {
   font-weight: bold;
 }
 
-.comment-author-avatar {
+.avatar {
   float: left;
   margin: 0 1em 0.5em 0;
 }
@@ -348,4 +348,21 @@ textarea {
     display: block;
     padding: 1em 0;
   }
+}
+
+// profile, etc.
+
+.profile {
+  padding: 1em;
+}
+
+.profile-details {
+  @include clearfix;
+  line-height: 1;
+  margin-bottom: 2em;
+}
+
+.profile-details-name {
+  font-size: 2em;
+  font-weight: bold;
 }

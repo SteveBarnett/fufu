@@ -124,6 +124,7 @@ h1, h2, h3, h4 {
 
 input {
   padding: 0.5em 1em;
+  font-size: 0.9em;
 }
 
 .error {
@@ -156,6 +157,8 @@ textarea {
   font-size: 0.9em;
 }
 
-.label-wide {
+.label-wide, .input-wide {
   display: block;
+  width: 94%;
+  margin-bottom: 1em;
 }

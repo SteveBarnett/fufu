@@ -1,0 +1,23 @@
+---
+layout: default
+name: profile
+---
+
+<form action="" class="profile">
+  
+  <div class="profile-details">    
+    {{ site.atoms | where:"name","avatar" }}
+    <div class="profile-details-name">Susan</div>
+    <div class="profile-details-name">QuiteLongSurname</div>
+  </div>
+
+  {{ site.molecules | where:"name","profiledetails"}}
+
+  <p class="cta">
+    <a href="#">Change picture</a>
+    <a href="#">Change PIN</a>
+  </p>
+
+  <input type="submit" value="Update profile" class="btn btn-wide">
+
+</form>
