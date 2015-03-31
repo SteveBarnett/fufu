@@ -18,17 +18,28 @@
 //   margin-right: 20px;
 // }
 
-.i-comment {
+.i {
   display: inline-block;
   overflow: hidden;
-  background: transparent url(img/icon-comment-count.png) 0 0 no-repeat;
   height: 35px;
   width: 35px;
-  position: relative;
+  position: relative;  
+}
+
+.i-comment {
+  background: transparent url(img/icon-comment-count.png) 0 0 no-repeat;
   top: 11px;
   margin-right: 0.5em
 }
 
 .i-comment-alt {
   background-image: url(img/icon-comment-count-red.png);
+}
+
+.i-facebook {
+  background-image: url(img/icon-facebook.png);
+}
+
+.i-twitter {
+  background-image: url(img/icon-twitter.png);
 }

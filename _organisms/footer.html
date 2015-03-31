@@ -1,8 +1,10 @@
 ---
 layout: default
+name: footer
 ---
 
 <div class="footer" role="contentinfo">
+  {{ site.molecules | where:"name","navsocial" }}
   {{ site.molecules | where:"name","navlegallang" }}
   {{ site.molecules | where:"name","copyright" }}
 </div>

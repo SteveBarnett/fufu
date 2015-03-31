@@ -1,8 +1,8 @@
 ---
 layout: default
+name: navsocial
 ---
 
-{{ site.atoms | where:"name","icon-twitter" }}
-{{ site.atoms | where:"name","icon-facebook" }}
-{{ site.atoms | where:"name","icon-instagram" }}
-{{ site.atoms | where:"name","icon-email" }}
+<ul class="nav nav-social list-inline">
+  <li>{{ site.atoms | where:"name","icon-facebook" }}</li><li>{{ site.atoms | where:"name","icon-twitter" }}</li>
+</ul>
