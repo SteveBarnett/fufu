@@ -4,6 +4,10 @@ layout: default
 
 {{ site.molecules | where:"name","over" }} 
 
+{{ site.organisms | where:"name", "articleheader" }}
+
 <article>
-  {{ site.organisms | where:"name", "articleheader" }}
+  {{ site.molecules | where:"name", "articletext" }}
 </article>
+
+{{ site.molecules | where:"name", "comments" }}

@@ -1,4 +1,4 @@
-// Ebola
+// Action4Women
 
 $colorFirst: #C51332; // red
 $colorSecond: #161518; // dark grey
@@ -76,6 +76,7 @@ p {
 
 .article-header {
   @include clearfix;
+  padding: 0 1em 1em 1em;
   .article-meta {
     float: left;
     padding-top: 0.75em;
@@ -86,18 +87,23 @@ p {
 }
 
 article {
-  padding: 1em;
+  padding: 0 1em 4em 1em;
+  p:first-child {
+    color: $colorFirst;
+    font-size: 1.25em;
+  }
 }
 
 // buttons
 
 .btn {
-  background-color: red;
+  background-color: $colorFirst;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   &:hover {
-    text-decoration: underline;
+    color: #ffffff;
+    background-color: lighten($colorFirst, 10%);
   }
 }
 
@@ -120,7 +126,6 @@ article {
 
 .link-comments {
   color: lighten($colorSecond, 50%);
-  text-transform: uppercase;
   text-decoration: none;
   &:hover {
     color: $colorSecond;
@@ -135,20 +140,30 @@ article {
   }
 }
 
+.comments {
+  padding: 0 1em 1em 1em;
+  margin: 0 1.5em;
+  background-color: $colorFourth;
+  font-size: 0.9em;
+}
+
+.comments-header {
+  padding-bottom: 1em;
+}
+
 .comment-list {
   @include no-bull;
   @include no-mp;
-  padding: 1em 0;
   p {
     margin-top: 0;
   }
 }
 
 .comment {
-  padding: 1em 1.5em;
-  border-top: solid 1px $colorFourth;
+  padding: 1em 0;
+  border-bottom: solid 1px lighten($colorSecond, 70%);
   &:last-child {
-    border-bottom: solid 1px $colorFourth;
+    border-bottom: none;
   }
 }
 
@@ -159,6 +174,22 @@ article {
       padding-left: 0;
     }
   }
+}
+
+.comment-author {
+  font-weight: bold;
+}
+
+.comment-author-avatar {
+  float: left;
+  margin: 0 1em 0.5em 0;
+}
+
+.comment-add {
+  float: right;
+  text-transform: uppercase;
+  padding-top: 0.5em;
+  font-weight: bold;
 }
 
 // forms and validation

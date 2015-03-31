@@ -1,3 +1,8 @@
+$colorFirst: #C51332; // red
+$colorSecond: #161518; // dark grey
+$colorThird: #1573AD; // blue
+$colorFourth: #EBEBEB; // light grey
+
 // dark grey
 .highlight-primary {
   background: $colorSecond url(grey-zigzag.png) 0 0 repeat;
@@ -7,6 +12,7 @@
 // light grey
 .highlight-secondary {
   background-color: $colorFourth;
+  color: $colorFourth;
 }
 
 // blue
@@ -16,5 +22,5 @@
 }
 
 .btn {
-  background: red url(red-zigzag.png) 0 0 repeat;
+  background: $colorFirst url(red-zigzag.png) 0 0 repeat;
 }
