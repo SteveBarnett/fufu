@@ -7,6 +7,11 @@ $colorFourth: #EBEBEB; // light grey
 
 @include links($colorFirst);
 
+body {
+  font-family: "Exo 2", sans-serif;
+  color: lighten($colorSecond, 40%);
+}
+
 // dark grey
 .highlight-primary {
   color: $colorSecond;
