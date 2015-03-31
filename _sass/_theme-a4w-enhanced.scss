@@ -21,6 +21,11 @@ $colorFourth: #EBEBEB; // light grey
   background: $colorThird url(blue-zigzag.png) 0 0 repeat;
 }
 
+.highlight-quaternary {
+  color: lighten($colorSecond, 40%);;
+  background-color: $colorFourth; 
+}
+
 .btn {
   background: $colorFirst url(img/zigzag.png) 0 0 repeat;
 }

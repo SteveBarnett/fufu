@@ -147,11 +147,15 @@ input {
 input.btn-wide {
   width: 103%;
   font-size: 0.9em;
+  cursor: pointer;
 }
 
 textarea {
   display: block;
   width: 100%;
   font-size: 0.9em;
-  // padding: 0.5em 4%;
+}
+
+.label-wide {
+  display: block;
 }

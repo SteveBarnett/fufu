@@ -1,0 +1,17 @@
+---
+layout: default
+name: catandtitle
+---
+
+<form action="">
+  <div class="poll highlight-quaternary">
+    {{ site.molecules | where:"name","catandtitle" }}
+    <div class="poll-options">
+      {{ site.molecules | where:"name","radiosblock" }}
+    </div>
+    <div class="poll-view-results">
+      <input type="submit" value="Vote" class="btn btn-wide">
+      <p><a href="#" class="uc">See results</a></p>    
+    </div>
+  </div>
+</form>

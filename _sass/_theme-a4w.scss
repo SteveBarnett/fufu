@@ -39,6 +39,13 @@ textarea {
   color: $colorThird;
 }
 
+// light grey
+.highlight-quaternary {
+  color: $colorFourth;
+}
+
+
+
 // typography
 
 p {
@@ -197,7 +204,6 @@ article {
 .comments {
   padding: 0 1em 1em 1em;
   margin: 0 1.5em;
-  background-color: $colorFourth;
   font-size: 0.9em;
 }
 
@@ -311,5 +317,31 @@ textarea {
   }
   .active {
     color: #ffffff;
+  }
+}
+
+.poll {
+  padding: 1em;
+  .article-title {
+    margin-bottom: 0.25em;
+  }
+}
+
+.poll-options {
+  margin-bottom: 1em;
+  font-size: 1.25em;
+  line-height: 2;
+  input {
+    margin-right: 1em;
+    position: relative;
+    top: -0.25em;
+  }
+}
+
+.poll-view-results {
+  text-transform: uppercase;
+  text-align: center;
+  input {
+    margin-bottom: 1em;
   }
 }
