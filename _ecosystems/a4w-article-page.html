@@ -2,15 +2,12 @@
 layout: default
 ---
 
+{{ site.molecules | where:"name","a4wnav" }}
 {{ site.molecules | where:"name","over" }} 
-
 {{ site.organisms | where:"name", "articleheader" }}
-
 <article>
   {{ site.molecules | where:"name", "articletext" }}
 </article>
-
 {{ site.organisms | where:"name", "comments" }}
 {{ site.molecules | where:"name", "addcomment" }}
-
 {{ site.organisms | where:"name", "footer" }}

@@ -357,7 +357,7 @@ textarea {
 // profile, etc.
 
 .profile {
-  padding: 1em;
+  padding: 5em 1em 1em 1em;
 }
 
 .profile-details {
@@ -369,4 +369,15 @@ textarea {
 .profile-details-name {
   font-size: 2em;
   font-weight: bold;
+}
+
+// main nav
+
+.nav-main {
+  padding: 1em 2em;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }

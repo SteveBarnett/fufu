@@ -2,6 +2,10 @@
 
 /* ==|== primary styles ===================================================== */
 
+body {
+  position: relative;
+}
+
 ::-moz-selection {
   background-color: lighten($colorFirst, 65%);
   color: $colorFirst;
