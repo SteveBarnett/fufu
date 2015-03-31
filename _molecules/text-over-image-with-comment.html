@@ -1,0 +1,13 @@
+---
+layout: default
+name: overcomment
+---
+
+<div class="over">
+  <img src="/fufu/img/squitten.jpg" alt="A kitten in a square">
+  <a href="#" class="over-text">
+    {{ site.molecules | where:"name","catandtitle" }}
+    <p>Optional extra teaser text that's about one sentence long.</p>
+    {{ site.atoms | where:"name","commentcounter" }}
+  </a>
+</div>

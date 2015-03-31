@@ -83,6 +83,7 @@
 	right: 1em;
 	bottom: 4em;
 	left: 1em;
+	z-index: 1;
 	p:last-child {
 		margin-bottom: 0;
 	}
@@ -90,6 +91,15 @@
 
 a.over-text {
 	text-decoration: none;
+}
+
+.over {
+	.link-comments {
+		position: absolute;
+		right: 1em;
+		bottom: 1em;
+		z-index: 1;
+	}
 }
 
 // comments
