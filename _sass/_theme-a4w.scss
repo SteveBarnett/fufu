@@ -118,9 +118,61 @@ article {
   }
 }
 
+.poll-result {
+  margin-bottom: 1em;
+}
+
+.poll-result-answer {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+
 .poll-result-bar {
+  position: relative;
   background-color: $colorFirst;
-  height: 2em;
+  height: 2.5em;
+  &:after {
+    content: attr(data-percent);
+    position: absolute;
+    right: 0;
+    color: $colorSecond;
+    font-weight: bold;
+    font-size: 2em;
+    right: -2.25em;
+    top: -0.1em;
+  }
+}
+
+.poll-results-bar-large {
+  &:after {
+    right: 0.25em;
+  }
+}
+
+.poll-result:nth-of-type(1) .poll-result-bar {
+  background-color: lighten($colorFirst, 20%);
+}
+
+.poll-result:nth-of-type(2) .poll-result-bar {
+  background-color: lighten($colorFirst, 10%);
+}
+
+.poll-result:nth-of-type(3) .poll-result-bar {
+  background-color: $colorFirst;
+}
+
+.poll-result:nth-of-type(4) .poll-result-bar {
+  background-color: darken($colorFirst, 10%);
+}
+
+.poll-result:nth-of-type(5) .poll-result-bar {
+  background-color: darken($colorFirst, 20%);
+}
+
+.poll-result:nth-of-type(6) .poll-result-bar {
+  background-color: darken($colorFirst, 30%);
 }
 
 
