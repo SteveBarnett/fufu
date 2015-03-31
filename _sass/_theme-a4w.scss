@@ -59,6 +59,13 @@ $colorFourth: #EBEBEB; // light grey
   }
 }
 
+.link-comments-alt {
+  color: $colorFirst;
+  &:hover {
+    color: $colorFirst;
+  }
+}
+
 .comment-list {
   @include no-bull;
   @include no-mp;
