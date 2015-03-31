@@ -1,7 +1,7 @@
 // Action4Women
 
 $colorFirst: #C51332; // red
-$colorSecond: #161518; // dark grey
+$colorSecond: #27262b; // dark grey
 $colorThird: #1573AD; // blue
 $colorFourth: #EBEBEB; // light grey
 
@@ -200,4 +200,36 @@ article {
 
 .input-error {
   border: solid 1px $colorFirst;
+}
+
+// footer 
+
+[role="contentinfo"] {
+  background: $colorSecond;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 1em;
+  margin-top: 1em;
+  border-top: solid 1px lighten($colorSecond, 40%);
+}
+
+.nav-legal-lang {
+  li {
+  border-color: lighten($colorSecond, 40%);
+    &:last-child {
+      padding-left: 0.5em;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: lighten($colorSecond, 40%);
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  .active {
+    color: #ffffff;
+  }
 }
