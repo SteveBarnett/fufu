@@ -136,9 +136,22 @@ input {
 
 .btn {
   padding: 0.75em 1em;
+  border: none;
 }
 
 .btn-wide {
   display: block;
   text-align: center;
+}
+
+input.btn-wide {
+  width: 103%;
+  font-size: 0.9em;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 0.9em;
+  // padding: 0.5em 4%;
 }

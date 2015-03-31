@@ -7,7 +7,9 @@ $colorFourth: #EBEBEB; // light grey
 
 @include links($colorFirst);
 
-body {
+body,
+input,
+textarea {
   font-family: "Exo 2", sans-serif;
   color: lighten($colorSecond, 40%);
 }
@@ -192,6 +194,11 @@ article {
   font-weight: bold;
 }
 
+.add-comment {
+  padding: 1em;
+  margin: 1.5em;
+}
+
 // forms and validation
 
 .error {
@@ -200,6 +207,10 @@ article {
 
 .input-error {
   border: solid 1px $colorFirst;
+}
+
+textarea {
+  margin: 1em 0 0.5em 0;
 }
 
 // footer 
