@@ -6,6 +6,10 @@ body {
   position: relative;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 ::-moz-selection {
   background-color: lighten($colorFirst, 65%);
   color: $colorFirst;
