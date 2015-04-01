@@ -421,3 +421,18 @@ form {
 .sign-up {
   margin-top: 5em;
 }
+
+.list-article-teasers {
+  a {
+    text-decoration: none;
+    padding: 0;
+  }
+  .article-title {
+    margin-bottom: 1em;
+  }
+}
+
+.article-teaser {
+  padding: 1em;
+  @include clearfix;
+}

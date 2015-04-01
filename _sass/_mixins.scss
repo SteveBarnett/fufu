@@ -109,21 +109,10 @@
     float: left;
     margin: 0 1em 1em 0;
   }
-  p {
-    margin-left: 4em; // = thumb width + margin above
-    margin-top: 0;
-  }
-  h3 {
-    margin-top: -1em;
-  }
   [dir="rtl"] & {
     img {
       float: right;
       margin: 0 0 1em 1em;
-    }
-    p {
-      margin-left: 0;
-      margin-right: 4em; // = thumb width + margin above
     }
   }
 }
@@ -133,22 +122,11 @@
     float: right;
     margin: 0 0 1em 1em;
   }
-  p {
-    margin-right: 4em; // = thumb width + margin above
-    margin-top: 0;
-  }
-  h3 {
-    margin-top: -1em;
-  }
   [dir="rtl"] & {
     img {
       float: left;
       margin: 0 1em 1em 0;
     }
-    p {
-      margin-right: 0;
-      margin-left: 4em; // = thumb width + margin above
-    } 
   }
 }
 

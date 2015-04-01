@@ -54,3 +54,16 @@ $colorFourth: #EBEBEB; // light grey
 .over-poll {
   background-color: $colorFirst; 
 }
+
+.article-teaser-thumb {
+  float: left;
+  width: 20%;
+  img {
+    width: 100%;
+  }
+}
+
+.article-teaser-text {
+  float: right;
+  width: 75%;
+}
