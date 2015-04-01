@@ -67,3 +67,54 @@ $colorFourth: #EBEBEB; // light grey
   float: right;
   width: 75%;
 }
+
+.nav-social {
+  background: $colorSecond;
+  a {
+    opacity: 0.5;
+  }
+}
+
+.nav-legal-lang {
+  background: $colorSecond;
+  li {
+  border-color: lighten($colorSecond, 40%);
+  }
+  a {
+    color: lighten($colorSecond, 40%);
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  .active {
+    color: #ffffff;
+  }
+}
+
+.nav-menu {
+  li {
+    border: none;
+  }
+  li:nth-of-type(2) {
+    border-bottom: solid 1px $colorFourth;
+    padding-bottom: 1em;
+  }
+  li:nth-of-type(3) {
+    margin-top: 1em;
+  }
+  li:last-child {
+    margin-bottom: 1em;
+  }
+  .nav {
+    a {
+      font-size: 2em;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
+
+.lang-change {
+  padding-left: 2em;
+}

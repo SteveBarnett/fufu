@@ -297,34 +297,21 @@ textarea {
 
 .nav-social {
   text-align: center;
-  background: $colorSecond;
   li {
     border-color: transparent;
   }
   a {
     text-decoration: none;
-    opacity: 0.5;
   }
 }
 
 .nav-legal-lang {
   text-align: center;
-  background: $colorSecond;
   li {
   border-color: lighten($colorSecond, 40%);
     &:last-child {
       padding-left: 0.5em;
     }
-  }
-  a {
-    text-decoration: none;
-    color: lighten($colorSecond, 40%);
-    &:hover {
-      color: #ffffff;
-    }
-  }
-  .active {
-    color: #ffffff;
   }
 }
 
