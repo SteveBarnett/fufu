@@ -2,6 +2,14 @@
 layout: default
 ---
 
-{{ site.molecules | where:"name","a4wnav" }}
+{{ site.molecules | where:"name","a4wnavmain" }}
+
+<main id="main">
 {{ site.organisms | where:"name","profile" }}
-{{ site.organisms | where:"name","footer" }}
+</main>
+
+{{ site.organisms | where:"name","formsignin" }}
+{{ site.organisms | where:"name","formsearch" }}
+{{ site.molecules | where:"name","a4wnav" }}
+
+<a href="#main" class="nav-close">main</a>
