@@ -17,6 +17,9 @@ textarea {
 // dark grey
 .highlight-primary {
   color: $colorSecond;
+  p {
+    color: lighten($colorSecond, 40%);
+  }
 }
 
 // dark grey
@@ -396,12 +399,23 @@ form {
     margin-bottom: 0.5em;
   }
   label > input {
-    margin-top: 1em;
+    margin-top: 0.5em;
   }
   input[type="text"],
   input[type="number"],
-  input[type="search"] {
+  input[type="search"],
+  input[type="checkbox"] {
     background-color: transparent;
     border: solid 1px lighten($colorSecond, 40%);
   }
+}
+
+.form-sign-in {
+  input[type="submit"] {
+    margin: 1em 0 2em 0;
+  }
+}
+
+.sign-up {
+  margin-top: 5em;
 }

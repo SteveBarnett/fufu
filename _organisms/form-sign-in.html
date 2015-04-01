@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="highlight-primary">
+  <form action="" class="form-sign-in">
+    
+
+    <fieldset>
+      <legend>Sign In</legend>
+      <p>Enter your username and 4-digit PIN</p>
+      {{ site.atoms | where:"name","inputwide" }}
+      {{ site.atoms | where:"name","number" }}
+      {{ site.atoms | where:"name","checkbox" }}
+      
+      {{ site.atoms | where:"name","submit" }}
+
+    </fieldset>
+
+  </form>
+
+  <a href="#">I forgot my password</a>
+
+  <div class="sign-up">
+    <p>Don't have an account?<br />
+    <a href="#">Sign up here to get started</a></p>    
+  </div>
+
+</div>
+
