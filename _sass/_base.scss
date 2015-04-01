@@ -127,8 +127,12 @@ h1, h2, h3, h4 {
 // forms and validation
 
 input {
-  padding: 0.5em 1em;
+  padding: 0.5em;
   font-size: 0.9em;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
 }
 
 .error {
@@ -150,7 +154,7 @@ input {
 }
 
 input.btn-wide {
-  width: 103%;
+  width: 100%;
   font-size: 0.9em;
   cursor: pointer;
 }
@@ -163,6 +167,6 @@ textarea {
 
 .label-wide, .input-wide {
   display: block;
-  width: 94%;
+  width: 100%;
   margin-bottom: 1em;
 }

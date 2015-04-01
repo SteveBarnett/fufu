@@ -381,3 +381,27 @@ textarea {
   left: 0;
   z-index: 3;
 }
+
+// forms
+
+form {
+  label, legend {
+    text-transform: uppercase;
+    display: block;
+  }
+  legend {
+    padding: 0;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  label > input {
+    margin-top: 1em;
+  }
+  input[type="text"],
+  input[type="number"],
+  input[type="search"] {
+    background-color: transparent;
+    border: solid 1px lighten($colorSecond, 40%);
+  }
+}

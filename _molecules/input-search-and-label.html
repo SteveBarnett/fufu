@@ -1,7 +1,8 @@
 ---
 layout: default
+name: searchandlabel
 ---
 
-<label for="input-search-molecule">Search: 
-  <input type="search" id="input-search-molecule" name="input-search-molecule" placeholder="e.g. fufu"/>
+<label for="input-search">Search: 
+  {{ site.atoms | where:"name","inputsearch" }}
 </label>

@@ -1,7 +1,7 @@
 ---
 layout: default
+name: searchbox
 ---
 
-<input type="search" />
-
-<button><i class="i i-search"></i> Search</button>
+{{ site.molecules | where:"name","searchhiddenlabel" }}
+{{ site.atoms | where:"name","submit" }}
