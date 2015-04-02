@@ -124,83 +124,42 @@ $colorFourth: #EBEBEB; // light grey
 
 // off canvas
 
-.js {
-  #menu {
-    display: none; 
-  }
+#nav-close {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $colorSecond;
+  opacity: 0.8;
 }
 
-.nav-active,
-.signin-active,
-.search-active,
-.register-active {
-  .nav-close {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: $colorSecond;
-    opacity: 0.8;
-  }
+.nav-main {
+  right: 0;
+  width: 20em;
+  max-width: 100%;
 }
 
-.nav-active,
-.signin-active,
-.search-active,
-.register-active {
-  .nav-main {
-    right: 0;
-    width: 20em;
-    max-width: 100%;
-  }
-  #jump {
-    display: none;
-  }
+#menu {
+  @include displaymenu;
 }
 
-.nav-active {
-  #menu {
-    @include displaymenu;
-  }
-  #close {
-    display: block;
-    position: absolute;
-    top: 1em;
-    right: 2em;
-  }
+#close {
+  position: absolute;
+  top: 1em;
+  right: 2em;
 }
 
-.signin-active,
-.search-active,
-.register-active {
-  #logo {
-    display: none;
-  }
-  #back {
-    display: block;
-    position: absolute;
-    top: 1em;
-    left: 1em;
-  }
+#back {
+
+  position: absolute;
+  top: 1em;
+  left: 1em;
 }
 
-.signin-active {
-  #signin {
-    @include displaymenu;
-  }
-}
-
-.search-active {
-  #search {
-    @include displaymenu;
-  }
-}
-
-.register-active {
-  #register {
-    @include displaymenu;
-  }
+#signin,
+#search,
+#register  {
+  @include displaymenu;
 }
