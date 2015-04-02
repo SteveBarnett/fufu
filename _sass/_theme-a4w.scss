@@ -380,6 +380,12 @@ textarea {
   height: 4em;
 }
 
+.nav-menu {
+  .nav-main {
+    position: relative;
+  }
+}
+
 // forms
 
 form {
@@ -430,4 +436,13 @@ form {
 .article-teaser {
   padding: 1em;
   @include clearfix;
+}
+
+.nav-close,
+#close,
+#back,
+#signin,
+#register,
+#search {
+  display: none;
 }

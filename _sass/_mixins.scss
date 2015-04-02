@@ -131,33 +131,23 @@
 }
 
 @mixin clearfix {
-    *zoom: 1;
-    &:before {
-      content: " ";
-      display: table;
-    }
-    &:after {
-      content: " ";
-      display: table;
-      clear: both;
-    }
+  *zoom: 1;
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
 }
 
 @mixin displaymenu {
+  display: block;
   position: absolute;
   top: 4em;
   z-index: 2;
   width: 20em;
   max-width: 100%;
-    ~ .nav-close {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: $colorSecond;
-    opacity: 0.8;
-  }
 }

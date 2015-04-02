@@ -124,22 +124,83 @@ $colorFourth: #EBEBEB; // light grey
 
 // off canvas
 
-.nav-close {
-  display: none;
+.js {
+  #menu {
+    display: none; 
+  }
 }
 
-#menu:not(:target),
-#signin:not(:target),
-#register:not(:target),
-#search:not(:target) {
-  display: none;
+.nav-active,
+.signin-active,
+.search-active,
+.register-active {
+  .nav-close {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $colorSecond;
+    opacity: 0.8;
+  }
 }
 
-#menu,
-#signin,
-#register,
-#search {
-  &:target {
+.nav-active,
+.signin-active,
+.search-active,
+.register-active {
+  .nav-main {
+    right: 0;
+    width: 20em;
+    max-width: 100%;
+  }
+  #jump {
+    display: none;
+  }
+}
+
+.nav-active {
+  #menu {
+    @include displaymenu;
+  }
+  #close {
+    display: block;
+    position: absolute;
+    top: 1em;
+    right: 2em;
+  }
+}
+
+.signin-active,
+.search-active,
+.register-active {
+  #logo {
+    display: none;
+  }
+  #back {
+    display: block;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+  }
+}
+
+.signin-active {
+  #signin {
+    @include displaymenu;
+  }
+}
+
+.search-active {
+  #search {
+    @include displaymenu;
+  }
+}
+
+.register-active {
+  #register {
     @include displaymenu;
   }
 }
