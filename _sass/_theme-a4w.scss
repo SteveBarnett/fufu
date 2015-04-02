@@ -7,6 +7,13 @@ $colorFourth: #EBEBEB; // light grey
 
 @include links($colorFirst);
 
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 body,
 input,
 textarea {
