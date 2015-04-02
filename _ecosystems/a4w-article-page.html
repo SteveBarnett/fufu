@@ -5,13 +5,14 @@ layout: default
 {{ site.molecules | where:"name","a4wnavmain" }}
 
 <main id="main">
-{{ site.molecules | where:"name","over" }} 
-{{ site.organisms | where:"name", "articleheader" }}
-<article>
-  {{ site.molecules | where:"name", "articletext" }}
-</article>
-{{ site.organisms | where:"name", "comments" }}
-{{ site.molecules | where:"name", "addcomment" }}
+  {{ site.molecules | where:"name","over" }} 
+  {{ site.organisms | where:"name", "articleheader" }}
+  <article>
+    {{ site.molecules | where:"name", "articletext" }}
+  </article>
+  {{ site.organisms | where:"name", "comments" }}
+  {{ site.molecules | where:"name", "addcomment" }}
+  {{ site.organisms | where:"name","footer" }}
 </main>
 
 {{ site.organisms | where:"name","formsignin" }}
