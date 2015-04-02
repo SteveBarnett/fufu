@@ -1,9 +1,6 @@
 // Action4Women
 
-$colorFirst: #C51332; // red
-$colorSecond: #27262b; // dark grey
-$colorThird: #1573AD; // blue
-$colorFourth: #EBEBEB; // light grey
+@import "a4wcolors";
 
 @include links($colorFirst);
 
@@ -18,20 +15,20 @@ body,
 input,
 textarea {
   font-family: "Exo 2", sans-serif;
-  color: lighten($colorSecond, 40%);
+  color: $anotherShadeOfGrey;
 }
 
 // dark grey
 .highlight-primary {
   color: $colorSecond;
   p {
-    color: lighten($colorSecond, 40%);
+    color: $anotherShadeOfGrey;
   }
 }
 
 // dark grey
 .highlight-secondary {
-  color: lighten($colorSecond, 10%);
+  color: $anotherShadeOfGrey;
   li {
     border: none; 
   }
@@ -268,7 +265,6 @@ article {
 
 .add-comment {
   padding: 1em;
-  margin: 1.5em;
 }
 
 // forms and validation
@@ -299,7 +295,7 @@ textarea {
   text-align: center;
   padding-top: 1em;
   margin-top: 1em;
-  border-top: solid 1px lighten($colorSecond, 40%);
+  border-top: solid 1px $anotherShadeOfGrey;
 }
 
 .nav-social {
@@ -315,7 +311,7 @@ textarea {
 .nav-legal-lang {
   text-align: center;
   li {
-  border-color: lighten($colorSecond, 40%);
+  border-color: $anotherShadeOfGrey;
     &:last-child {
       padding-left: 0.5em;
     }
@@ -324,7 +320,7 @@ textarea {
 
 .poll {
   padding: 1em;
-  border-top: solid 1px lighten($colorSecond, 40%);
+  border-top: solid 1px $anotherShadeOfGrey;
   .article-title {
     margin-bottom: 0.25em;
   }
@@ -409,7 +405,7 @@ form {
   input[type="checkbox"],
   input[type="tel"] {
     background-color: transparent;
-    border: solid 1px lighten($colorSecond, 40%);
+    border: solid 1px $anotherShadeOfGrey;
   }
 }
 

@@ -1,7 +1,4 @@
-$colorFirst: #C51332; // red
-$colorSecond: #27262b; // dark grey
-$colorThird: #1573AD; // blue
-$colorFourth: #EBEBEB; // light grey
+@import "a4wcolors";
 
 // dark grey
 .highlight-primary {
@@ -28,7 +25,7 @@ $colorFourth: #EBEBEB; // light grey
 }
 
 .highlight-quaternary {
-  color: lighten($colorSecond, 40%);;
+  color: $anotherShadeOfGrey;
   background-color: $colorFourth; 
 }
 
@@ -78,10 +75,10 @@ $colorFourth: #EBEBEB; // light grey
 .nav-legal-lang {
   background: $colorSecond;
   li {
-  border-color: lighten($colorSecond, 40%);
+  border-color: $anotherShadeOfGrey;
   }
   a {
-    color: lighten($colorSecond, 40%);
+    color: $anotherShadeOfGrey;
     &:hover {
       color: #ffffff;
     }
@@ -96,10 +93,10 @@ $colorFourth: #EBEBEB; // light grey
     border: none;
   }
   li:nth-of-type(1) {
-    border-top: solid 1px lighten($colorSecond, 40%);
+    border-top: solid 1px $anotherShadeOfGrey;
   }
   li:nth-of-type(2) {
-    border-bottom: solid 1px lighten($colorSecond, 40%);
+    border-bottom: solid 1px $anotherShadeOfGrey;
     padding-bottom: 1em;
   }
   li:nth-of-type(3) {
@@ -136,9 +133,11 @@ $colorFourth: #EBEBEB; // light grey
 }
 
 .nav-main {
-  right: 0;
-  width: 20em;
   max-width: 100%;
+}
+
+.nav-main-active {
+  width: 20em;
 }
 
 #menu {
