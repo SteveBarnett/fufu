@@ -73,6 +73,14 @@ var fufu = (function () {
     }
   }
 
+  function toggleClass(el, cn) {
+    if(hasClass(el, cn)) {
+      removeClass(el, cn);
+    } else {
+      addClass(el, cn);
+    }
+  }
+
   function bindEvent(target, type, listener, capture) {
     if(window.addEventListener) {
       target.addEventListener(type, listener, capture);
@@ -97,6 +105,27 @@ var fufu = (function () {
     }
   }
 
+  function hideMenu() {
+    addClass(menu, "hidden");
+    addClass(logo, "hidden");
+    addClass(hamburger, "hidden");
+    addClass(close, "hidden");
+  }
+
+  function hideFormMenus() {
+    addClass(back, "hidden");
+    addClass(signin, "hidden");
+    addClass(register, "hidden");
+    addClass(search, "hidden");
+  }
+
+  function toggleBurgerMenu() {
+    toggleClass(hamburger, "hidden");
+    toggleClass(menu, "hidden");
+    toggleClass(close, "hidden");
+    toggleClass(navClose, "hidden");
+  }
+
   return {
     init: init,
     docEl: docEl,
@@ -114,8 +143,12 @@ var fufu = (function () {
     navClose: navClose,
     addClass: addClass,
     removeClass: removeClass,
+    toggleClass: toggleClass,
     bindEvent: bindEvent,
-    preventActions: preventActions
+    preventActions: preventActions,
+    hideMenu: hideMenu,
+    hideFormMenus: hideFormMenus,
+    toggleBurgerMenu: toggleBurgerMenu
   };
 
 })();
@@ -125,39 +158,28 @@ var fufu = (function () {
   fufu.removeClass(fufu.docEl,"no-js");
   fufu.addClass(fufu.docEl,"js");
   fufu.addClass(fufu.menu, "hidden");
-  fufu.addClass(fufu.signin, "hidden");
-  fufu.addClass(fufu.register, "hidden");
-  fufu.addClass(fufu.search, "hidden");
+  fufu.hideFormMenus();
 
   // burger nav
 
   fufu.bindEvent(fufu.hamburger, "click", function (ev) {
     fufu.preventActions(ev);
-    fufu.removeClass(fufu.menu, "hidden");
-    fufu.addClass(fufu.hamburger, "hidden");
-    fufu.removeClass(fufu.close, "hidden");
-    fufu.removeClass(fufu.navClose, "hidden");
+    fufu.toggleBurgerMenu();
   });
 
   fufu.bindEvent(fufu.close, "click", function (ev) {
     fufu.preventActions(ev);
-    fufu.addClass(fufu.menu, "hidden");
-    fufu.removeClass(fufu.hamburger, "hidden");
-    fufu.addClass(fufu.close, "hidden");
-    fufu.addClass(fufu.navClose, "hidden");
+    fufu.toggleBurgerMenu();
   });
 
   fufu.bindEvent(fufu.navClose, "click", function (ev) {
     fufu.preventActions(ev);
-    fufu.addClass(fufu.menu, "hidden");
     fufu.removeClass(fufu.hamburger, "hidden");
+    fufu.addClass(fufu.menu, "hidden");
     fufu.addClass(fufu.close, "hidden");
     fufu.addClass(fufu.navClose, "hidden");
     // hide menu forms too
-    fufu.addClass(fufu.back, "hidden");
-    fufu.addClass(fufu.signin, "hidden");
-    fufu.addClass(fufu.register, "hidden");
-    fufu.addClass(fufu.search, "hidden");
+    fufu.hideFormMenus();
     fufu.removeClass(fufu.logo, "hidden");
   });
 
@@ -165,30 +187,21 @@ var fufu = (function () {
 
   fufu.bindEvent(fufu.showSignin, "click", function (ev) {
     fufu.preventActions(ev);
-    fufu.addClass(fufu.menu, "hidden");
-    fufu.addClass(fufu.logo, "hidden");
-    fufu.addClass(fufu.hamburger, "hidden");
-    fufu.addClass(fufu.close, "hidden");
+    fufu.hideMenu();
     fufu.removeClass(fufu.back, "hidden");
     fufu.removeClass(fufu.signin, "hidden");
   });
 
   fufu.bindEvent(fufu.showRegister, "click", function (ev) {
     fufu.preventActions(ev);
-    fufu.addClass(fufu.menu, "hidden");
-    fufu.addClass(fufu.logo, "hidden");
-    fufu.addClass(fufu.hamburger, "hidden");
-    fufu.addClass(fufu.close, "hidden");
+    fufu.hideMenu();
     fufu.removeClass(fufu.back, "hidden");
     fufu.removeClass(fufu.register, "hidden");
   });
 
   fufu.bindEvent(fufu.showSearch, "click", function (ev) {
     fufu.preventActions(ev);
-    fufu.addClass(fufu.menu, "hidden");
-    fufu.addClass(fufu.logo, "hidden");
-    fufu.addClass(fufu.hamburger, "hidden");
-    fufu.addClass(fufu.close, "hidden");
+    fufu.hideMenu();
     fufu.removeClass(fufu.back, "hidden");
     fufu.removeClass(fufu.search, "hidden");
   });
@@ -198,10 +211,7 @@ var fufu = (function () {
     fufu.removeClass(fufu.menu, "hidden");
     fufu.removeClass(fufu.logo, "hidden");
     fufu.removeClass(fufu.close, "hidden");
-    fufu.addClass(fufu.back, "hidden");
-    fufu.addClass(fufu.signin, "hidden");
-    fufu.addClass(fufu.register, "hidden");
-    fufu.addClass(fufu.search, "hidden");
+    fufu.hideFormMenus();
   });
 
 
