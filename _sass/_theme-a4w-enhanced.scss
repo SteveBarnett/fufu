@@ -130,12 +130,14 @@ $colorFourth: #EBEBEB; // light grey
 
 #menu:not(:target),
 #signin:not(:target),
+#register:not(:target),
 #search:not(:target) {
   display: none;
 }
 
 #menu,
 #signin,
+#register,
 #search {
   &:target {
     @include displaymenu;
