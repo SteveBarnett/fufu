@@ -5,7 +5,8 @@ layout: default
 {{ site.molecules | where:"name","a4wnavmain" }}
 
 <main id="main">
-{{ site.organisms | where:"name","formregister" }}
+  {{ site.organisms | where:"name","formregistervisible" }}
+  {{ site.organisms | where:"name","footer" }}
 </main>
 
 {{ site.organisms | where:"name","formsignin" }}
