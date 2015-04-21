@@ -6,15 +6,17 @@ A future friendly front-end style guide that even caters for feature phones.
 
 ### HTML
 
-We've used an atomic-design-like pattern. It's a static site, generated with [Jekyll](http://jekyllrb.com/). The atoms, molecules, organisms, and ecosystems are [Jekyll collections](http://jekyllrb.com/docs/collections/), set in `_config.yml`. 
-
-For various reasons, we have a requirement for no JavaScript. Unfortunately that means we can't use the new HTML elements like `header`, `footer`, and `nav`, since we can't polyfill them for browsers that don't grok them.
+We've used an [atomic-design](http://bradfrost.com/blog/post/atomic-web-design/)-like pattern. It's a static site, generated with [Jekyll](http://jekyllrb.com/). The atoms, molecules, organisms, and ecosystems are [Jekyll collections](http://jekyllrb.com/docs/collections/), set in `_config.yml`. 
 
 ### CSS
 
 We use [Sass](http://sass-lang.com/), and let Jekyll handle compiling it.
 
 The main Sass file is `css/style.scss`. This imports partials from the `_sass` directory. We use a `link rel="stylesheet" media="screen and (min-width: 20em)"` to pull in (the compiled version of) `css/enhanced.scss`, (which pulls in a few additional partials from the `_sass` directory), and a Google web font.
+
+### JavaScript
+
+We [cut the mustard](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard), checking for support of `querySelector`, `localStorage` and `addEventListener` before using [Filament Group's loadJS](https://github.com/filamentgroup/loadJS) to asynchronously load our minified JavaScript file.
 
 ### Images
 
