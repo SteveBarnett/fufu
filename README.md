@@ -10,7 +10,7 @@ We've used an [atomic-design](http://bradfrost.com/blog/post/atomic-web-design/)
 
 ### CSS
 
-We use [Sass](http://sass-lang.com/), and let Jekyll handle compiling it.
+We use [Sass](http://sass-lang.com/), and let Jekyll handle compiling it. We set the [output style](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_16) to `:compressed`
 
 The main Sass file is `css/style.scss`. This imports partials from the `_sass` directory. We use a `link rel="stylesheet" media="screen and (min-width: 20em)"` to pull in (the compiled version of) `css/enhanced.scss`, (which pulls in a few additional partials from the `_sass` directory), and a Google web font.
 
