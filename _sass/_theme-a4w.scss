@@ -127,6 +127,15 @@ article {
   }
 }
 
+a {
+  &.btn {
+    color: #ffffff;
+    &:hover, &:visited {
+      color: #ffffff;
+    }
+  }
+}
+
 // polls
 
 .poll-results {
