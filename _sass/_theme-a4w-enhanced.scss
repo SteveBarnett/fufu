@@ -50,6 +50,11 @@
     background-repeat: repeat;
     z-index: 0;
   }
+  &:first-child {
+    .article-title {
+      margin-bottom: 0.5em;
+    }
+  }
 }
 
 .over-poll {
