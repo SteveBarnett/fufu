@@ -458,3 +458,8 @@ form {
     color: $colorFourth;
   }
 }
+
+html {
+
+  -webkit-tap-highlight-color: transparent;
+}
