@@ -2,6 +2,8 @@
 
 A future friendly front-end style guide that even caters for feature phones.
 
+![fufu](https://cloud.githubusercontent.com/assets/1239497/8354606/af823a5c-1b49-11e5-8bb7-6beda85d65f4.png)
+
 ## Style Guide
 
 ### HTML
