@@ -11,7 +11,7 @@
 
     <style>
       body {
-        font-family: sans-serif;
+        font-family: "Lato", sans-serif;
       }
 
       .clear-fix {
@@ -29,20 +29,57 @@
         clear: both;
       }
 
-      .dad-row {
-        margin-bottom: 1em;
+      .intro {
+        margin-bottom: 2em;
       }
 
-      p {
+      .dad {
+        padding: 1em 0.5em;
+      }
+
+      .dad-row {
+        margin-bottom: 2em;
+      }
+
+      p, h2, h3 {
         margin-top: 0;
       }
 
-      .do {
+      h2 {
+        font-weight: normal;
+        margin-bottom: 0;
+      }
 
+      h3 {
+        font-weight: normal;
+      }
+
+      h2 strong,
+      h3 strong {
+        font-weight: bold;
+      }
+
+      .do,
+      .dont {
+        padding: 1em;
+      }
+
+      .do {
+        border: solid 2px #999;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        color: #37A142;
       }
 
       .dont {
+        border: solid 2px #999;
+        border-top: none;
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+      }
 
+      .dont h3 {
+        color: #E30015;
       }
     </style>
 
@@ -51,6 +88,20 @@
   <body>
 
     {{ content }}
+
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Lato:400,700:latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); </script>
 
   </body>
 
