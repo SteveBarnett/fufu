@@ -30,6 +30,8 @@ Supplied by [placekitten.com](https://placekitten.com/). (^._.^)ﾉ
 
 ## Some problems
 
+There's a short [Dos and Don't of Feature phone Design](http://stevebarnett.github.io/fufu/dos-and-donts.html) that covers some of the design side of things. Below are some of the technical details.
+
 ### CSS
 
 There aren't a lot of safe styles that can be applied to featurephones, and behaviour is inconsistent. The worst of these is not respecting [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity). Here's an example.
