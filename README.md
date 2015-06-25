@@ -12,11 +12,15 @@ We've used an [atomic-design](http://bradfrost.com/blog/post/atomic-web-design/)
 
 We use [Sass](http://sass-lang.com/), and let Jekyll handle compiling it. We set the [output style](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_16) to `:compressed`
 
-The main Sass file is `css/style.scss`. This imports partials from the `_sass` directory. We use a `link rel="stylesheet" media="screen and (min-width: 20em)"` to pull in (the compiled version of) `css/enhanced.scss`, (which pulls in a few additional partials from the `_sass` directory), and a Google web font.
+The main Sass file is `css/style.scss`. This imports partials from the `_sass` directory. We use a `link rel="stylesheet" media="screen and (min-width: 20em)"` to pull in (the compiled version of) `css/enhanced.scss`, (which pulls in a few additional partials from the `_sass` directory).
 
 ### JavaScript
 
-We [cut the mustard](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard), checking for support of `querySelector`, `localStorage` and `addEventListener` before using [Filament Group's loadJS](https://github.com/filamentgroup/loadJS) to asynchronously load our minified JavaScript file.
+We [cut the mustard](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard), checking for support of `querySelector`, `localStorage` and `addEventListener` before using [Filament Group's loadJS](https://github.com/filamentgroup/loadJS) to asynchronously load our minified JavaScript file and add a [Google Web Font](https://www.google.com/fonts).
+
+We use [Filament Group's loadCSS](https://github.com/filamentgroup/loadCSS) to asynchronously load our `css/enhanced.css`. We also place a link to the enhanced stylesheet inside a `<noscript>` element in case JavaScript is disabled.
+
+The small bits of JavaScript in `<head>` of the document (loadCSS, loadJS, and our mustard cut are minifed before inclusion. The original files are in the `js` directory.)
 
 ### Images
 
