@@ -12,18 +12,20 @@
     <style>
       body {
         font-family: "Lato", sans-serif;
+        max-width: 40em;
+        margin: 0 auto;
       }
 
-      .clear-fix {
+      .clearfix {
         *zoom: 1;
       }
 
-      .clear-fix:before {
+      .clearfix:before {
         content: " ";
         display: table;
       }
 
-      .clear-fix:after {
+      .clearfix:after {
         content: " ";
         display: table;
         clear: both;
@@ -39,6 +41,8 @@
 
       .dad-row {
         margin-bottom: 2em;
+        border: solid 2px #999;
+        border-radius: 0.5em;
       }
 
       p, h2, h3 {
@@ -65,21 +69,36 @@
       }
 
       .do {
-        border: solid 2px #999;
-        border-top-left-radius: 0.5em;
-        border-top-right-radius: 0.5em;
         color: #37A142;
+        border-bottom: solid 2px #999;
+        position: relative;
       }
 
       .dont {
-        border: solid 2px #999;
-        border-top: none;
-        border-bottom-left-radius: 0.5em;
-        border-bottom-right-radius: 0.5em;
+        position: relative;
       }
 
       .dont h3 {
         color: #E30015;
+      }
+
+  
+      @media screen and (min-width: 50em) {
+        .do:before {
+          content: url(css/img/do.png);
+          position: absolute;
+          left: -4em;
+          top: 0.5em;
+          display: block;
+        }
+
+        .dont:after {
+          content: url(css/img/dont.png);
+          position: absolute;
+          left: -4em;
+          top: 0.5em;
+          display: block;
+        }
       }
     </style>
 
