@@ -18,7 +18,7 @@ The main Sass file is `css/style.scss`. This imports partials from the `_sass` d
 
 ### JavaScript
 
-We [cut the mustard](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard), checking for support of `querySelector`, `localStorage` and `addEventListener` before using [Filament Group's loadJS](https://github.com/filamentgroup/loadJS) to asynchronously load our minified JavaScript file and add a [Google Web Font](https://www.google.com/fonts).
+We [cut the mustard](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard), checking for support of `querySelector`, `localStorage` and `addEventListener` before using [Filament Group's loadJS](https://github.com/filamentgroup/loadJS) to asynchronously load our minified JavaScript file and add a [Google Web Font](https://www.google.com/fonts). We use feature detection (like [Modernizr](http://modernizr.com/)) and not device detection.
 
 We use [Filament Group's loadCSS](https://github.com/filamentgroup/loadCSS) to asynchronously load our `css/enhanced.css`. We also place a link to the enhanced stylesheet inside a `<noscript>` element in case JavaScript is disabled.
 
