@@ -18,11 +18,13 @@ The main Sass file is `css/style.scss`. This imports partials from the `_sass` d
 
 ### JavaScript
 
+We use [Scott Jehl's eCSSential](https://github.com/scottjehl/eCSSential) to asynchronously load our `css/enhanced.css`, ensuring that browsers download only the stylesheets that they need. Browsers are greedy and [will download all stylesheets](http://scottjehl.github.io/CSS-Download-Tests/) that are referenced in the head, whether they need it or not. We also place a link to the enhanced stylesheet inside a `<noscript>` element in case JavaScript is disabled.
+
+eCSSential uses `matchMedia`, which means that some older browsers, notably Android 2.x, don't get the enhanced stylesheet (see [caniuse.com/#search=matchmedia](http://caniuse.com/#search=matchmedia) for the full list). If your enhanced stylesheet is very small, and if those older browsers are an important part of your target market, you can use [Filament Group's loadCSS](https://github.com/filamentgroup/loadCSS) to asynchronously load `css/enhanced.css`. This comes at a cost though: all browsers will download all the stylesheets.
+
 We [cut the mustard](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard), checking for support of `querySelector`, `localStorage` and `addEventListener` before using [Filament Group's loadJS](https://github.com/filamentgroup/loadJS) to asynchronously load our minified JavaScript file and add a [Google Web Font](https://www.google.com/fonts). We use feature detection (like [Modernizr](http://modernizr.com/)) and not device detection.
 
-We use [Filament Group's loadCSS](https://github.com/filamentgroup/loadCSS) to asynchronously load our `css/enhanced.css`. We also place a link to the enhanced stylesheet inside a `<noscript>` element in case JavaScript is disabled.
-
-The small bits of JavaScript in `<head>` of the document (loadCSS, loadJS, and our mustard cut are minifed before inclusion. The original files are in the `js` directory.)
+The small bits of JavaScript in `<head>` of the document are minifed before inclusion. The original files are in the `js` directory.
 
 ### Images
 
