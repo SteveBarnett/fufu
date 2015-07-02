@@ -1,0 +1,38 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ page.url  | replace: '/ecosystems/', ''  | replace: '.html', '' | replace: '-', ' ' | capitalize }}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+  <link rel="stylesheet" media="screen and (min-width: 20em)" href="{{ site.baseurl }}/css/enhanced.css">
+  
+  <style>
+    .sg-category {
+      margin-bottom: 2em;
+      padding: 1em 0 2em 0;
+      border-bottom: solid 2px #999;
+    }
+    
+    .sg-category a {
+      display: inline-block;
+      padding: 0.25em 0;
+    }
+
+    .sg-link {
+      padding: 0.5em 0.5em 0 0.5em;
+      margin-bottom: 0.5em;
+      text-align: right;
+      border-bottom: solid 1px #ccc;
+    }
+
+    .sg-marker {
+      text-align: right;
+    }
+  </style>
+
+</head>

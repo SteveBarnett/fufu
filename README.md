@@ -22,6 +22,10 @@ We use [Scott Jehl's eCSSential](https://github.com/scottjehl/eCSSential) to asy
 
 eCSSential uses `matchMedia`, which means that some older browsers, notably Android 2.x, don't get the enhanced stylesheet (see [caniuse.com/#search=matchmedia](http://caniuse.com/#search=matchmedia) for the full list). If your enhanced stylesheet is very small, and if those older browsers are an important part of your target market, you can use [Filament Group's loadCSS](https://github.com/filamentgroup/loadCSS) to asynchronously load `css/enhanced.css`. This comes at a cost though: all browsers will download all the stylesheets.
 
+#### Aside: different heads for Jekyll
+
+Fufu comes with three choices for the `head` part of the [Jekyll](http://jekyllrb.com/) version of the site, so that you can choose the layout you need. The default is `_includes/head.html`, which uses eCSSential. `_includes/head-loadCSS.html` uses loadCSS instead. `_includes/head-idotorg.html` loads the CSS without any JavaScript; this is for situations where it's known that JavaScript is not available, such as sites on Facebook's [Internet.org platform](https://internet.org/).
+
 We [cut the mustard](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard), checking for support of `querySelector`, `localStorage` and `addEventListener` before using [Filament Group's loadJS](https://github.com/filamentgroup/loadJS) to asynchronously load our minified JavaScript file and add a [Google Web Font](https://www.google.com/fonts). We use feature detection (like [Modernizr](http://modernizr.com/)) and not device detection.
 
 The small bits of JavaScript in `<head>` of the document are minifed before inclusion. The original files are in the `js` directory.
