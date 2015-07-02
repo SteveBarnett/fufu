@@ -8,7 +8,7 @@
 
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/style{{ page.fufu-theme }}.css">
 
   <script type="text/javascript">
   /*! eCSSential - v0.1.0 - 2012-06-08
@@ -20,7 +20,7 @@
   function loadJS(e,t){"use strict";var n=window.document.getElementsByTagName("script")[0],o=window.document.createElement("script");return o.src=e,o.async=!0,n.parentNode.insertBefore(o,n),t&&"function"==typeof t&&(o.onload=t),o}
 
   eCSSential({ 
-    "(min-width: 20em)": "{{ site.baseurl }}/css/enhanced.css"
+    "(min-width: 20em)": "{{ site.baseurl }}/css/enhanced{{ page.fufu-theme }}.css"
   });
 
   // cut the mustard
@@ -29,7 +29,7 @@
   </script>
 
   <noscript>
-    <link rel="stylesheet" media="screen and (min-width: 20em)" href="{{ site.baseurl }}/css/enhanced.css">
+    <link rel="stylesheet" media="screen and (min-width: 20em)" href="{{ site.baseurl }}/css/enhanced{{ page.fufu-theme }}.css">
   </noscript>
 
   <style>

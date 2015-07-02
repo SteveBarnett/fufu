@@ -8,7 +8,7 @@
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/style{{ page.fufu-theme }}.css">
 
   <script type="text/javascript" id="loadcss">
   /*! loadCSS: load a CSS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. Licensed MIT */
@@ -17,7 +17,7 @@
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   function loadJS(e,t){"use strict";var n=window.document.getElementsByTagName("script")[0],o=window.document.createElement("script");return o.src=e,o.async=!0,n.parentNode.insertBefore(o,n),t&&"function"==typeof t&&(o.onload=t),o}
 
-  loadCSS("{{ site.baseurl }}/css/enhanced.css",document.getElementById("loadcss"), "screen and (min-width: 20em)")
+  loadCSS("{{ site.baseurl }}/css/enhanced{{ page.fufu-theme }}.css",document.getElementById("loadcss"), "screen and (min-width: 20em)")
 
   // cut the mustard
   "querySelector"in document&&"localStorage"in window&&"addEventListener"in window&&(loadJS("/fufu/js/main.min.js"),WebFontConfig={google:{families:["Exo+2:400,700:latin"]}},function(){var t=document.createElement("script");t.src=("https:"==document.location.protocol?"https":"http")+"://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js",t.type="text/javascript",t.async="true";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}());
@@ -25,7 +25,7 @@
   </script>
 
   <noscript>
-    <link rel="stylesheet" media="screen and (min-width: 20em)" href="{{ site.baseurl }}/css/enhanced.css">
+    <link rel="stylesheet" media="screen and (min-width: 20em)" href="{{ site.baseurl }}/css/enhanced{{ page.fufu-theme }}.css">
   </noscript>
 
   <style>
