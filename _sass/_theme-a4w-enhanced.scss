@@ -36,6 +36,9 @@
 
 .over {
   position: relative;
+  max-height: 25em;
+  text-align: center;
+  overflow: hidden;
   &:after {
     content: "";
     position: absolute;
@@ -54,6 +57,28 @@
     .article-title {
       margin-bottom: 0.5em;
     }
+  }
+  img {
+    position: absolute;
+    left: 0;
+    top: -150%;
+  }
+  .link-comments {
+    text-align: left;
+    @media (min-width: 48em) {
+      right: 4em;
+    }
+  }
+}
+
+.over-text {
+  text-align: left;
+  @media (min-width: 48em) {
+    left: 7em;
+    right: 11em;
+  }
+  @media (min-width: 85em) {
+    right: 36em;
   }
 }
 
