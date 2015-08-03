@@ -171,38 +171,18 @@
   }
 }
 
-@media (min-device-width: 50em) {
-  html {
-    padding-top: 4em;
-    &:before {
-      content: "This site is optimised for mobile viewing. Access this site on your mobile phone for the best user experience.";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: #fff;
-      color: $colorSecond;
-      z-index: 1;
-      text-align: center;
-      line-height: 2;
-    }
-    &:after {
-      content: "This site is currently in beta.";
-      position: absolute;
-      top: 2em;
-      left: 0;
-      right: 0;
-      background: #e52d47 url(img/zigzag.png) 0 0 repeat;
-      color: white;
-      z-index: 1;
-      text-align: center;
-      line-height: 2;
-    }
-  }
-}
-
 .logo {
   img {
     width: 85px;
+  }
+}
+
+// override max-widths set in css/enhanced.scss
+@media screen {
+  html {
+    max-width: none;
+    @media (min-device-width: 50em) {
+      max-width: none;
+    }
   }
 }
