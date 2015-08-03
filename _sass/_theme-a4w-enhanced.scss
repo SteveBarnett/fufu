@@ -61,7 +61,22 @@
   img {
     position: absolute;
     left: 0;
-    top: -150%;
+    top: -5em;
+    @media (min-width: 40em) {
+      top: -10em;
+    }
+    @media (min-width: 50em) {
+      top: -15em;
+    }
+    @media (min-width: 60em) {
+      top: -20em;
+    }
+    @media (min-width: 70em) {
+      top: -25em;
+    }
+    @media (min-width: 80em) {
+      top: -30em;
+    }
   }
   .link-comments {
     text-align: left;
