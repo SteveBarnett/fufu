@@ -203,10 +203,27 @@
   #search,
   #register  {
     @include displaymenu;
-    .input-wide,
-    .btn-wide {
-      width: 48%;
+    @media (min-width: 48em) {
+      .btn-wide {
+        width: 48%;
+        clear: left;
+      }
+      [for="username"] {
+        width: 48%;
+        float: left;
+        clear: left;
+      }
+      [for="pin"],
+      [for="mobile-number"] {
+        width: 48%;
+        float: right;
+      }
+      [for="remember-me"] {
+        clear: left;
+      }
     }
+  
+
   }
 }
 
