@@ -150,6 +150,7 @@
     margin-bottom: 1em;
   }
   .nav {
+    max-width: 30em;
     a {
       font-size: 2em;
       text-transform: uppercase;
@@ -177,7 +178,7 @@
   }
 
   .nav-main-active {
-    width: 20em;
+    width: 11em;
     max-width: 100%;
   }
 
@@ -193,7 +194,6 @@
   }
 
   #back {
-
     position: absolute;
     top: 1em;
     left: 1em;
@@ -203,7 +203,15 @@
   #search,
   #register  {
     @include displaymenu;
+    .input-wide,
+    .btn-wide {
+      width: 48%;
+    }
   }
+}
+
+fieldset {
+  padding-bottom: 2em;
 }
 
 .logo {
