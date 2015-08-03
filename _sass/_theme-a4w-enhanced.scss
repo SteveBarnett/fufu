@@ -86,7 +86,8 @@
   background-color: $colorFirst; 
 }
 
-.poll {
+.poll,
+article {
   @media (min-width: 48em) {
     padding-left: 7em;
     padding-right: 20em;
@@ -95,6 +96,19 @@
     padding-right: 50em;
   }
 }
+
+.comments {
+  @media (min-width: 48em) {
+    margin-left: 7em;
+    margin-right: 20em;
+  }
+  @media (min-width: 85em) {
+    margin-right: 50em;
+  }
+}
+
+
+    margin: 0 20em 0 7em;
 
 .article-teaser-thumb {
   float: left;
