@@ -208,22 +208,26 @@
         width: 48%;
         clear: left;
       }
-      [for="username"] {
+      [for="username"],
+      [for="mobile-number"],
+      [for="id_gender"],
+      [for="id_identity"] {
         width: 48%;
         float: left;
         clear: left;
       }
       [for="pin"],
-      [for="mobile-number"] {
+      [for="id_password1"],
+      [for="display_name"],
+      [for="id_year_of_birth"] {
         width: 48%;
         float: right;
       }
-      [for="remember-me"] {
+      [for="remember-me"],
+      [for="id_tos"] {
         clear: left;
       }
     }
-  
-
   }
 }
 
