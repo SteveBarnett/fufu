@@ -86,6 +86,16 @@
   background-color: $colorFirst; 
 }
 
+.poll {
+  @media (min-width: 48em) {
+    padding-left: 7em;
+    padding-right: 20em;
+  }
+  @media (min-width: 85em) {
+    padding-right: 50em;
+  }
+}
+
 .article-teaser-thumb {
   float: left;
   width: 20%;
