@@ -11,21 +11,16 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/css/style{{ page.fufu-theme }}.css">
 
   <script type="text/javascript" id="loadcss">
-  /*! loadCSS: load a CSS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. Licensed MIT */
-  function loadCSS(e,n,o,t){"use strict";var d=window.document.createElement("link"),i=n||window.document.getElementsByTagName("script")[0],r=window.document.styleSheets;return d.rel="stylesheet",d.href=e,d.media="only x",t&&(d.onload=t),i.parentNode.insertBefore(d,i),d.onloadcssdefined=function(e){for(var n,o=0;o<r.length;o++)r[o].href&&r[o].href===d.href&&(n=!0);n?e():setTimeout(function(){d.onloadcssdefined(e)})},d.onloadcssdefined(function(){d.media=o||"all"}),d}
+  {% include js/loadCSS.min.js %}
+  {% include js/loadJS.min.js %}
 
-  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
-  function loadJS(e,t){"use strict";var n=window.document.getElementsByTagName("script")[0],o=window.document.createElement("script");return o.src=e,o.async=!0,n.parentNode.insertBefore(o,n),t&&"function"==typeof t&&(o.onload=t),o}
+  loadCSS("{{ site.baseurl }}/css/enhanced{{ page.fufu-theme }}.css",document.getElementById("loadcss"), "(min-width: 20em)")
 
-  loadCSS("{{ site.baseurl }}/css/enhanced{{ page.fufu-theme }}.css",document.getElementById("loadcss"), "screen and (min-width: 20em)")
-
-  // cut the mustard
-  "querySelector"in document&&"localStorage"in window&&"addEventListener"in window&&(loadJS("/fufu/js/main.min.js"),WebFontConfig={google:{families:["Exo+2:400,700:latin"]}},function(){var t=document.createElement("script");t.src=("https:"==document.location.protocol?"https":"http")+"://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js",t.type="text/javascript",t.async="true";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}());
-
+  {% include js/mustard.min.js %}
   </script>
 
   <noscript>
-    <link rel="stylesheet" media="screen and (min-width: 20em)" href="{{ site.baseurl }}/css/enhanced{{ page.fufu-theme }}.css">
+    <link rel="stylesheet" media="(min-width: 20em)" href="{{ site.baseurl }}/css/enhanced{{ page.fufu-theme }}.css">
   </noscript>
 
   <style>
