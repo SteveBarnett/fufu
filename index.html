@@ -17,7 +17,7 @@ layout: default
       <li>
         <a href="/fufu{{ atom.url }}">{{ atom.url  | replace: '/atoms/', ''  | replace: '.html', '' }}</a>
       </li>
-    {% endfor %}      
+    {% endfor %}
     </ul>
   </div>
 
@@ -30,7 +30,7 @@ layout: default
       <li>
         <a href="/fufu{{ molecule.url }}">{{ molecule.url | replace: '/molecules/', ''  | replace: '.html', '' }}</a>
       </li>
-    {% endfor %}      
+    {% endfor %}
     </ul>
   </div>
 
@@ -43,7 +43,7 @@ layout: default
       <li>
         <a href="/fufu{{ organism.url }}">{{ organism.url | replace: '/organisms/', ''  | replace: '.html', '' }}</a>
       </li>
-    {% endfor %}      
+    {% endfor %}
     </ul>
   </div>
 
@@ -55,8 +55,11 @@ layout: default
       <li>
         <a href="/fufu{{ ecosystem.url }}">{{ ecosystem.url  | replace: '/ecosystems/', ''  | replace: '.html', '' }}</a>
       </li>
-    {% endfor %}      
+    {% endfor %}
     </ul>
   </div>
 
+  <div class="footer" id="footer">
+    Thank you to the very generous people at <a href="https://www.browserstack.com">BrowserStack</a> for providing a free account for cross browser testing, since <a href="https://github.com/SteveBarnett/fufu">Fufu is Open Source</a>.
+  </div>
 </div>

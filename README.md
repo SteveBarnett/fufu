@@ -8,7 +8,7 @@ A future friendly front-end style guide that even caters for feature phones.
 
 ### HTML
 
-We've used an [atomic-design](http://bradfrost.com/blog/post/atomic-web-design/)-like pattern. It's a static site, generated with [Jekyll](http://jekyllrb.com/). The atoms, molecules, organisms, and ecosystems are [Jekyll collections](http://jekyllrb.com/docs/collections/), set in `_config.yml`. 
+We've used an [atomic-design](http://bradfrost.com/blog/post/atomic-web-design/)-like pattern. It's a static site, generated with [Jekyll](http://jekyllrb.com/). The atoms, molecules, organisms, and ecosystems are [Jekyll collections](http://jekyllrb.com/docs/collections/), set in `_config.yml`.
 
 ### CSS
 
@@ -32,7 +32,7 @@ The small bits of JavaScript in `<head>` of the document are minifed before incl
 
 ### Images
 
-Supplied by [placekitten.com](https://placekitten.com/). (^._.^)ﾉ
+Supplied by [placekitten.com](https://placekitten.com/). `(^._.^)ﾉ`
 
 ## Some problems
 
@@ -84,3 +84,7 @@ Everything else is moved to a separate `enhanced.css` file, and served using `<l
 Looking at the user base of the project that **fufu** was created for ([Universal Core](http://docs.unicore.io/)), the majority of devices run with a screen resolution of 240 pixels wide (or higher). We use images of 230 pixels wide (to allow for a little browser chrome) as our base.
 
 Images use in banners / headers have `width: 100%; height: auto;` applied to them, so that phones that support those rules (and have wider screens) will stretch the image.
+
+## Thanks
+
+Thank you to the very generous people at [BrowserStack](https://www.browserstack.com) for providing a free account for cross browser testing, since [Fufu is Open Source](https://github.com/SteveBarnett/fufu).
