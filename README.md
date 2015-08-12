@@ -24,7 +24,11 @@ eCSSential uses `matchMedia`, which means that some older browsers, notably Andr
 
 #### Aside: different heads for Jekyll
 
-Fufu comes with three choices for the `head` part of the [Jekyll](http://jekyllrb.com/) version of the site, so that you can choose the layout you need. The default is `_includes/head.html`, which uses eCSSential. `_includes/head-loadCSS.html` uses loadCSS instead. `_includes/head-idotorg.html` loads the CSS without any JavaScript; this is for situations where it's known that JavaScript is not available, such as sites on Facebook's [Internet.org platform](https://internet.org/).
+Fufu comes with three choices for the `head` part of the [Jekyll](http://jekyllrb.com/) version of the site, so that you can choose the layout you need.
+
+1. The default is `_includes/head.html`, which uses eCSSential.
+2. `_includes/head-loadCSS.html` uses loadCSS instead (but means that (greedy) browsers will download the stylesheet, even if the media query doesn't apply).
+3. `_includes/head-idotorg.html` loads the CSS without any JavaScript at all; this is for situations where it's known that JavaScript is not available, such as sites on Facebook's [Internet.org platform](https://internet.org/).
 
 We [cut the mustard](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard), checking for support of `querySelector`, `localStorage` and `addEventListener` before using [Filament Group's loadJS](https://github.com/filamentgroup/loadJS) to asynchronously load our minified JavaScript file and add a [Google Web Font](https://www.google.com/fonts). We use feature detection (like [Modernizr](http://modernizr.com/)) and not device detection.
 
