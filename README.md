@@ -34,10 +34,6 @@ We [cut the mustard](http://responsivenews.co.uk/post/18948466399/cutting-the-mu
 
 The small bits of JavaScript in `<head>` of the document are minifed before inclusion. The original files are in the `js` directory.
 
-### Images
-
-Supplied by [placekitten.com](https://placekitten.com/). `(^._.^)ﾉ`
-
 ## Some problems
 
 There's a short [Dos and Don't of Feature phone Design](http://stevebarnett.github.io/fufu/dos-and-donts.html) that covers some of the design side of things. Below are some of the technical details.
