@@ -96,15 +96,6 @@ html {
   outline: none;
 }
 
-html {
-  font-family: $font-family-sans-serif;
-  line-height: 1.25;
-}
-
-body {
-  @include no-m;
-}
-
 body {
   a {
     word-wrap: break-word;
@@ -113,11 +104,25 @@ body {
 
 // Typography
 
+html {
+  font-family: $font-family-sans-serif;
+  line-height: 1.25;
+  // Typography tweaks to make generic fonts display more like the WebFont
+}
+
 h1, h2, h3, h4 {
   margin-top: 0;
 }
 
+.wf-active {
+  // load the WebFont, adjust size, line-height, etc.
+}
+
 // layout
+
+body {
+  @include no-m;
+}
 
 .l-row {
   clear: both;
