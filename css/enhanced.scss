@@ -2,20 +2,26 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@media screen {
-  html {
-    background-color: #333;
-    max-width: 35em;
-    margin: 0 auto;
-    @media (min-device-width: 50em) {
-      max-width: 20em;
-    }
-  }
-
-  body {
-    background-color: #fff;
-  }  
-}
-
 @import "mixins";
 @import "variables";
+
+// Preferred typographic measure: 22-38em
+
+body {
+  @media (min-width: 40em) {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  @media (min-width: 55em) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  @media (min-width: 65em) {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  @media (min-width: 80em) {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+}
