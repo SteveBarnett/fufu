@@ -4,24 +4,3 @@
 
 @import "mixins";
 @import "variables";
-
-// Preferred typographic measure: 22-38em
-
-body {
-  @media (min-width: 40em) {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-  @media (min-width: 55em) {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-  @media (min-width: 65em) {
-    padding-left: 25%;
-    padding-right: 25%;
-  }
-  @media (min-width: 80em) {
-    padding-left: 30%;
-    padding-right: 30%;
-  }
-}
