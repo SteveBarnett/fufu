@@ -103,36 +103,6 @@ body {
   }
 }
 
-// Typography
-
-html {
-  font-family: $font-family-sans-serif;
-  line-height: 1.25;
-  // Typography tweaks to make generic fonts display more like the WebFont
-}
-
-.wf-active {
-  // load the WebFont, adjust size, line-height, etc.
-}
-
-h1, h2, h3, h4 {
-  margin-top: 0;
-}
-
-// Preferred measure: 22-38em
-// Use this on modules
-
-.main {
-  @media (min-width: 38em) {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-  @media (min-width: 64em) {
-    padding-left: 25%;
-    padding-right: 25%;
-  }
-}
-
 // layout
 
 body {
