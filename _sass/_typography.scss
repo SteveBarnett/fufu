@@ -95,3 +95,9 @@ blockquote {
       line-height: 1.45833333;
   }
 }
+
+// helper classes
+
+.uc {
+  @include uc;
+}

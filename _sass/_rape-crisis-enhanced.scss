@@ -1,0 +1,27 @@
+// Rape Crisis
+
+@include links($colorFirst);
+
+// dark turquoise on turquoise
+.highlight-primary {
+  background-color: $colorFirst;
+  color: $colorSecond;
+  a {
+    color: $colorSecond;
+  }
+  .active {
+    color: lighten($colorSecond, 10%)
+  }
+}
+
+// black on green
+.highlight-secondary {
+  background-color: $colorThird;
+  color: $colorFourth;
+  a {
+    color: $colorFourth;
+  }
+  .active {
+    color: lighten($colorFourth, 30%)
+  }
+}
