@@ -1,5 +1,5 @@
 # Site settings
-title: Fufu - a future friendly front-end style guide 
+title: Fufu - a future friendly front-end style guide
 description: > # this means to ignore newlines until "baseurl:"
   A future friendly front-end style guide that even caters for feature phones.
 baseurl: /fufu
@@ -19,4 +19,3 @@ collections:
 
 sass:
     style: :compressed
-    
