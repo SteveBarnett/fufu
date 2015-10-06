@@ -25,3 +25,56 @@
     color: lighten($colorFourth, 30%)
   }
 }
+
+// buttons
+
+.btn {
+  background-color: $colorFirst;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.16em;
+  display: inline-block;
+  padding: 0.5em 1.15em;
+  &:hover {
+    color: #fff;
+    background-color: lighten($colorFirst, 10%);
+  }
+}
+
+// buttons
+
+.btn-wide {
+  display: block;
+}
+
+.btn-secondary {
+  background-color: $colorSecond;
+  &:hover {
+    color: #fff;
+    background-color: lighten($colorSecond, 10%);
+  }
+}
+
+.btn-icon {
+  position: relative;
+  padding-left: 2em;
+}
+
+.btn-group-download {
+  @include l-tac;
+  .btn {
+    margin: 1em;
+    &:nth-child(2) {
+      background-color: #2db58a;
+      &:hover {
+        background-color: lighten(#2db58a, 10%);
+      }
+    }
+    &:nth-child(3) {
+      background-color: #00845c;
+      &:hover {
+        background-color: lighten(#2db58a, 10%);
+      }
+    }
+  }
+}

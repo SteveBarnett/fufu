@@ -6,35 +6,3 @@
 @import "mixins";
 @import "variables";
 @import "theme-rape-crisis-enhanced";
-
-// buttons
-
-.btn {
-  background-color: $colorFirst;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.16em;
-  display: inline-block;
-  padding: 0.5em 1.15em;
-  &:hover {
-    color: #fff;
-    background-color: lighten($colorFirst, 10%);
-  }
-}
-
-.btn-wide {
-  display: block;
-}
-
-.btn-secondary {
-  background-color: $colorSecond;
-  &:hover {
-    color: #fff;
-    background-color: lighten($colorSecond, 10%);
-  }
-}
-
-.btn-icon {
-  position: relative;
-  padding-left: 2em;
-}

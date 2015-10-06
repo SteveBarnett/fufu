@@ -1,0 +1,21 @@
+---
+layout: default
+fufu-theme: -rape-crisis
+---
+
+<div class="main">
+
+  <div class="sg-category">
+    {% for molecule in site.molecules %}
+      {% if molecule.name == 'btn-group-download' %}
+        <div class="sg-item">
+          <div class="sg-link">
+            <a href="/fufu{{ molecule.url }}">{{ molecule.url  | replace: '/molecules/', ''  | replace: '.html', '' }}</a> &darr;
+          </div>
+          {{ molecule.content }}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</div>
