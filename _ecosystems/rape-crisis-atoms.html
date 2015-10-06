@@ -7,7 +7,7 @@ fufu-theme: -rape-crisis
 
   <div class="sg-category">
     {% for atom in site.atoms %}
-      {% if atom.name == 'btn' or atom.name == 'btnwide'  or atom.name == 'btn-secondary' or atom.name == 'btnwide-secondary' or atom.name == 'paragraph' or atom.name == 'em' or atom.name == 'strong' or atom.name == 'link' or atom.name == 'headers' or atom.name == 'headers-uc' or atom.name == 'icon-facebook' or atom.name == 'icon-twitter' or atom.name == 'icon-pinterest' or atom.name == 'icon-youtube' or atom.name == 'image-circled' or atom.name == 'btn-arrow' %}
+      {% if atom.name == 'btn' or atom.name == 'btnwide'  or atom.name == 'btn-secondary' or atom.name == 'btnwide-secondary' or atom.name == 'paragraph' or atom.name == 'em' or atom.name == 'strong' or atom.name == 'link' or atom.name == 'headers' or atom.name == 'headers-uc' or atom.name == 'icon-facebook' or atom.name == 'icon-twitter' or atom.name == 'icon-pinterest' or atom.name == 'icon-youtube' or atom.name == 'image-circled' or atom.name == 'btn-arrow' or atom.name == 'panel-alt' %}
         <div class="sg-item">
           <div class="sg-link">
             <a href="/fufu{{ atom.url }}">{{ atom.url  | replace: '/atoms/', ''  | replace: '.html', '' }}</a> &darr;
