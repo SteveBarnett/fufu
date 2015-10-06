@@ -6,46 +6,16 @@ fufu-theme: -rape-crisis
 <div class="main">
 
   <div class="sg-category">
-    {{ site.atoms | where:"name","btn" }}
-  </div>
-  <div class="sg-category">
-    {{ site.atoms | where:"name","btnwide" }}
-  </div>
-  <div class="sg-category">
-    {{ site.atoms | where:"name","btn-secondary" }}
-  </div>
-  <div class="sg-category">
-    {{ site.atoms | where:"name","btnwide-secondary" }}
-  </div>
-  <div class="sg-category">
-    {{ site.atoms | where:"name","paragraph" }}
-  </div>
-  <div class="sg-category">
-    {{ site.atoms | where:"name","em" }}
-  </div>
-  <div class="sg-category">
-    {{ site.atoms | where:"name","strong" }}
-  </div>
-  <div class="sg-category">
-    {{ site.atoms | where:"name","link" }}
-  </div>
-  <div class="sg-category">
-    {{ site.atoms | where:"name","headers" }}
-  </div>
-  <div class="sg-category">
-    {{ site.atoms | where:"name","headers-uc" }}
-  </div>
-  <div class="sg-category">
-    {{ site.atoms | where:"name","icon-facebook" }}
-  </div>
-  <div class="sg-category">
-    {{ site.atoms | where:"name","icon-twitter" }}
-  </div>
-  <div class="sg-category">
-    {{ site.atoms | where:"name","icon-pinterest" }}
-  </div>
-  <div class="sg-category">
-    {{ site.atoms | where:"name","icon-youtube" }}
+    {% for atom in site.atoms %}
+      {% if atom.name == 'btn' or atom.name == 'btnwide'  or atom.name == 'btn-secondary' or atom.name == 'btnwide-secondary' or atom.name == 'paragraph' or atom.name == 'em' or atom.name == 'strong' or atom.name == 'link' or atom.name == 'headers' or atom.name == 'headers-uc' or atom.name == 'icon-facebook' or atom.name == 'icon-twitter' or atom.name == 'icon-pinterest' or atom.name == 'icon-youtube' %}
+        <div class="sg-item">
+          <div class="sg-link">
+            <a href="/fufu{{ atom.url }}">{{ atom.url  | replace: '/atoms/', ''  | replace: '.html', '' }}</a> &darr;
+          </div>
+          {{ atom.content }}
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
 
 </div>
