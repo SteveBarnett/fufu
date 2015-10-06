@@ -23,7 +23,12 @@
   overflow: hidden;
   height: 30px;
   width: 30px;
-  position: relative; 
+  position: relative;
+}
+
+.i-flex {
+  display: inline-block;
+  position: relative;
 }
 
 .i-comment {
@@ -115,4 +120,21 @@
   height: 20px;
   width: 20px;
   background-image: url(img/icon-back.png);
+}
+
+.i-arrow {
+  display: block;
+  &:before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0.7em;
+    left: 0.9em;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border: solid 0.5em transparent;
+    border-left-color: #fff;
+    border-radius: 0.2em;
+  }
 }
