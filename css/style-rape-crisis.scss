@@ -10,8 +10,4 @@
 @import "typography";
 @import "modules";
 @import "icons";
-
-.btn {
-  color: $colorFirst;
-  font-size: 1.16em;
-}
+@import "_theme-rape-crisis"
