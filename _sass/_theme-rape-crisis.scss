@@ -21,3 +21,9 @@ h4 {
   @include l-tac;
   padding: 0.5em;
 }
+
+.nav-social {
+  a {
+    display: inline-block;
+  }
+}
