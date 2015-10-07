@@ -1,8 +1,8 @@
 .i {
   display: inline-block;
   overflow: hidden;
-  height: 30px;
-  width: 30px;
+  height: 70px;
+  width: 70px;
   position: relative;
 }
 
@@ -16,30 +16,19 @@ Icon classes can be used entirely standalone. They are named after their origina
 .i-rape-crisis-facebook {
   background-image: url(img/rape-crisis/icons.png);
   background-position: 0px 0px;
-  width: 70px;
-  height: 70px;
 }
-.i-rape-crisis-icons {
-  background-image: url(img/rape-crisis/icons.png);
-  background-position: 0px -72px;
-  width: 70px;
-  height: 862px;
-}
+
 .i-rape-crisis-pinterest {
   background-image: url(img/rape-crisis/icons.png);
-  background-position: 0px -936px;
-  width: 70px;
-  height: 70px;
+  background-position: 0px -70px;
 }
+
 .i-rape-crisis-twitter {
   background-image: url(img/rape-crisis/icons.png);
-  background-position: 0px -1008px;
-  width: 70px;
-  height: 70px;
+  background-position: 0px -140px;
 }
+
 .i-rape-crisis-youtube {
   background-image: url(img/rape-crisis/icons.png);
-  background-position: 0px -1080px;
-  width: 70px;
-  height: 70px;
+  background-position: 0px -210px;
 }

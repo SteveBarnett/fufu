@@ -13,19 +13,19 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .i-rape-crisis-pinterest:before {
   background-image: url(img/rape-crisis/icons.png);
-  background-position: 0px -72px;
+  background-position: 0px -70px;
   width: 70px;
   height: 70px;
 }
 .i-rape-crisis-twitter:before {
   background-image: url(img/rape-crisis/icons.png);
-  background-position: 0px -144px;
+  background-position: 0px -140px;
   width: 70px;
   height: 70px;
 }
 .i-rape-crisis-youtube:before {
   background-image: url(img/rape-crisis/icons.png);
-  background-position: 0px -216px;
+  background-position: 0px -210px;
   width: 70px;
   height: 70px;
 }
