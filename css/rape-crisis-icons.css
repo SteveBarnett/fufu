@@ -1,0 +1,31 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<i class="icon-home"></i>
+```
+*/
+.i-rape-crisis-facebook:before {
+  background-image: url(img/rape-crisis/icons.png);
+  background-position: 0px 0px;
+  width: 70px;
+  height: 70px;
+}
+.i-rape-crisis-pinterest:before {
+  background-image: url(img/rape-crisis/icons.png);
+  background-position: 0px -72px;
+  width: 70px;
+  height: 70px;
+}
+.i-rape-crisis-twitter:before {
+  background-image: url(img/rape-crisis/icons.png);
+  background-position: 0px -144px;
+  width: 70px;
+  height: 70px;
+}
+.i-rape-crisis-youtube:before {
+  background-image: url(img/rape-crisis/icons.png);
+  background-position: 0px -216px;
+  width: 70px;
+  height: 70px;
+}
