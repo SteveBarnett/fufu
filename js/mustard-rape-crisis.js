@@ -3,7 +3,7 @@ if('querySelector' in document && 'localStorage' in window && 'addEventListener'
   loadJS( "/fufu/js/main.min.js" );
 
   WebFontConfig = {
-    google: { families: [ 'Source+Sans+Pro:400,700,400italic:latin' ] }
+    google: { families: [ 'Source+Sans+Pro:400,700:latin', 'Roboto+Condensed:300:latin' ] }
   };
   (function() {
     var wf = document.createElement('script');
