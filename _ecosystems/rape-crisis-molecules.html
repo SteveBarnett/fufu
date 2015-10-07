@@ -8,9 +8,9 @@ fufu-theme: -rape-crisis
   <div class="sg-category">
     {% for molecule in site.molecules %}
       {% if molecule.name == 'btn-group-download' or molecule.name == 'nav-social-rape-crisis' %}
-        <div class="sg-item">
+        <div class="sg-item" id="{{ molecule.name }}">
           <div class="sg-link">
-            <a href="/fufu{{ molecule.url }}">{{ molecule.url  | replace: '/molecules/', ''  | replace: '.html', '' }}</a> &darr;
+            <a href="#{{ molecule.name }}">{{ molecule.url  | replace: '/molecules/', ''  | replace: '.html', '' }}</a> &darr;
           </div>
           {{ molecule.content }}
         </div>
