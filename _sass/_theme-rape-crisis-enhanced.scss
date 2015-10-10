@@ -2,27 +2,21 @@
 
 @include links($colorFirst);
 
-// dark turquoise on turquoise
-.highlight-primary {
+.primary {
   background-color: $colorFirst;
-  color: $colorSecond;
-  a {
-    color: $colorSecond;
-  }
-  .active {
-    color: lighten($colorSecond, 10%)
+  color: #fff;
+  &:hover {
+    color: #fff;
+    background-color: lighten($colorFirst, 10%);
   }
 }
 
-// black on green
-.highlight-secondary {
-  background-color: $colorThird;
-  color: $colorFourth;
-  a {
-    color: $colorFourth;
-  }
-  .active {
-    color: lighten($colorFourth, 30%)
+.secondary {
+  background-color: $colorSecond;
+  color: #fff;
+  &:hover {
+    color: #fff;
+    background-color: lighten($colorSecond, 10%);
   }
 }
 

@@ -33,8 +33,30 @@ h4 {
   padding: 0.5em;
 }
 
+// typography
+
+.list-inline {
+  li {
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+  }
+}
+
+// nav
+
 .nav-social {
   a {
     display: inline-block;
+  }
+}
+
+
+.nav {
+  a {
+    padding: 1em;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
