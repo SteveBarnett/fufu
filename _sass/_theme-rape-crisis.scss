@@ -28,6 +28,9 @@ h4 {
 
 // panels
 
+.panel {
+  @include clearfix;
+}
 
 .panel-alt {
   padding: 0.5em;
@@ -40,6 +43,10 @@ h4 {
 .panel-item-team {
   font-size: 1.53em;
   line-height: 1.413;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border: solid 1px $colorThird;
+  border-radius: 0.1em;
   img {
     display: block;
     width: 50%;

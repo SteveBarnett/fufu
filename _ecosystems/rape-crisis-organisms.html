@@ -1,0 +1,21 @@
+---
+layout: default
+fufu-theme: -rape-crisis
+---
+
+<div class="main">
+
+  <div class="sg-category">
+    {% for organism in site.organisms %}
+      {% if organism.name == 'panel-team' %}
+        <div class="sg-item" id="{{ organism.name }}">
+          <div class="sg-link">
+            <a href="#{{ organism.name }}">{{ organism.url  | replace: '/organisms/', ''  | replace: '.html', '' }}</a> &darr;
+          </div>
+          {{ organism.content }}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</div>
