@@ -37,10 +37,9 @@ h4 {
 
 .panel {
   @include clearfix;
-}
-
-.panel-alt {
-  padding: 0.5em;
+  img {
+    margin-bottom: 2em;
+  }
 }
 
 .panel-item {

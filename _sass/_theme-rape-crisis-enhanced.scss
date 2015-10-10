@@ -148,9 +148,16 @@
 
 .panel-alt {
   @include bg-alt;
+  padding: 0.5em;
 }
 
 .panel-item-team {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.panel-inset {
+  margin: 1em;
+  padding: 2em;
 }
