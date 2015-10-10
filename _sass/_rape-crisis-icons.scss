@@ -6,6 +6,24 @@
   position: relative;
 }
 
+.i-arrow {
+  position: relative;
+  display: block;
+  &:before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0.2em;
+    left: -1.1em;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border: solid 0.5em transparent;
+    border-left-color: #fff;
+    border-radius: 0.2em;
+  }
+}
+
 /*
 Icon classes can be used entirely standalone. They are named after their original file names.
 
