@@ -7,7 +7,7 @@ fufu-theme: -rape-crisis
 
   <div class="sg-category">
     {% for molecule in site.molecules %}
-      {% if molecule.name == 'btn-group-download' or molecule.name == 'nav-social-rape-crisis' or molecule.name == 'list-inline-rape-crisis'  or molecule.name == 'nav-inline' or molecule.name == 'nav-main-rape-crisis' or molecule.name == 'list-ordered' or molecule.name == 'list-ordered-rape-crisis' or molecule.name == 'list-ordered-rape-crisis-alt' %}
+      {% if molecule.name == 'btn-group-download' or molecule.name == 'nav-social-rape-crisis' or molecule.name == 'list-inline-rape-crisis'  or molecule.name == 'nav-inline' or molecule.name == 'nav-main-rape-crisis' or molecule.name == 'list-ordered' or molecule.name == 'list-ordered-rape-crisis' or molecule.name == 'list-ordered-rape-crisis-alt' or molecule.name == 'panel' or molecule.name == 'panel-item-img' or molecule.name == 'panel-item-team' %}
         <div class="sg-item" id="{{ molecule.name }}">
           <div class="sg-link">
             <a href="#{{ molecule.name }}">{{ molecule.url  | replace: '/molecules/', ''  | replace: '.html', '' }}</a> &darr;

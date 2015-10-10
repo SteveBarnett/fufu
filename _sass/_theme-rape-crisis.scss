@@ -28,9 +28,31 @@ h4 {
 
 // panels
 
+
 .panel-alt {
-  @include l-tac;
   padding: 0.5em;
+}
+
+.panel-item {
+  @include l-tac;
+}
+
+.panel-item-team {
+  font-size: 1.53em;
+  line-height: 1.413;
+  img {
+    display: block;
+    width: 50%;
+    margin: 0 auto 2em auto;
+  }
+  h4, p {
+    margin-bottom: 0;
+  }
+  p:first-of-type {
+    color: $colorThird;
+    margin-top: 0;
+    font-size: 0.75em;
+  }
 }
 
 // typography
