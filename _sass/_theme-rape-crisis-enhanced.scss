@@ -73,6 +73,54 @@
   }
 }
 
+// lists
+
+.list-ordered-rape-crisis {
+  counter-reset: whattodo;
+  padding: 0;
+  list-style: none;
+  h4 {
+    padding-left: 3em;
+  }
+  li {
+    counter-increment: whattodo;
+    position: relative;
+    margin-bottom: 3em;
+    &:before {
+      position: absolute;
+      left: 0;
+      top: -0.5em;
+      content: counter(whattodo);
+      font-size: 1.53em;
+      line-height: 1.413;
+      background-color: $colorSecond;
+      color: #fff;
+      padding: 0.5em 1em;
+      border-radius: 50%;
+    }
+    &:nth-of-type(4n+1) {
+      &:before {
+        background-color: darken($colorSecond, 10%);
+      }
+    }
+    &:nth-of-type(4n+2) {
+      &:before {
+        background-color: $colorSecond;
+      }
+    }
+    &:nth-of-type(4n+3) {
+      &:before {
+        background-color: lighten($colorSecond, 10%);
+      }
+    }
+    &:nth-of-type(4n+4) {
+      &:before {
+        background-color: adjust-hue($colorSecond, 40%);
+      }
+    }
+  }
+}
+
 // panels
 
 .panel-alt {
