@@ -75,14 +75,10 @@
 
 // lists
 
-.list-ordered-rape-crisis {
+.list-ordered {
   counter-reset: whattodo;
   padding: 0;
   list-style: none;
-  h4 {
-    padding-left: 3em;
-    text-transform: uppercase;
-  }
   li {
     counter-increment: whattodo;
     position: relative;
@@ -94,6 +90,17 @@
       content: counter(whattodo);
       font-size: 1.53em;
       line-height: 1.413;
+    }
+  }
+}
+
+.list-ordered-rape-crisis {
+  h4 {
+    text-transform: uppercase;
+    padding-left: 3em;
+  }
+  li {
+    &:before {
       background-color: $colorSecond;
       color: #fff;
       padding: 0.5em 1em;
@@ -121,6 +128,22 @@
     }
   }
 }
+
+.list-ordered-rape-crisis-alt {
+  h4 {
+    padding-left: 2.5em;
+    margin-bottom: 0;
+  }
+  li {
+    &:before {
+      color: $colorSecond;
+      border: solid 2px $colorSecond;
+      border-radius: 0.25em;
+      padding: 0.25em 0.6em;
+    }
+  }
+}
+
 
 // panels
 
