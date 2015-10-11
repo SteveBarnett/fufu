@@ -19,6 +19,7 @@ h1, h2, h3, h4 {
 }
 
 .panel {
+  @include l-tac;
   > {
     h1, h2, h3, h4 {
         color: $colorFirst;
