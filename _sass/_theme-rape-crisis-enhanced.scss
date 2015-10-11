@@ -46,7 +46,7 @@ article {
             column-count: 2;
     -webkit-column-width: 20em;
        -moz-column-width: 20em;
-            column-width: 20em;    
+            column-width: 20em;
   }
 }
 
@@ -242,7 +242,8 @@ article {
   @include grid-4up-big-gutter;
 }
 
-.panel-org {
+.panel-org,
+.panel-what-to-do {
   .panel-item {
     @include grid-3up;
   }

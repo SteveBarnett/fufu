@@ -1,0 +1,21 @@
+---
+layout: default
+name: panel-what-to-do
+---
+
+<div class="panel panel-what-to-do">
+  <h2 class="uc">What To Do If<br />Someone Raped You</h2>
+  {{ site.atoms | where:"name","paragraph" }}
+
+  <div class="panel-item">
+    {{ site.molecules | where:"name","list-ordered-rape-crisis-part-1" }}
+  </div>
+  <div class="panel-item">
+    {{ site.atoms | where:"name","image" }}
+    {{ site.atoms | where:"name","paragraph" }}
+    {{ site.molecules | where:"name","btn-group-download" }}
+  </div>
+  <div class="panel-item">
+    {{ site.molecules | where:"name","list-ordered-rape-crisis-part-2" }}
+  </div>
+</div>
