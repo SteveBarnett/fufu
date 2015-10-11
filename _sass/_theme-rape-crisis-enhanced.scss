@@ -20,6 +20,25 @@
   }
 }
 
+// typography
+
+article {
+  line-height: 1.5;
+  &:first-letter {
+    @include one-letter-circle;
+    font-size: 1.5em;
+    display: inline-block;
+    float: left;
+    margin-right: 0.5em;
+  }
+}
+
+.article-alt {
+  &:first-letter {
+    background-color: $colorFirst;
+  }
+}
+
 // buttons
 
 .btn {
@@ -101,10 +120,7 @@
   }
   li {
     &:before {
-      background-color: $colorSecond;
-      color: #fff;
-      padding: 0.5em 1em;
-      border-radius: 50%;
+      @include one-letter-circle;
     }
     &:nth-of-type(4n+1) {
       &:before {
