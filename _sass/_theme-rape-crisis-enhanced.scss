@@ -158,8 +158,32 @@
 }
 
 .panel-inset {
+  @include bg-alt;
   margin: 1em;
   padding: 2em;
   border: solid 1px darken($colorFourth, 10%);
   border-radius: 0.25em;
+}
+
+.panel-donate {
+  img {
+    @media (min-width: 35em) {
+      float: left;
+      margin-right: 2em;
+    }
+  }
+  .btn {
+    @media (min-width: 60em) {
+      float: right;
+    }
+  }
+  .panel-donate-text {
+    @media (min-width: 60em) {
+      float: left;
+      width: 20em;
+    }
+    @media (min-width: 70em) {
+      width: 30em;
+    }
+  }
 }
