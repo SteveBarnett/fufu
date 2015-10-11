@@ -44,15 +44,12 @@ h4 {
 
 // panels
 
-.panel {
+.panel,
+.panel-l {
   @include clearfix;
   img {
     margin-bottom: 2em;
   }
-}
-
-.panel-item {
-  @include l-tac;
 }
 
 .panel-item-team {

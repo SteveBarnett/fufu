@@ -230,3 +230,9 @@ article {
   @include grid-2up-big-gutter;
   @include grid-4up-big-gutter;
 }
+
+.panel-org {
+  .panel-item {
+    @include grid-3up;
+  }
+}

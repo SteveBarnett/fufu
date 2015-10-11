@@ -1,0 +1,24 @@
+---
+layout: default
+name: panel-org
+---
+
+<div class="panel-l panel-org">
+  <div class="panel-item">
+    <h2>Trustees</h2>
+    {{ site.atoms | where:"name","paragraph" }}
+  </div>
+  <div class="panel-item">
+    <h2>Annual Reports</h2>
+    <ul>
+      <li><a href="#">Link to report</a></li>
+      <li><a href="#">Link to report</a></li>
+      <li><a href="#">Link to report</a></li>
+      <li><a href="#">Link to report</a></li>
+    </ul>
+  </div>
+  <div class="panel-item">
+    <h2>Certification</h2>
+    {{ site.atoms | where:"name","paragraph" }}
+  </div>
+</div>
