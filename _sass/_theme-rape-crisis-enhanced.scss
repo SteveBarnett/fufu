@@ -171,6 +171,26 @@ article {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
   margin-bottom: 1em;
+  @media (min-width: 30em) {
+    // &:nth-of-type(n) {
+      float: left;
+      width: 47%;
+    // }
+    &:nth-of-type(2n+1) {
+      margin-right: 6%;
+    }
+  }
+  @media (min-width: 60em) {
+    width: 23.5%;
+    &:nth-of-type(4n+1),
+    &:nth-of-type(4n+2),
+    &:nth-of-type(4n+3) {
+      margin-right: 2%;
+    }
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+  }
 }
 
 .panel-inset {

@@ -59,8 +59,8 @@ h4 {
   line-height: 1.413;
   padding-top: 1em;
   padding-bottom: 1em;
-  border: solid 1px $colorThird;
-  border-radius: 0.1em;
+  border: solid 1px darken($colorFourth, 10%);
+  border-radius: 0.25em;
   img {
     display: block;
     width: 50%;
