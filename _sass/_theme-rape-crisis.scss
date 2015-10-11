@@ -12,9 +12,17 @@ h1, h2, h3, h4 {
   font-weight: 300;
 }
 
-.panel, .panel-item {
+.panel-item {
   h1, h2, h3, h4 {
     margin-bottom: 0;
+  }
+}
+
+.panel {
+  > {
+    h1, h2, h3, h4 {
+        color: $colorFirst;
+    }
   }
 }
 
