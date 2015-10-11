@@ -68,6 +68,18 @@ article {
   }
 }
 
+.btn-tertiary {
+  background-color: $colorFourth;
+  color: $colorThird;
+  &:hover {
+    background-color: darken($colorFourth, 10%);
+    color: $colorThird;
+  }
+  .i-arrow:before {
+    border-left-color: $colorThird;
+  }
+}
+
 .btn-icon {
   position: relative;
   padding-left: 2em;
@@ -163,8 +175,14 @@ article {
 // panels
 
 .panel-alt {
-  @include bg-alt;
   padding: 0.5em;
+  @include bg-alt;
+}
+
+.panel-inv {
+  padding: 1em;
+  background: $colorFirst;
+  color: #fff;
 }
 
 .panel-inset {
