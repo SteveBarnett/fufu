@@ -7,7 +7,7 @@ fufu-theme: -rape-crisis
 
   <div class="sg-category">
     {% for atom in site.atoms %}
-      {% if atom.name == 'btn' or atom.name == 'btnwide'  or atom.name == 'btn-secondary' or atom.name == 'btnwide-secondary' or atom.name == 'paragraph' or atom.name == 'em' or atom.name == 'strong' or atom.name == 'link' or atom.name == 'headers' or atom.name == 'headers-uc' or atom.name == 'image-circled' or atom.name == 'btn-arrow' or atom.name == 'panel-alt' or atom.name == 'icon-rape-crisis-facebook' or atom.name == 'icon-rape-crisis-twitter' or atom.name == 'icon-rape-crisis-pinterest' or atom.name == 'icon-rape-crisis-youtube' %}
+      {% if atom.name == 'btn' or atom.name == 'btnwide'  or atom.name == 'btn-secondary' or atom.name == 'btnwide-secondary' or atom.name == 'paragraph' or atom.name == 'em' or atom.name == 'strong' or atom.name == 'link' or atom.name == 'headers' or atom.name == 'headers-uc' or atom.name == 'image-circled' or atom.name == 'btn-arrow' or atom.name == 'panel-alt' or atom.name == 'icon-rape-crisis-facebook' or atom.name == 'icon-rape-crisis-twitter' or atom.name == 'icon-rape-crisis-pinterest' or atom.name == 'icon-rape-crisis-youtube' or atom.name == 'icon-rape-crisis-email' or atom.name == 'icon-rape-crisis-location' or atom.name == 'icon-rape-crisis-phone' %}
         <div class="sg-item" id="{{ atom.name }}">
           <div class="sg-link">
             <a href="#{{ atom.name }}">{{ atom.url  | replace: '/atoms/', ''  | replace: '.html', '' }}</a> &darr;
