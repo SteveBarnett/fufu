@@ -55,6 +55,20 @@
 	}
 }
 
+// uses px to match icon size and padding
+.list-iconed {
+  @include no-bull;
+  padding-left: 40px;
+  li {
+    position: relative;
+    .i, .i-s {
+      position: absolute;
+      left: -40px;
+      top: 0;
+    }
+  }
+}
+
 .list-header {
 	@include no-m;
 	padding: 0.5em;

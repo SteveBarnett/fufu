@@ -78,6 +78,10 @@
   margin: 0;
 }
 
+@mixin no-p {
+  padding: 0;
+}
+
 @mixin no-mp {
   margin: 0;
   padding: 0;
