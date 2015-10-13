@@ -118,22 +118,26 @@ article {
 // lists
 
 .list-ordered {
-  counter-reset: whattodo;
+  counter-reset: fancyorderedlist;
   padding: 0;
   list-style: none;
   li {
-    counter-increment: whattodo;
+    counter-increment: fancyorderedlist;
     position: relative;
     margin-bottom: 3em;
     &:before {
       position: absolute;
       left: 0;
       top: -0.5em;
-      content: counter(whattodo);
+      content: counter(fancyorderedlist);
       font-size: 1.53em;
       line-height: 1.413;
     }
   }
+}
+
+.panel-what-to-do {
+  counter-reset: whattodo;
 }
 
 .list-ordered-rape-crisis {
@@ -142,7 +146,9 @@ article {
     padding-left: 3em;
   }
   li {
+    counter-increment: whattodo;
     &:before {
+      content: counter(whattodo);
       @include one-letter-circle;
     }
     &:nth-of-type(4n+1) {
