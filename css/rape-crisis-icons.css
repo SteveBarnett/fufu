@@ -8,42 +8,42 @@ Icon classes can be used entirely standalone. They are named after their origina
 .i-rape-crisis-email:before {
   background-image: url(img/rape-crisis/icons.png);
   background-position: 0px 0px;
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 25px;
 }
 .i-rape-crisis-facebook:before {
   background-image: url(img/rape-crisis/icons.png);
-  background-position: 0px -32px;
+  background-position: 0px -25px;
   width: 70px;
   height: 70px;
 }
 .i-rape-crisis-location:before {
   background-image: url(img/rape-crisis/icons.png);
-  background-position: 0px -102px;
-  width: 32px;
-  height: 32px;
+  background-position: 0px -95px;
+  width: 25px;
+  height: 25px;
 }
 .i-rape-crisis-phone:before {
   background-image: url(img/rape-crisis/icons.png);
-  background-position: 0px -134px;
-  width: 32px;
-  height: 32px;
+  background-position: 0px -120px;
+  width: 25px;
+  height: 25px;
 }
 .i-rape-crisis-pinterest:before {
   background-image: url(img/rape-crisis/icons.png);
-  background-position: 0px -166px;
+  background-position: 0px -145px;
   width: 70px;
   height: 70px;
 }
 .i-rape-crisis-twitter:before {
   background-image: url(img/rape-crisis/icons.png);
-  background-position: 0px -236px;
+  background-position: 0px -215px;
   width: 70px;
   height: 70px;
 }
 .i-rape-crisis-youtube:before {
   background-image: url(img/rape-crisis/icons.png);
-  background-position: 0px -306px;
+  background-position: 0px -285px;
   width: 70px;
   height: 70px;
 }
