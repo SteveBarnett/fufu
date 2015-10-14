@@ -31,7 +31,22 @@
       padding: 1em 0 2em 0;
       border-bottom: solid 2px #999;
     }
-    
+
+    .sg-item {
+      *zoom: 1;
+    }
+
+    .sg-item:before {
+      content: " ";
+      display: table;
+    }
+
+    .sg-item:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+
     .sg-link {
       padding: 0.5em 0.5em 0 0.5em;
       margin-bottom: 0.5em;

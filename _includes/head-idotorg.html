@@ -10,17 +10,32 @@
 
   <link rel="stylesheet" href="{{ site.baseurl }}/css/style{{ page.fufu-theme }}.css">
   <link rel="stylesheet" media="(min-width: 20em)" href="{{ site.baseurl }}/css/enhanced{{ page.fufu-theme }}.css">
-  
+
   <style>
     .sg-category {
       margin-bottom: 2em;
       padding: 1em 0 2em 0;
       border-bottom: solid 2px #999;
     }
-    
+
     .sg-category a {
       display: inline-block;
       padding: 0.25em 0;
+    }
+
+    .sg-item {
+      *zoom: 1;
+    }
+
+    .sg-item:before {
+      content: " ";
+      display: table;
+    }
+
+    .sg-item:after {
+      content: " ";
+      display: table;
+      clear: both;
     }
 
     .sg-link {
