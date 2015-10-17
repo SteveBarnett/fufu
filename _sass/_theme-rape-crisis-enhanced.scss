@@ -205,7 +205,7 @@ article {
 
 .panel-alt {
   padding: 0.5em;
-  @include bg-alt;
+  @background-color: $colorFourth;
 }
 
 .panel-inv {
@@ -214,8 +214,14 @@ article {
   color: #fff;
 }
 
+.panel-inv-alt {
+  padding: 1em;
+  background: $colorThird;
+  color: #fff;
+}
+
 .panel-inset {
-  @include bg-alt;
+  @background-color: $colorFourth;
   margin: 1em;
   padding: 2em;
   border: solid 1px darken($colorFourth, 10%);
