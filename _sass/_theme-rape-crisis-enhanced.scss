@@ -223,6 +223,7 @@ article {
   display: block;
   position: relative;
   line-height: 2;
+  @include uc;
   &:after {
     content: "+";
     position: absolute;
