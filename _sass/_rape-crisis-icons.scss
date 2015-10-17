@@ -23,6 +23,23 @@
   }
 }
 
+.i-arrow-up {
+  position: relative;
+  display: block;
+  &:before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -1.5em;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border: solid 0.5em transparent;
+    border-bottom-color: #fff;
+    border-radius: 0.2em;
+  }
+}
 
 // Classes from the generated rape-crisis-icons.css, using the .spritesmith.js
 // We remove the :before since were using them inline

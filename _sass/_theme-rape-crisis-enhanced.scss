@@ -91,6 +91,18 @@ article {
   }
 }
 
+.btn-quarternary {
+  background-color: $colorThird;
+  color: #fff;
+  &:hover {
+    background-color: darken($colorThird, 10%);
+    color: #fff;
+  }
+  .i-arrow:before {
+    border-left-color: #fff;
+  }
+}
+
 .btn-icon {
   position: relative;
   padding-left: 2em;
