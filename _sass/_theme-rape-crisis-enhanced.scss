@@ -201,11 +201,41 @@ article {
 }
 
 .list-accordion-rape-crisis {
-  // :not(:target)[id] {
-  //   .list-accordion-item {
-  //     display: none;
-  //   }
-  // }
+  li {
+    padding: 0.5em 0;
+    border-bottom: solid 1px lighten($colorThird, 20%);
+    &:first-child {
+      border-top: solid 1px lighten($colorThird, 20%);
+    }
+  }
+  :target[id] {
+    .list-accordion-header {
+      &:after {
+        content: "-";
+        background-color: $colorFirst;
+        padding: 0 0.4em 0.125em 0.4em;
+      }
+    }
+  }
+}
+
+.list-accordion-header {
+  display: block;
+  position: relative;
+  line-height: 2;
+  &:after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $colorSecond;
+    color: #fff;
+    padding: 0.1em 0.3em;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1;
+  }
 }
 
 // panels

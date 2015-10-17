@@ -27,6 +27,7 @@
 
 .list-plain {
 	@include no-bull;
+  @include no-p;
 	* {
 		@include no-bull;
 	}
@@ -78,6 +79,14 @@
 	a {
 		text-decoration: none;
 	}
+}
+
+.list-accordion {
+  :not(:target)[id] {
+    .list-accordion-item {
+      display: none;
+    }
+  }
 }
 
 .header-centered {
