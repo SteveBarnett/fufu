@@ -375,8 +375,9 @@ article {
 
 .panel-org,
 .panel-what-to-do,
-.panel-the-road {
-  .panel-item {
+.panel-the-road,
+.panel-other-ways {
+  .panel-item, .panel-item-alt {
     @include grid-3up;
   }
 }
