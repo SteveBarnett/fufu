@@ -53,13 +53,16 @@ h4 {
   }
 }
 
+.panel-item-alt {
+  padding: 1em;
+  border: solid 1px darken($colorFourth, 10%);
+  border-radius: 0.25em;
+  // box-shadow: ?
+}
+
 .panel-item-team {
   font-size: 1.53em;
   line-height: 1.413;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  border: solid 1px darken($colorFourth, 10%);
-  border-radius: 0.25em;
   img {
     display: block;
     width: 50%;
@@ -72,6 +75,18 @@ h4 {
     color: $colorThird;
     margin-top: 0;
     font-size: 0.75em;
+  }
+}
+
+.panel-item-other-ways {
+  i, h4 {
+    float: left;
+  }
+  i {
+    margin: 0 2em 2em 0;
+  }
+  p {
+    clear: left;
   }
 }
 
