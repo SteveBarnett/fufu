@@ -241,14 +241,33 @@ article {
 }
 
 .list-tabs {
+  // background-color: black; // !!!
   a {
-    background-color: white;
+    padding: 1em;
     color: $colorSecond;
     text-decoration: none;
     text-transform: uppercase;
     border-top-left-radius: 0.25em;
     border-top-right-radius: 0.25em;
-    border-bottom: solid 1px lighten($colorThird, 40%);
+  }
+  .tab-selected {
+    a {
+      background-color: white;
+      position: relative;
+      &:after {
+        display: block;
+        position: absolute;
+        content: "";
+        left: 45%;
+        bottom: -0.25em;
+        width: 0;
+        height: 0;
+        background-color: transparent;
+        border: solid 0.5em transparent;
+        border-top-color: $colorSecond;
+        border-radius: 0.2em;
+      }
+    }
   }
 }
 
