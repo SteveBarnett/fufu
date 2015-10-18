@@ -240,6 +240,22 @@ article {
   }
 }
 
+.list-tabs {
+  a {
+    background-color: white;
+    color: $colorSecond;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    border-bottom: solid 1px lighten($colorThird, 40%);
+  }
+}
+
+.list-tab-item {
+  padding: 1em;
+}
+
 // panels
 
 .panel-alt {
