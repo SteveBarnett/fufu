@@ -21,6 +21,7 @@ h1, h2, h3, h4 {
 .panel {
   @include l-tac;
   @include clearfix;
+  margin: 2em 0;
   &:first-child {
     h1, h2, h3, h4 {
         color: $colorFirst;

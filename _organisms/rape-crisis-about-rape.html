@@ -1,0 +1,29 @@
+---
+layout: default
+fufu-theme: -rape-crisis
+---
+
+<div class="main">
+
+{{ site.atoms | where:"name","panel-alt" }}
+<!-- nav -->
+<!-- not a carousel -->
+
+{{ site.organism | where:"name","panel-stats" }}
+{{ site.organism | where:"name","panel-article" }}
+{{ site.organism | where:"name","panel-alt" }}
+
+<!-- article with sidebar -->
+{{ site.molecules | where:"name","article" }}
+
+{{ site.molecules | where:"name","list-accordion" }}
+<!-- banner img -->
+
+{{ site.molecules | where:"name","donate-rape-crisis" }}
+
+<!-- find us footer -->
+{{ site.molecules | where:"name","nav-social-rape-crisis" }}
+<!-- maps -->
+{{ site.molecules | where:"name","list-tabs" }}
+<!-- panel footer -->
+</div>
