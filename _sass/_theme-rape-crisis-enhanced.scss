@@ -254,18 +254,20 @@ article {
     a {
       background-color: white;
       position: relative;
-      &:after {
-        display: block;
-        position: absolute;
-        content: "";
-        left: 45%;
-        bottom: -0.25em;
-        width: 0;
-        height: 0;
-        background-color: transparent;
-        border: solid 0.5em transparent;
-        border-top-color: $colorSecond;
-        border-radius: 0.2em;
+      @media (min-width: 40em) {
+        &:after {
+          display: block;
+          position: absolute;
+          content: "";
+          left: 45%;
+          bottom: -0.25em;
+          width: 0;
+          height: 0;
+          background-color: transparent;
+          border: solid 0.5em transparent;
+          border-top-color: $colorSecond;
+          border-radius: 0.2em;
+        }
       }
     }
   }
