@@ -89,6 +89,28 @@
   }
 }
 
+.list-tabs {
+  @include no-mp;
+  @include no-bull;
+  > li {
+    display: block;
+    clear: both;
+    @media (min-width: 40em) {
+      display: inline-block;
+    }
+  }
+  a {
+    padding: 0.5em 1em;
+    @include l-db;
+  }
+}
+
+.list-tab-item {
+  &:not(:target) {
+      display: none;
+    }
+}
+
 .header-centered {
 	@include l-tac;
 }
