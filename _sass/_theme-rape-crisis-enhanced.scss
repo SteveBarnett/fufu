@@ -241,19 +241,42 @@ article {
 }
 
 .list-tabs {
-  // background-color: black; // !!!
+  background-color: black; // !!!
+  border-bottom: solid 1px lighten($colorThird, 40%);
   a {
     padding: 1em;
-    color: $colorSecond;
+    color: $colorThird;
+    background-color: $colorFourth;
     text-decoration: none;
     text-transform: uppercase;
     border-top-left-radius: 0.25em;
     border-top-right-radius: 0.25em;
   }
   .tab-selected {
+    position: relative;
+    &:after {
+      content: "";
+      border-bottom: solid 1px white;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+    }
+    a {
+      color: $colorSecond;
+      background-color: white;
+    }
+  }
+}
+
+.list-tabs-alt {
+  a {
+    color: $colorSecond;
+    background-color: transparent;
+  }
+  .tab-selected {
     a {
       background-color: white;
-      position: relative;
       @media (min-width: 40em) {
         &:after {
           display: block;
