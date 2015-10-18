@@ -229,6 +229,7 @@ article {
   display: block;
   position: relative;
   line-height: 2;
+  padding-right: 2em;
   @include uc;
   &:after {
     content: "+";
@@ -308,11 +309,13 @@ article {
 // panels
 
 .panel-alt {
+  @include clearfix;
   padding: 0.5em;
-  @background-color: $colorFourth;
+  background-color: $colorFourth;
 }
 
 .panel-inv {
+  @include clearfix;
   padding: 1em;
   background: $colorFirst;
   color: #fff;
@@ -371,7 +374,8 @@ article {
 }
 
 .panel-org,
-.panel-what-to-do {
+.panel-what-to-do,
+.panel-the-road {
   .panel-item {
     @include grid-3up;
   }
@@ -387,5 +391,19 @@ article {
     padding-left: 50%;
     background: transparent url(/fufu/img/ceiling-cat-400.jpg) left top no-repeat;
     background-size: 45%;
+  }
+}
+
+.panel-the-road {
+  text-align: center;
+  .panel-item {
+    padding: 1em;
+  }
+  .panel-item:nth-child(even) {
+    background-color: #e1edf0;
+  }
+  h4 {
+    font-size: 1.5em;
+    margin: 1em 0;
   }
 }
