@@ -310,3 +310,12 @@ article {
     @include grid-3up;
   }
 }
+
+.panel-article {
+  @media (min-width: 38em) {
+    padding-left: 40%;
+  }
+  @media (min-width: 64em) {
+    padding-left: 50%;
+  }
+}
