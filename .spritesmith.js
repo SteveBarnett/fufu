@@ -3,8 +3,8 @@
 var util = require('util');
 
 module.exports = {
-  src: './css/img/rape-crisis/*.{png,gif,jpg}',
-  destImage: './css/img/rape-crisis/icons.png',
+  src: './css/img/rape-crisis/icons/*.{png,gif,jpg}',
+  destImage: './css/img/rape-crisis/icons/icons.png',
   destCSS: './css/rape-crisis-icons.css',
   padding: 0,
   algorithm: 'top-down',
