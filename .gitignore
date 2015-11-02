@@ -3,3 +3,5 @@ _site/
 node_modules/
 .jekyll-metadata
 gulpfile.js
+Gemfile
+Gemfile.lock
