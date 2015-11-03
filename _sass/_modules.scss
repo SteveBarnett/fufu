@@ -71,6 +71,22 @@
   }
 }
 
+// uses px to match img size and padding
+.list-imaged {
+  @include no-bull;
+  padding-left: 85px;
+  li {
+    position: relative;
+    margin-bottom: 1em;
+    min-height: 85px;
+    img {
+      position: absolute;
+      left: -85px;
+      top: 0;
+    }
+  }
+}
+
 .list-header {
 	@include no-m;
 	padding: 0.5em;
