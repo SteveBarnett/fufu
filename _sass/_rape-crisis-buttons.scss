@@ -1,0 +1,76 @@
+// buttons
+
+.btn {
+  background-color: $colorFirst;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.16em;
+  display: inline-block;
+  padding: 0.5em 1.15em;
+  &:hover {
+    color: #fff;
+    background-color: lighten($colorFirst, 10%);
+  }
+}
+
+// buttons
+
+.btn-wide {
+  display: block;
+}
+
+.btn-secondary {
+  background-color: $colorSecond;
+  &:hover {
+    color: #fff;
+    background-color: lighten($colorSecond, 10%);
+  }
+}
+
+.btn-tertiary {
+  background-color: $colorFourth;
+  color: $colorThird;
+  &:hover {
+    background-color: darken($colorFourth, 10%);
+    color: $colorThird;
+  }
+  .i-arrow:before {
+    border-left-color: $colorThird;
+  }
+}
+
+.btn-quarternary {
+  background-color: $colorThird;
+  color: #fff;
+  &:hover {
+    background-color: darken($colorThird, 10%);
+    color: #fff;
+  }
+  .i-arrow:before {
+    border-left-color: #fff;
+  }
+}
+
+.btn-icon {
+  position: relative;
+  padding-left: 2em;
+}
+
+.btn-group-download {
+  @include l-tac;
+  .btn {
+    margin: 1em;
+    &:nth-child(2) {
+      background-color: #2db58a;
+      &:hover {
+        background-color: lighten(#2db58a, 10%);
+      }
+    }
+    &:nth-child(3) {
+      background-color: #00845c;
+      &:hover {
+        background-color: lighten(#2db58a, 10%);
+      }
+    }
+  }
+}

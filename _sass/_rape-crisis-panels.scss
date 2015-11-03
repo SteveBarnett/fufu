@@ -1,0 +1,134 @@
+// panels
+
+.panel-alt {
+  @include clearfix;
+  padding: 0.5em;
+  background-color: $colorFourth;
+}
+
+.panel-inv {
+  @include clearfix;
+  padding: 1em;
+  background: $colorFirst;
+  color: #fff;
+}
+
+.panel-inv-alt {
+  padding: 1em;
+  background: $colorThird;
+  color: #fff;
+}
+
+.panel-inset {
+  @background-color: $colorFourth;
+  margin: 1em;
+  padding: 2em;
+  border: solid 1px darken($colorFourth, 10%);
+  border-radius: 0.25em;
+}
+
+.panel-donate {
+  img {
+    @media (min-width: 35em) {
+      float: left;
+      margin-right: 2em;
+    }
+  }
+  .btn {
+    @media (min-width: 60em) {
+      float: right;
+    }
+  }
+  .panel-donate-text {
+    @media (min-width: 60em) {
+      float: left;
+      width: 20em;
+    }
+    @media (min-width: 70em) {
+      width: 30em;
+    }
+  }
+}
+
+.panel-stats {
+  .panel-item {
+    @include grid-2up-big-gutter;
+    @include grid-4up-big-gutter;
+  }
+}
+
+.panel-item-team {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  margin-bottom: 1em;
+  @include grid-2up-big-gutter;
+  @include grid-4up-big-gutter;
+}
+
+.panel-org,
+.panel-what-to-do,
+.panel-the-road,
+.panel-other-ways {
+  .panel-item, .panel-item-alt {
+    @include grid-3up;
+  }
+}
+
+.panel-the-road {
+  img {
+      @media (min-width: 30em) {
+        width: 50%;
+      }
+      @media (min-width: 45em) {
+        width: 100%;
+      }
+  }
+}
+
+.panel-article {
+  @media (min-width: 38em) {
+    padding-left: 40%;
+    background: transparent url(/fufu/img/ceiling-cat-200.jpg) left top no-repeat;
+    background-size: 35%;
+  }
+  @media (min-width: 64em) {
+    padding-left: 50%;
+    background: transparent url(/fufu/img/ceiling-cat-400.jpg) left top no-repeat;
+    background-size: 45%;
+  }
+}
+
+.panel-article-alt {
+  text-align: left;
+  @media (min-width: 45em) {
+    .panel-item {
+      float: left;
+      &:nth-child(1) {
+        width: 62%;
+        margin-right: 3%;
+      }
+      &:nth-child(2) {
+        width: 31%;
+      }
+    }
+  }
+}
+
+.article-extra {
+  margin-bottom: 2em;
+  border-radius: 0.25em;
+}
+
+.panel-the-road {
+  text-align: center;
+  .panel-item {
+    padding: 1em;
+  }
+  .panel-item:nth-child(even) {
+    background-color: #e1edf0;
+  }
+  h4 {
+    font-size: 1.5em;
+    margin: 1em 0;
+  }
+}
