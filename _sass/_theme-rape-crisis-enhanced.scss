@@ -395,6 +395,27 @@ article {
   }
 }
 
+.panel-article-alt {
+  text-align: left;
+  @media (min-width: 45em) {
+    .panel-item {
+      float: left;
+      &:nth-child(1) {
+        width: 62%;
+        margin-right: 3%;
+      }
+      &:nth-child(2) {
+        width: 31%;
+      }
+    }
+  }
+}
+
+.article-extra {
+  margin-bottom: 2em;
+  border-radius: 0.25em;
+}
+
 .panel-the-road {
   text-align: center;
   .panel-item {
