@@ -24,6 +24,20 @@
   color: #fff;
 }
 
+.panel-footer {
+  @include clearfix;
+  padding: 1em;
+  background: darken($colorSecond, 20%);
+  color: #fff;
+  a {
+    text-decoration: none;
+    color: lighten($colorSecond, 30%);
+    &:visited {
+      color: $colorSecond;
+    }
+  }
+}
+
 .panel-inset {
   @background-color: $colorFourth;
   margin: 1em;
@@ -142,5 +156,14 @@
   h4 {
     font-size: 1.5em;
     margin: 1em 0;
+  }
+}
+
+.panel-footer {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  .panel-item {
+    @include grid-2up-big-gutter;
+    @include grid-4up-big-gutter;
   }
 }

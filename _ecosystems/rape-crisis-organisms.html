@@ -7,7 +7,7 @@ fufu-theme: -rape-crisis
 
   <div class="sg-category">
     {% for organism in site.organisms %}
-      {% if organism.name == 'panel-team' or organism.name == "panel-stats" or organism.name == "panel-org" or organism.name == "panel-what-to-do" or organism.name == "panel-article" or organism.name == "panel-other-ways" or organism.name == "panel-article-alt" %}
+      {% if organism.name == 'panel-team' or organism.name == "panel-stats" or organism.name == "panel-org" or organism.name == "panel-what-to-do" or organism.name == "panel-article" or organism.name == "panel-other-ways" or organism.name == "panel-article-alt" or organism.name == "footer-rape-crisis" %}
         <div class="sg-item" id="{{ organism.name }}">
           <div class="sg-link">
             <a href="#{{ organism.name }}">{{ organism.url  | replace: '/organisms/', ''  | replace: '.html', '' }}</a> &darr;
