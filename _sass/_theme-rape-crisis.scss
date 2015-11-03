@@ -57,7 +57,19 @@ h4 {
   padding: 1em;
   border: solid 1px darken($colorFourth, 10%);
   border-radius: 0.25em;
-  // box-shadow: ?
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border: solid 0.1em darken($colorFourth, 20%);
+    right: 0;
+    bottom: -0.2em;
+    left: 0;
+    border-bottom-right-radius: 0.25em;
+    border-bottom-left-radius: 0.25em;
+    opacity: 0.25;
+  }
 }
 
 .panel-item-team {

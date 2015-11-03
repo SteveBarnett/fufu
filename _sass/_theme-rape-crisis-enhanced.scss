@@ -2,6 +2,10 @@
 
 @include links($colorFirst);
 
+.main {
+  padding: 0;
+}
+
 .primary {
   background-color: $colorFirst;
   color: #fff;
