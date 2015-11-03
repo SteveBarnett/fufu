@@ -1,5 +1,9 @@
 // panels
 
+.panel {
+  @include clearfix;
+}
+
 .panel-alt {
   @include clearfix;
   padding: 0.5em;
@@ -14,6 +18,7 @@
 }
 
 .panel-inv-alt {
+  @include clearfix;
   padding: 1em;
   background: $colorThird;
   color: #fff;
