@@ -231,6 +231,14 @@ article {
   line-height: 2;
   padding-right: 2em;
   @include uc;
+  text-decoration: none;
+  color: $colorSecond;
+  &:visited {
+    color: $colorSecond;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
   &:after {
     content: "+";
     position: absolute;
@@ -379,6 +387,17 @@ article {
 .panel-other-ways {
   .panel-item, .panel-item-alt {
     @include grid-3up;
+  }
+}
+
+.panel-the-road {
+  img {
+      @media (min-width: 30em) {
+        width: 50%;
+      }
+      @media (min-width: 45em) {
+        width: 100%;
+      }
   }
 }
 
