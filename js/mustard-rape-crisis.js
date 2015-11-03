@@ -1,6 +1,6 @@
 // For info only. Minified version is used in the head of the doc.
-if('querySelector' in document && 'localStorage' in window && 'addEventListener' in window) {
-  loadJS( "/fufu/js/main.min.js" );
+if('querySelector' in document && 'addEventListener' in window) {
+  loadJS( "/fufu/js/main-rape-crisis.min.js" );
 
   WebFontConfig = {
     google: { families: [ 'Source+Sans+Pro:400,700:latin', 'Roboto+Condensed:300:latin' ] }
