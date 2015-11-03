@@ -79,6 +79,13 @@
   }
 }
 
+.panel-org {
+  text-align: left;
+  a {
+    color: $colorSecond;
+  }
+}
+
 .panel-the-road {
   img {
       @media (min-width: 30em) {

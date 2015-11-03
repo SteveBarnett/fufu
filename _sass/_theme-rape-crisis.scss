@@ -46,8 +46,7 @@ h4 {
 
 // panels
 
-.panel,
-.panel-l {
+.panel {
   @include clearfix;
   img {
     margin-bottom: 2em;
