@@ -27,7 +27,8 @@
 .panel-footer {
   @include clearfix;
   padding: 1em;
-  background: darken($colorSecond, 20%);
+  background: darken($colorSecond, 20%) url(img/footer-bg.jpg) 0 0 repeat;
+  background-size: cover;
   color: #fff;
   a {
     text-decoration: none;
