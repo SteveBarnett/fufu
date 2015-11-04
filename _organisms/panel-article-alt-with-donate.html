@@ -1,0 +1,22 @@
+---
+layout: default
+name: panel-article-alt-with-donate
+fufu-theme: -rape-crisis
+---
+
+<div class="panel panel-article-alt">
+  <article class="panel-item article">
+    {{ site.atoms | where:"name","paragraph" }}
+    {{ site.atoms | where:"name","paragraph" }}
+    {{ site.molecules | where:"name","donate-rape-crisis" }}
+  </article>
+  <div class="panel-item">
+    <div class="panel-alt article-extra">
+      {{ site.atoms | where:"name","paragraph" }}
+    </div>
+    <div class="panel-inv article-extra">
+      {{ site.atoms | where:"name","paragraph" }}
+      {{ site.atoms | where:"name","btn-secondary" }}
+    </div>
+  </div>
+</div>

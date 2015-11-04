@@ -30,6 +30,12 @@ input, textarea, keygen, select, button {
   }
 }
 
+.main {
+  .panel:first-child {
+    margin-top: 0;
+  }
+}
+
 h2 {
   font-size: 2.5em;
   line-height: 1.417;
@@ -103,6 +109,9 @@ h4 {
 // nav
 
 .nav-social {
+  @media(min-width: 35em) {
+    float: right;
+  }
   a {
     display: inline-block;
   }
@@ -121,4 +130,5 @@ h4 {
 
 .nav-main {
   text-align: right;
+  padding: 1em;
 }

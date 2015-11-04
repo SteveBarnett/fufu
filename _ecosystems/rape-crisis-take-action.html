@@ -11,14 +11,12 @@ fufu-theme: -rape-crisis
 
 <!-- not a carousel -->
 
-<!-- article with sidebar -->
-{{ site.molecules | where:"name","article" }}
+{{ site.organisms | where:"name","panel-article-alt-with-donate" }}
+<!-- TODO: volunteer panel -->
+{{ site.organisms | where:"name","panel-article" }}
+{{ site.organisms | where:"name","panel-other-ways" }}
 
-
-
-<!-- find us footer -->
-{{ site.molecules | where:"name","nav-social-rape-crisis" }}
-<!-- maps -->
-{{ site.molecules | where:"name","list-tabs" }}
+{{ site.organisms | where:"name","footer-rape-crisis-find-us" }}
 {{ site.organisms | where:"name","footer-rape-crisis" }}
+{{ site.molecules | where:"name","panel-inv-alt" }}
 </div>

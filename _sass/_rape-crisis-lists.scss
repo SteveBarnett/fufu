@@ -125,6 +125,7 @@
 }
 
 .list-tabs {
+  clear: both;
   background-color: black; // !!!
   border-bottom: solid 1px lighten($colorThird, 40%);
   a {

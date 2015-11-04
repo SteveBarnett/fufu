@@ -6,19 +6,19 @@ fufu-theme: -rape-crisis
 <div class="main">
 
 {{ site.atoms | where:"name","panel-alt" }}
-<!-- nav -->
 {{ site.molecules | where:"name","nav-main-rape-crisis" }}
+{{ site.molecules | where:"name","hero-take-action-rape-crisis" }}
 
 <!-- not a carousel -->
-{{ site.organisms | where:"name","panel-article" }}
+
+{{ site.organisms | where:"name","panel-article-alt-with-donate" }}
 {{ site.organisms | where:"name","panel-what-to-do" }}
 {{ site.organisms | where:"name","panel-article" }}
-<!-- imag banner -->
-<!-- preventing rape -->
+<!-- TODO: facts banner -->
+{{ site.organisms | where:"name","panel-preventing-rape" }}
 {{ site.molecules | where:"name","donate-rape-crisis" }}
-<!-- find us footer -->
-{{ site.molecules | where:"name","nav-social-rape-crisis" }}
-<!-- maps -->
-{{ site.molecules | where:"name","list-tabs" }}
+
+{{ site.organisms | where:"name","footer-rape-crisis-find-us" }}
 {{ site.organisms | where:"name","footer-rape-crisis" }}
+{{ site.molecules | where:"name","panel-inv-alt" }}
 </div>

@@ -2,6 +2,7 @@
 
 .panel-alt {
   @include clearfix;
+  text-align: center;
   padding: 2em;
   background-color: $colorFourth;
 }
@@ -16,7 +17,7 @@
 .panel-inv-alt {
   @include clearfix;
   padding: 1em;
-  background: $colorThird;
+  background: #000;
   color: #fff;
 }
 
@@ -150,8 +151,10 @@
 
 .panel-the-road {
   text-align: center;
+  padding: 0;
   .panel-item {
     padding: 1em;
+    background-color: $colorFourth;
   }
   .panel-item:nth-child(even) {
     background-color: #e1edf0;
@@ -165,6 +168,13 @@
 .panel-footer {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
+  .panel-item {
+    @include grid-2up-big-gutter;
+    @include grid-4up-big-gutter;
+  }
+}
+
+.panel-preventing-rape {
   .panel-item {
     @include grid-2up-big-gutter;
     @include grid-4up-big-gutter;
