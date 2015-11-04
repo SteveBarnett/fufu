@@ -1,9 +1,5 @@
 // panels
 
-.panel {
-  @include clearfix;
-}
-
 .panel-alt {
   @include clearfix;
   padding: 2em;
@@ -71,6 +67,12 @@
 }
 
 .panel-stats {
+  text-align: center;
+  margin: 2em 0;
+  background: $colorThird url(img/rape-crisis/panel-stats-bg.jpg) 0 0 repeat;
+  background-size: cover;
+  color: lighten($colorThird, 40%);
+  padding: 2em 0;
   .panel-item {
     @include grid-2up-big-gutter;
     @include grid-4up-big-gutter;
