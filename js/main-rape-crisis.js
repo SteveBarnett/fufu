@@ -137,4 +137,24 @@ var fufu = (function () {
     });
   }
 
+  // maps in iframes, only for biggish screens, matchMedia to tabs
+  if('matchMedia' in window) {
+    if (window.matchMedia("(min-width: 40em)").matches) {
+      var mapLinks,
+      numMaps,
+      iframeDataSrc;
+
+      mapLinks = docEl.querySelectorAll('.map-link');
+      numMaps = mapLinks.length;
+      for (var k = 0; k < numMaps; k++) {
+        iframeDataSrc = mapLinks[k].getAttribute('data-iframe-src');
+
+        mapLinks[k].insertAdjacentHTML('beforebegin', '<iframe class="map-iframe"  frameborder="0" src="' + iframeDataSrc + '"></iframe>');
+        mapLinks[k].parentNode.removeChild(mapLinks[k]);
+      }
+
+    }
+  }
+
+
 }(window, window.document));
