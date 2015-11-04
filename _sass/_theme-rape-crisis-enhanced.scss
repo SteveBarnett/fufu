@@ -54,6 +54,21 @@ article {
   }
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  tr {
+    border: solid 1px darken($colorFourth, 20%);
+  }
+  td, th {
+    padding: 0.5em 1em;
+    border-left: solid 1px darken($colorFourth, 20%);
+    &:last-child {
+      border-right: solid 1px darken($colorFourth, 20%);
+    }
+  }
+}
+
 @import "rape-crisis-buttons";
 @import "rape-crisis-lists";
 @import "rape-crisis-panels";
