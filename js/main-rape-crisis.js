@@ -95,8 +95,11 @@ var fufu = (function () {
   numListTabs,
   targetTab,
   targetTabList,
+  targetTabItem,
   targetTabItems,
   numTargetTabItems;
+
+  // tabs
 
   // grab all the elements we need
   docEl  = document.documentElement;
@@ -108,13 +111,12 @@ var fufu = (function () {
 
   // show a tab if it's in the URL
   currentHash = window.location.hash;
+  targetTabItem = docEl.querySelector('[href="' + currentHash + '"]');
   // if there's a tab hash in the URL, select that tab
-  if (currentHash.length > 0) {
-    fufu.addClass(docEl.querySelector('[href="' + currentHash + '"]').parentNode, 'tab-selected');
+  if (currentHash.length > 0 && targetTabItem !== 'null') {
+    fufu.addClass(targetTabItem.parentNode, 'tab-selected');
   } else {
   // otherwise select the first one
-    console.log('no hash');
-    console.log(listTabs[0].querySelector('li'));
     fufu.addClass(listTabs[0].querySelector('li'), 'tab-selected');
   }
 
