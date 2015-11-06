@@ -1,12 +1,7 @@
 'use strict';
 
 var fufu = (function () {
-//
-//   // var docEl;
-//
-//   // docEl = document.documentElement;
-//   // hamburger = document.getElementById("jump");
-//
+
   function getTarget(ev) {
     ev = ev || window.event;
     return ev.target || ev.srcElement;
@@ -45,15 +40,7 @@ var fufu = (function () {
       el.className = trim((' ' + el.className + ' ').replace(' ' + cn + ' ', ' '));
     }
   }
-//   //
-//   // function toggleClass(el, cn) {
-//   //   if(hasClass(el, cn)) {
-//   //     removeClass(el, cn);
-//   //   } else {
-//   //     addClass(el, cn);
-//   //   }
-//   // }
-//   //
+
   function preventActions(ev) {
     ev = ev || window.event;
     if(ev.stopPropagation && ev.preventDefault) {
@@ -66,27 +53,15 @@ var fufu = (function () {
   }
 //
   return {
-//     // docEl: docEl
-//     // hamburger: hamburger,
     addClass: addClass,
     removeClass: removeClass,
     getTarget: getTarget,
-//     // toggleClass: toggleClass,
-//     // bindEvent: bindEvent,
     preventActions: preventActions
   };
 //
 })();
 
 (function (window, document) {
-
-  // if(fufu.menu && fufu.signin && fufu.showSignin) {
-  //
-  //   fufu.showSignin.addEventListener("click", function(ev) {
-  //     // fufu.preventActions(ev);
-  //   });
-  //
-  // }
 
   var docEl,
   listTabs,
