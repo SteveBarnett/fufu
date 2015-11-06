@@ -97,11 +97,19 @@
 	}
 }
 
-.list-accordion {
-  :not(:target)[id] {
-    .list-accordion-item {
-      display: none;
-    }
+:not(:target)[id] {
+  .list-accordion-item {
+    display: none;
+  }
+}
+
+// add pushState
+.pushState {
+  .list-accordion-item {
+    display: none;
+  }
+  .list-accordion-item-selected {
+    display: block;
   }
 }
 
@@ -124,6 +132,16 @@
 .list-tab-item {
   &:not(:target) {
     display: none;
+  }
+}
+
+// add pushState
+.pushState {
+  .list-tab-item {
+    display: none;
+  }
+  .list-tab-item-selected {
+    display: block;
   }
 }
 
