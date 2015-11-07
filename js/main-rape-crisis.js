@@ -92,6 +92,7 @@ var fufu = (function () {
   // js version of show / hide tabs, for browsers with pushState
   hasPushState = ('pushState' in history);
   if(hasPushState) {
+    fufu.removeClass(docEl, 'no-pushState');
     fufu.addClass(docEl, 'pushState');
   }
 
@@ -99,10 +100,12 @@ var fufu = (function () {
   currentHash = window.location.hash;
   if (currentHash.length > 0 && targetTabItem !== 'null') {
     targetTabItem = docEl.querySelector('[href="' + currentHash + '"]');
-    targetListTabItem =  docEl.querySelector(currentHash);
-    fufu.addClass(targetTabItem.parentNode, 'tab-selected');
-    if (hasPushState) {
-      fufu.addClass(targetListTabItem, 'list-tab-item-selected');
+    targetListTabItem =  docEl.querySelector('#list-tab-items ' + currentHash);
+    if (targetListTabItem) {
+      fufu.addClass(targetTabItem.parentNode, 'tab-selected');
+      if (hasPushState) {
+        fufu.addClass(targetListTabItem, 'list-tab-item-selected');
+      }
     }
   } else {
   // otherwise select the first one
@@ -143,6 +146,40 @@ var fufu = (function () {
       }
     });
   }
+
+  // list for clicks on accordions
+
+  // var listAccordionHeaders,
+  // numListAccordionHeaders,
+  // targetAccordion,
+  // targetAccordionList,
+  // targetAccordionItems,
+  // numTargetAccordionItems,
+  // listAccordions,
+  // numListAccordions;
+  //
+  // listAccordions = docEl.querySelectorAll('.list-accordion');
+  // numListAccordions = listAccordions.length;
+  //
+  // for (var i = 0; i < numListAccordions; i++) {
+  //   listAccordions[i].addEventListener('click', function(ev){
+  //
+  //     ev.preventDefault();
+  //
+  //     targetAccordionList = fufu.getTarget(ev).parentNode.parentNode;
+  //     targetAccordionItems = targetAccordionList.querySelectorAll('.list-accordion-item');
+  //     console.log(targetAccordionItems);
+  //     numTargetAccordionItems = targetAccordionItems.length;
+  //
+  //     for (var j = 0; j < numTargetAccordionItems; j++) {
+  //       fufu.removeClass(targetAccordionItems[i], 'list-accordion-item-selected');
+  //       console.log(targetAccordionItems[i]);
+  //     }
+  //     fufu.addClass(fufu.getTarget(ev).nextElementSibling, 'list-accordion-item-selected');
+  //   });
+  // }
+
+
 
   // maps in iframes, only for biggish screens, matchMedia to tabs
   if('matchMedia' in window) {

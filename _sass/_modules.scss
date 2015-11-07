@@ -103,15 +103,15 @@
   }
 }
 
-// add pushState
-.pushState {
-  .list-accordion-item {
-    display: none;
-  }
-  .list-accordion-item-selected {
-    display: block;
-  }
-}
+// js version without scrolling
+// .js {
+//   .list-accordion-item {
+//     display: none;
+//   }
+//   .list-accordion-item-selected {
+//     display: block;
+//   }
+// }
 
 .list-tabs {
   @include no-mp;
@@ -129,7 +129,7 @@
   }
 }
 
-.list-tab-item {
+.no-pushState .list-tab-item {
   &:not(:target) {
     display: none;
   }
