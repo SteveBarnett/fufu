@@ -98,9 +98,9 @@ var fufu = (function () {
 
   // show a tab and tab item, if a hash is in the URL
   currentHash = window.location.hash;
-  if (currentHash.length > 0 && targetTabItem !== 'null') {
+  if (currentHash.length > 0) {
     targetTabItem = docEl.querySelector('[href="' + currentHash + '"]');
-    targetListTabItem =  docEl.querySelector('#list-tab-items ' + currentHash);
+    targetListTabItem =  docEl.querySelector('.list-tab-item' + currentHash);
     if (targetListTabItem) {
       fufu.addClass(targetTabItem.parentNode, 'tab-selected');
       if (hasPushState) {
@@ -181,11 +181,12 @@ var fufu = (function () {
 
 
 
-  // maps in iframes, only for biggish screens, matchMedia to tabs
+  // maps and volunteer form in iframes, only for biggish screens, matchMedia to tabs
   if('matchMedia' in window) {
     if (window.matchMedia("(min-width: 40em)").matches) {
       var mapLinks,
       numMaps,
+      volunteerForm,
       iframeDataSrc;
 
       mapLinks = docEl.querySelectorAll('.map-link');
@@ -197,6 +198,12 @@ var fufu = (function () {
         mapLinks[k].parentNode.removeChild(mapLinks[k]);
       }
 
+      volunteerForm = docEl.querySelector('.volunteer-iframe');
+      if (volunteerForm) {
+        iframeDataSrc = volunteerForm.getAttribute('data-iframe-src');
+        volunteerForm.insertAdjacentHTML('beforebegin', '<iframe class="volunteer-iframe" frameborder="0" src="' + iframeDataSrc + '"></iframe>');
+        volunteerForm.parentNode.removeChild(volunteerForm);
+      }
     }
   }
 

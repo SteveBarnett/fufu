@@ -73,9 +73,16 @@ table {
 @import "rape-crisis-lists";
 @import "rape-crisis-panels";
 
-.map-iframe {
+iframe {
   width: 100%;
+}
+
+.map-iframe {
   height: 20em;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+.volunteer-iframe {
+height: 40em;
 }
