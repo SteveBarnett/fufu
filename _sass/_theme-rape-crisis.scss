@@ -13,12 +13,6 @@ input, textarea, keygen, select, button {
   font-weight: 300;
 }
 
-.panel-item {
-  h1, h2, h3, h4 {
-    margin-bottom: 0;
-  }
-}
-
 .panel {
   @include l-tac;
   @include clearfix;
