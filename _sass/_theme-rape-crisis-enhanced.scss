@@ -86,3 +86,23 @@ iframe {
 .volunteer-iframe {
 height: 40em;
 }
+
+#subscribe {
+  &:target {
+    background-color: darken($colorSecond, 20%);
+    h4 {
+      &:before {
+        content: "→";
+        display: inline-block;
+        padding-right: 0.5em;
+        font-size: 1.5em;
+        position: relative;
+        top: 0.1em;
+        left: 0.4em;
+      }
+    }
+    form {
+      padding: 1em;
+    }
+  }
+}
