@@ -60,6 +60,7 @@
 .list-ordered-alt {
   h4 {
     padding-left: 2.5em;
+    text-transform: none;
   }
   li {
     &:before {
@@ -71,6 +72,28 @@
     &:nth-of-type(n) {
       &:before {
         background-color: transparent;
+      }
+    }
+  }
+}
+
+.list-ordered-alt {
+  counter-reset: fancyorderedlistalt;
+  li {
+    counter-increment: fancyorderedlistalt;
+    &:before {
+      content: counter(fancyorderedlistalt);
+    }
+  }
+}
+
+.panel-support {
+  counter-reset: supportlist;
+  .list-ordered-alt {
+    li {
+      counter-increment: supportlist;
+      &:before {
+        content: counter(supportlist);
       }
     }
   }

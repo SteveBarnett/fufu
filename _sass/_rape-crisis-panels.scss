@@ -21,6 +21,12 @@
   color: #fff;
 }
 
+.panel-light {
+  @include clearfix;
+  background-color: lighten($colorSecond, 50%);
+  padding: 1em;
+}
+
 .panel-footer {
   @include clearfix;
   padding: 1em;
@@ -178,5 +184,11 @@
   .panel-item {
     @include grid-2up-big-gutter;
     @include grid-4up-big-gutter;
+  }
+}
+
+.panel-support {
+  .panel-item {
+    @include grid-2up-big-gutter;
   }
 }
