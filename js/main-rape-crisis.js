@@ -107,7 +107,7 @@ var fufu = (function () {
         fufu.addClass(targetListTabItem, 'list-tab-item-selected');
       }
     }
-  } else {
+  } else if (listTabs.length > 0) {
   // otherwise select the first one
     fufu.addClass(listTabs[0].querySelector('li'), 'tab-selected');
     if (hasPushState) {
