@@ -51,6 +51,8 @@
 }
 
 .panel-donate {
+  @include clearfix;
+  background: $colorFourth;
   img {
     @media (min-width: 35em) {
       float: left;
