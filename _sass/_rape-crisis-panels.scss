@@ -2,7 +2,6 @@
 
 .panel-alt {
   @include clearfix;
-  text-align: center;
   padding: 2em;
   background-color: $colorFourth;
 }
@@ -133,12 +132,13 @@
 .panel-article {
   @media (min-width: 38em) {
     padding-left: 40%;
-    background: transparent url(/fufu/img/ceiling-cat-200.jpg) left top no-repeat;
+    background-color: transparent;
+    background-position: left top;
+    background-repeat: no-repeat;
     background-size: 35%;
   }
   @media (min-width: 64em) {
     padding-left: 50%;
-    background: transparent url(/fufu/img/ceiling-cat-400.jpg) left top no-repeat;
     background-size: 45%;
   }
 }
