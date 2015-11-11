@@ -32,18 +32,22 @@ a.primary, a.secondary {
 
 article {
   line-height: 1.5;
-  &:first-letter {
-    @include one-letter-circle;
-    font-size: 1.5em;
-    display: inline-block;
-    float: left;
-    margin-right: 0.5em;
+  p:first-of-type {
+    &:first-letter {
+      @include one-letter-circle;
+      font-size: 1.5em;
+      display: inline-block;
+      float: left;
+      margin-right: 0.5em;
+    }
   }
 }
 
 .article-alt {
-  &:first-letter {
-    background-color: $colorFirst;
+  p:first-of-type {
+    &:first-letter {
+      background-color: $colorFirst;
+    }
   }
 }
 

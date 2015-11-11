@@ -4,7 +4,7 @@
   counter-reset: fancyorderedlist;
   padding: 0;
   list-style: none;
-  li {
+  > li {
     counter-increment: fancyorderedlist;
     position: relative;
     margin-bottom: 3em;
@@ -28,7 +28,7 @@
     text-transform: uppercase;
     padding-left: 3em;
   }
-  li {
+  > li {
     counter-increment: whattodo;
     &:before {
       content: counter(whattodo);
@@ -62,7 +62,7 @@
     padding-left: 2.5em;
     text-transform: none;
   }
-  li {
+  > li {
     &:before {
       color: $colorSecond;
       border: solid 2px $colorSecond;
@@ -79,7 +79,7 @@
 
 .list-ordered-alt {
   counter-reset: fancyorderedlistalt;
-  li {
+  > li {
     counter-increment: fancyorderedlistalt;
     &:before {
       content: counter(fancyorderedlistalt);
@@ -90,7 +90,7 @@
 .panel-support {
   counter-reset: supportlist;
   .list-ordered-alt {
-    li {
+    > li {
       counter-increment: supportlist;
       &:before {
         content: counter(supportlist);
