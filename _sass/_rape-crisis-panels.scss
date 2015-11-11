@@ -201,3 +201,22 @@
     @include grid-2up-big-gutter;
   }
 }
+
+.panel-our-grant-makers-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  .panel-our-grant-makers-inner {
+    width: 2240px;
+    img {
+      margin-right: 20px;
+    }
+    a {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      &:hover {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
+    }
+  }
+}
