@@ -143,6 +143,15 @@
   }
 }
 
+.panel-article-report {
+  @media (min-width: 38em) {
+    background-image: url(/fufu/img/report-200.jpg);
+  }
+  @media (min-width: 64em) {
+    background-image: url(/fufu/img/report-400.jpg) ;
+  }
+}
+
 .panel-article-alt {
   text-align: left;
   @media (min-width: 45em) {
