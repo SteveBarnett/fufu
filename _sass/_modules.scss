@@ -97,9 +97,11 @@
 	}
 }
 
-:not(:target)[id] {
-  .list-accordion-item {
-    display: none;
+.list-accordion {
+  :not(:target)[id] {
+    .list-accordion-item {
+      display: none;
+    }
   }
 }
 
