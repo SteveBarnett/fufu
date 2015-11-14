@@ -95,9 +95,9 @@ iframe {
 height: 40em;
 }
 
-#subscribe {
+#subscribe, #contact {
   &:target {
-    background-color: darken($colorSecond, 20%);
+    background-color: darken($colorSecond, 15%);
     h4 {
       &:before {
         content: "→";
