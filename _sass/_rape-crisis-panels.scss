@@ -2,6 +2,7 @@
 
 .panel-c {
   text-align: center;
+  clear: left;
 }
 
 .panel-alt {
@@ -42,6 +43,9 @@
     &:visited {
       color: $colorSecond;
     }
+  }
+  img {
+    max-width: 72px;
   }
 }
 
@@ -104,6 +108,9 @@
   margin-bottom: 1em;
   @include grid-2up-big-gutter;
   @include grid-4up-big-gutter;
+  h4 {
+
+  }
 }
 
 .panel-org,
@@ -125,10 +132,11 @@
 .panel-the-road {
   img {
       @media (min-width: 30em) {
-        width: 50%;
+        width: 70%;
+        margin-top: 0;
       }
       @media (min-width: 45em) {
-        width: 100%;
+        width: 70%;
       }
   }
 }
@@ -147,14 +155,20 @@
   }
 }
 
-.panel-article-report {
+.panel-article-flip {
   @media (min-width: 38em) {
-    background-image: url(img/rape-crisis/report-200.jpg);
+    padding-right: 40%;
+    background-color: transparent;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 35%;
   }
   @media (min-width: 64em) {
-    background-image: url(img/rape-crisis/report-400.jpg) ;
+    padding-right: 50%;
+    background-size: 45%;
   }
 }
+
 
 .panel-article-alt {
   text-align: left;
@@ -178,7 +192,6 @@
 }
 
 .panel-the-road {
-  text-align: center;
   padding: 0;
   .panel-item {
     padding: 1em;
@@ -231,5 +244,13 @@
         filter: grayscale(0);
       }
     }
+  }
+}
+
+.panel-grant-makers {
+  img {
+    padding: 0 1em;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 }
