@@ -20,7 +20,7 @@
 .panel-inv-alt {
   @include clearfix;
   padding: 1em;
-  background: #000;
+  background: darken($colorThird, 15%);
   color: #fff;
 }
 
@@ -33,7 +33,7 @@
 .panel-footer {
   @include clearfix;
   padding: 1em;
-  background: darken($colorSecond, 20%) url(img/footer-bg.jpg) 0 0 repeat;
+  background: darken($colorSecond, 20%) url(img/rape-crisis/footer-bg.jpg) 0 0 repeat;
   background-size: cover;
   color: #fff;
   a {
