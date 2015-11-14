@@ -149,7 +149,7 @@
 
 .list-tabs {
   clear: both;
-  background-color: black; // !!!
+  background-color: darken($colorThird, 15%);
   border-bottom: solid 1px lighten($colorThird, 40%);
   a {
     padding: 1em;

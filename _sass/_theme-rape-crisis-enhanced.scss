@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-.primary, [href*="donate"] {
+.primary, a[href*="donate"] {
   background-color: $colorFirst;
   color: #fff;
   &:hover {
@@ -15,7 +15,7 @@
   }
 }
 
-.secondary, [href*="#subscribe"] {
+.secondary, a[href*="#subscribe"] {
   background-color: $colorSecond;
   color: #fff;
   &:hover {
