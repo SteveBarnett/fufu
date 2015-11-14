@@ -177,6 +177,12 @@
   }
 }
 
+.panel-light {
+  .list-tabs {
+    background-color: lighten($colorSecond, 50%);
+  }
+}
+
 .list-tabs-alt {
   a {
     color: $colorSecond;
