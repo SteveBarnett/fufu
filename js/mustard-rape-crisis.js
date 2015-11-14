@@ -1,5 +1,5 @@
 // For info only. Minified version is used in the head of the doc.
-if('querySelector' in document && 'addEventListener' in window) {
+if('querySelector' in document && 'addEventListener' in window && navigator.userAgent.indexOf('Opera Mini') === -1) {
   loadJS( "/fufu/js/main-rape-crisis.min.js" );
 
   WebFontConfig = {
