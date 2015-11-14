@@ -1,5 +1,9 @@
 // panels
 
+.panel-c {
+  text-align: center;
+}
+
 .panel-alt {
   @include clearfix;
   padding: 2em;
