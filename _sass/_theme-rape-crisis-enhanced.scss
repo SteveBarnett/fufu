@@ -44,6 +44,7 @@ article {
 }
 
 .article-alt {
+  max-width: 35em;
   p:first-of-type {
     &:first-letter {
       background-color: $colorFirst;
