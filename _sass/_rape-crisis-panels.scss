@@ -267,11 +267,21 @@
 }
 
 .banner {
+  clear: both;
   position: relative;
   .btn {
     position: absolute;
     left: 10%;
     bottom: 10%;
+  }
+  h2 {
+    font-size: 1em;
+    @media (min-width: 40em) {
+      font-size: 2em;
+    }
+  }
+  .btn {
+    font-size: 1em;
   }
 }
 
@@ -281,7 +291,7 @@
   padding: 0.25em;
   position: absolute;
   left: 10%;
-  bottom: 20%;
+  bottom: 40%;
 }
 
 .panel-find-us {
