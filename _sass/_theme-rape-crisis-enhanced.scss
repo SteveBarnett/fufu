@@ -85,10 +85,13 @@ iframe {
   width: 100%;
 }
 
-.map-iframe {
+.map-link {
   height: 20em;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  img {
+    width: 100%;
+  }
 }
 
 .volunteer-iframe {

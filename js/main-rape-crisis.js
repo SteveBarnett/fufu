@@ -147,56 +147,11 @@ var fufu = (function () {
     });
   }
 
-  // list for clicks on accordions
-
-  // var listAccordionHeaders,
-  // numListAccordionHeaders,
-  // targetAccordion,
-  // targetAccordionList,
-  // targetAccordionItems,
-  // numTargetAccordionItems,
-  // listAccordions,
-  // numListAccordions;
-  //
-  // listAccordions = docEl.querySelectorAll('.list-accordion');
-  // numListAccordions = listAccordions.length;
-  //
-  // for (var i = 0; i < numListAccordions; i++) {
-  //   listAccordions[i].addEventListener('click', function(ev){
-  //
-  //     ev.preventDefault();
-  //
-  //     targetAccordionList = fufu.getTarget(ev).parentNode.parentNode;
-  //     targetAccordionItems = targetAccordionList.querySelectorAll('.list-accordion-item');
-  //     console.log(targetAccordionItems);
-  //     numTargetAccordionItems = targetAccordionItems.length;
-  //
-  //     for (var j = 0; j < numTargetAccordionItems; j++) {
-  //       fufu.removeClass(targetAccordionItems[i], 'list-accordion-item-selected');
-  //       console.log(targetAccordionItems[i]);
-  //     }
-  //     fufu.addClass(fufu.getTarget(ev).nextElementSibling, 'list-accordion-item-selected');
-  //   });
-  // }
-
-
-
   // maps and volunteer form in iframes, only for biggish screens, matchMedia to tabs
   if('matchMedia' in window) {
     if (window.matchMedia("(min-width: 40em)").matches) {
-      var mapLinks,
-      numMaps,
-      volunteerForm,
+      var volunteerForm,
       iframeDataSrc;
-
-      mapLinks = docEl.querySelectorAll('.map-link');
-      numMaps = mapLinks.length;
-      for (var k = 0; k < numMaps; k++) {
-        iframeDataSrc = mapLinks[k].getAttribute('data-iframe-src');
-
-        mapLinks[k].insertAdjacentHTML('beforebegin', '<iframe class="map-iframe"  frameborder="0" src="' + iframeDataSrc + '"></iframe>');
-        mapLinks[k].parentNode.removeChild(mapLinks[k]);
-      }
 
       volunteerForm = docEl.querySelector('.volunteer-iframe');
       if (volunteerForm) {
@@ -205,6 +160,25 @@ var fufu = (function () {
         volunteerForm.parentNode.removeChild(volunteerForm);
       }
     }
+
+    var mapImages,
+    numMaps,
+    mapNewSrc;
+
+    mapImages = docEl.querySelectorAll('.map-link img');
+    numMaps = mapImages.length;
+
+    for (var k = 0; k < numMaps; k++) {
+      mapNewSrc = mapImages[k].src;
+      if (window.matchMedia("(min-width: 1200px)").matches) {
+        mapNewSrc = mapImages[k].src.replace('300x250', '640x150&scale=2');
+        mapImages[k].setAttribute('src', mapNewSrc);
+      } else if (window.matchMedia("(min-width: 640px)").matches) {
+        mapNewSrc = mapImages[k].src.replace('300x250', '640x250');
+        mapImages[k].setAttribute('src', mapNewSrc);
+      }
+    }
+
   }
 
 
