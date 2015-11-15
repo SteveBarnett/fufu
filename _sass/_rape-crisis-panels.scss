@@ -266,6 +266,24 @@
   margin-left: auto;
 }
 
+.banner {
+  position: relative;
+  .btn {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+  }
+}
+
+.banner-heading {
+  background-color: black;
+  color: $colorSecond;
+  padding: 0.25em;
+  position: absolute;
+  left: 10%;
+  bottom: 20%;
+}
+
 .panel-find-us {
   h2 {
     margin-bottom: 0;
