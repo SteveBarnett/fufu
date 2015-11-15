@@ -6,7 +6,12 @@ fufu-theme: -rape-crisis
 <div class="main">
 
 {{ site.molecules | where:"name","panel-crisis-line" }}
-{{ site.molecules | where:"name","nav-main-rape-crisis" }}
+<div class="panel-logo">
+  <a href="{{ site.baseurl }}" class="nav-logo">
+    <img src="{{ site.baseurl }}/img/rape-crisis-logo.png" alt="">
+  </a>
+  {{ site.molecules | where:"name","nav-main-rape-crisis" }}
+</div>
 {{ site.molecules | where:"name","hero-take-action-rape-crisis" }}
 
 <!-- not a carousel -->

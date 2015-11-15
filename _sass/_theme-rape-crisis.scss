@@ -139,11 +139,13 @@ h4 {
       padding: 0.5em;
     }
   }
-  .nav-logo {
-    display: block;
-  }
 }
+//
+// .nav-logo {
+//   padding: 0;
+// }
 
 .nav-logo {
-  padding: 0;
+  display: block;
 }
+// .panel-logo

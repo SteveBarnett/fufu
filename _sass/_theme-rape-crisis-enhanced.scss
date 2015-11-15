@@ -136,18 +136,16 @@ height: 40em;
   }
 }
 
-.nav-logo {
-  img {
-    @media (min-width: 40em) {
-      width: 6em;
-    }
-    @media (min-width: 60em) {
-      width: auto;
-    }
-  }
-  @media (min-width: 60em) {
-    float: left;
+.panel-logo {
+  @media (min-width: 40em) {
     position: relative;
-    top: -1.5em;
+    padding-left: 11em;
+    .nav-logo {
+      position: absolute;
+      left: 1em;
+      img {
+        width: 10em;
+      }
+    }
   }
 }
