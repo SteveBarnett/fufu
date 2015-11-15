@@ -118,3 +118,36 @@ height: 40em;
     }
   }
 }
+
+.nav-main {
+  @media (min-width: 40em) {
+    .nav-logo {
+      display: inline-block;
+    }
+  }
+  @media (min-width: 60em) {
+    text-align: right;
+    li {
+      padding: 1em 0;
+      a {
+        padding: 1em;
+      }
+    }
+  }
+}
+
+.nav-logo {
+  img {
+    @media (min-width: 40em) {
+      width: 6em;
+    }
+    @media (min-width: 60em) {
+      width: auto;
+    }
+  }
+  @media (min-width: 60em) {
+    float: left;
+    position: relative;
+    top: -1.5em;
+  }
+}

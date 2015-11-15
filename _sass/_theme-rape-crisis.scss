@@ -131,6 +131,19 @@ h4 {
 }
 
 .nav-main {
-  text-align: right;
-  padding: 1em;
+  list-style: none;
+  li {
+    padding: 0.5em 0;
+    display: inline-block;
+    a {
+      padding: 0.5em;
+    }
+  }
+  .nav-logo {
+    display: block;
+  }
+}
+
+.nav-logo {
+  padding: 0;
 }
