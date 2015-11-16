@@ -98,15 +98,15 @@
   }
 }
 
-// js version without scrolling
-// .js {
-//   .list-accordion-item {
-//     display: none;
-//   }
-//   .list-accordion-item-selected {
-//     display: block;
-//   }
-// }
+.opera-mini {
+  .list-accordion {
+    :not(:target)[id] {
+      .list-accordion-item {
+        display: block;
+      }
+    }
+  }
+}
 
 .list-tabs {
   @include no-mp;

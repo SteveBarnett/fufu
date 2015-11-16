@@ -118,6 +118,19 @@
   }
 }
 
+.opera-mini {
+  .list-accordion {
+    :target[id] {
+      .list-accordion-header {
+        &:after {
+          content: "";
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
 .list-accordion-header {
   display: block;
   position: relative;
@@ -144,6 +157,15 @@
     font-weight: bold;
     font-size: 1.5em;
     line-height: 1;
+  }
+}
+
+.opera-mini {
+  .list-accordion-header {
+    &:after {
+      content: "";
+      background-color: transparent;
+    }
   }
 }
 

@@ -1,9 +1,11 @@
 // For info only. Minified version is used in the head of the doc.
-if('querySelector' in document && 'addEventListener' in window && navigator.userAgent.indexOf('Opera Mini') === -1) {
+if (navigator.userAgent.indexOf('Opera Mini') > 0) {
+  document.documentElement.className += ' opera-mini';
+} else if('querySelector' in document && 'addEventListener' in window ) {
   loadJS( "/fufu/js/main-rape-crisis.min.js" );
 
   WebFontConfig = {
-    google: { families: [ 'Source+Sans+Pro:400,700:latin', 'Roboto+Condensed:300:latin' ] }
+    google: { families: [ 'Source+Sans+Pro:400,700:latin' ] }
   };
   (function() {
     var wf = document.createElement('script');
