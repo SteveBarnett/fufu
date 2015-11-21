@@ -43,6 +43,23 @@ article {
   }
 }
 
+article {
+  form, ul {
+    p:first-of-type {
+      &:first-letter {
+        background-color: transparent;
+        color: rgb(34, 34, 34);
+        padding: 0;
+        border-radius: 0;
+        font-size: 1em;
+        float: none;
+        margin-right: 0;
+      }
+    }
+
+  }
+}
+
 .article-alt {
   max-width: 35em;
   p:first-of-type {
