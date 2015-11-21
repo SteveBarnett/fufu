@@ -268,14 +268,18 @@
 .banner {
   clear: both;
   position: relative;
-  .btn {
-    position: absolute;
-    left: 10%;
-    bottom: 10%;
+  @media (min-width: 40em) {
+    .btn {
+      position: absolute;
+      left: 10%;
+      bottom: 10%;
+    }
   }
   h2 {
+    margin-top: 1em;
     font-size: 1em;
     @media (min-width: 40em) {
+      margin-top: 0;
       font-size: 2em;
     }
   }
@@ -288,9 +292,11 @@
   background-color: black;
   color: $colorSecond;
   padding: 0.25em;
-  position: absolute;
-  left: 10%;
-  bottom: 40%;
+  @media (min-width: 40em) {
+    position: absolute;
+    left: 10%;
+    bottom: 40%;
+  }
 }
 
 .panel-find-us {
