@@ -6,6 +6,9 @@
   <title>{{ page.url  | replace: '/ecosystems/', ''  | replace: '.html', '' | replace: '-', ' ' | capitalize }}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  <!-- <link rel="dns-prefetch" href="http://example.com"> -->
+  <!-- <link rel="preconnect" href="http://example.com"> -->
+
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <link rel="stylesheet" href="{{ site.baseurl }}/css/style{{ page.fufu-theme }}.css">
