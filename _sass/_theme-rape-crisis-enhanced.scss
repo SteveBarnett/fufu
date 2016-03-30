@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-.primary, a[href*="donate"] {
+.primary, .menu-item a[href*="donate"] {
   background-color: $colorFirst;
   color: #fff;
   &:hover {
