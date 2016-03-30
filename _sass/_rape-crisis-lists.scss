@@ -100,7 +100,7 @@
 }
 
 .list-accordion {
-  li {
+  > li {
     padding: 0.5em 0;
     border-bottom: solid 1px lighten($colorThird, 20%);
     &:first-child {

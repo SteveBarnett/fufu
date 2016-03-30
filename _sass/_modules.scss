@@ -18,12 +18,9 @@
 	}
 }
 
-.list-plain, .list-plain ul {
+.list-plain, .list-plain > ul {
 	@include no-bull;
   @include no-p;
-	* {
-		@include no-bull;
-	}
 }
 
 .list-block {

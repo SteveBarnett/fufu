@@ -2,6 +2,7 @@
 
 body {
   font-size: 1.1em;
+  color: #555;
 }
 
 .btn {
@@ -25,7 +26,7 @@ input, textarea, keygen, select, button {
 
 .panel {
   @include clearfix;
-  margin: 2em 0;
+  margin: 2em 0.5em;
 }
 
 .main {

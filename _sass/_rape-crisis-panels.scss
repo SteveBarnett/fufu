@@ -1,5 +1,11 @@
 // panels
 
+.panel-facts,
+.panel-stats {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .panel-c {
   text-align: center;
   clear: left;
@@ -79,6 +85,12 @@
     @media (min-width: 70em) {
       width: 30em;
     }
+  }
+}
+
+.panel-donate-alt {
+  img {
+    margin-bottom: 0;
   }
 }
 
@@ -258,11 +270,14 @@
 }
 
 .panel-mw ,
-.banner,
-.panel-article-alt {
+.banner {
   max-width: 70em;
   margin-right: auto;
   margin-left: auto;
+}
+
+.panel-article-alt {
+  max-width: 70em;
 }
 
 .banner {
@@ -295,7 +310,8 @@
   @media (min-width: 40em) {
     position: absolute;
     left: 10%;
-    bottom: 40%;
+    bottom: 30%;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }
 
